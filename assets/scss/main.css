@@ -5304,30 +5304,20 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-@font-face {
-  font-family: "UTM NEO SANS INTEL";
-  src: url("../fonts/UTM Neo Sans Intel.ttf") format("truetype"), url("../fonts/UTM Neo Sans Intel_Italic.ttf") format("truetype"), url("../fonts/UTM Neo Sans IntelBold_Italic.ttf") format("truetype"), url("../fonts/UTM Neo Sans IntelBold.ttf") format("truetype"); }
-html,
-body {
+html, body {
   font-size: 16px;
-  font-family: "UTM NEO SANS INTEL", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
-  @media only screen and (max-width: 1180px) {
-    html,
-    body {
+  @media only screen and (max-width: 1160px) {
+    html, body {
       font-size: 15px; } }
-  @media only screen and (max-width: 998px) {
-    html,
-    body {
+  @media only screen and (max-width: 900px) {
+    html, body {
       font-size: 14px; } }
   @media only screen and (max-width: 767px) {
-    html,
-    body {
+    html, body {
       font-size: 12px; } }
 
-@font-face {
-  font-family: "UTM NEO SANS INTEL";
-  src: url("../fonts/UTM Neo Sans Intel.ttf") format("truetype"), url("../fonts/UTM Neo Sans Intel_Italic.ttf") format("truetype"), url("../fonts/UTM Neo Sans IntelBold_Italic.ttf") format("truetype"), url("../fonts/UTM Neo Sans IntelBold.ttf") format("truetype"); }
 a:hover {
   text-decoration: none; }
 
@@ -5343,203 +5333,5 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%; }
-
-.desktop-header {
-  background: #01adab; }
-  .desktop-header .nav {
-    padding: 20px 15px; }
-    .desktop-header .nav .nav__top {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      color: #fff;
-      font-size: 13.2px;
-      font-size: 0.825rem; }
-      .desktop-header .nav .nav__top .item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 74px; }
-        .desktop-header .nav .nav__top .item .item__content {
-          margin-left: 5px; }
-          .desktop-header .nav .nav__top .item .item__content p:nth-child(1) {
-            font-size: 13.2px;
-            font-size: 0.825rem; }
-          .desktop-header .nav .nav__top .item .item__content p:nth-child(2) {
-            font-size: 11.58px;
-            font-size: 0.72375rem; }
-      .desktop-header .nav .nav__top .item:nth-child(2) {
-        position: relative; }
-    .desktop-header .nav .nav__midle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 15px 0; }
-      .desktop-header .nav .nav__midle .custom-input {
-        display: flex;
-        width: 710px;
-        margin-left: 41px; }
-        .desktop-header .nav .nav__midle .custom-input input {
-          height: 40px; }
-        @media only screen and (max-width: 1180px) {
-          .desktop-header .nav .nav__midle .custom-input {
-            width: 510px; } }
-      .desktop-header .nav .nav__midle .nav__midle__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 145px; }
-        .desktop-header .nav .nav__midle .nav__midle__btn span {
-          margin-left: 5px;
-          white-space: nowrap; }
-    .desktop-header .nav .nav__bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-      margin-top: 5px; }
-      .desktop-header .nav .nav__bottom li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-        .desktop-header .nav .nav__bottom li div {
-          position: relative;
-          background-color: #fff;
-          line-height: 27px;
-          width: 27px;
-          border-radius: 50%;
-          text-align: center; }
-        .desktop-header .nav .nav__bottom li a {
-          color: #fff;
-          margin-left: 11px;
-          font-size: 15.75px;
-          font-size: 0.984375rem; }
-  .desktop-header .nav-scroll {
-    background: #01adab;
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    .desktop-header .nav-scroll .nav-scroll__content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 70px; }
-      .desktop-header .nav-scroll .nav-scroll__content .custom-input {
-        display: flex;
-        width: 710px;
-        margin-left: 41px; }
-        .desktop-header .nav-scroll .nav-scroll__content .custom-input input {
-          height: 40px; }
-      .desktop-header .nav-scroll .nav-scroll__content .nav__midle__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 145px; }
-        .desktop-header .nav-scroll .nav-scroll__content .nav__midle__btn span {
-          margin-left: 5px;
-          white-space: nowrap; }
-  @media only screen and (max-width: 998px) {
-    .desktop-header {
-      display: none; } }
-
-.mobile-header {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  width: 100%; }
-  .mobile-header .nav-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0; }
-    .mobile-header .nav-mobile .nav-mobile__bars {
-      cursor: pointer; }
-      .mobile-header .nav-mobile .nav-mobile__bars .fas {
-        font-size: 28.75px;
-        font-size: 1.796875rem; }
-    .mobile-header .nav-mobile .nav-mobile__cart {
-      position: relative;
-      margin-right: 12px; }
-      .mobile-header .nav-mobile .nav-mobile__cart span {
-        background-color: #fa434e;
-        height: 22px;
-        width: 22px;
-        color: #fff;
-        font-weight: bolder;
-        border-radius: 50%;
-        text-align: center;
-        position: absolute;
-        font-size: 13.8px;
-        font-size: 0.8625rem;
-        top: -50%;
-        right: -50%; }
-    .mobile-header .nav-mobile .nav-mobile__menu {
-      position: fixed;
-      left: -50%;
-      top: 0;
-      width: 50%;
-      height: 100%;
-      transition: all 0.5s;
-      background-color: #495057; }
-      .mobile-header .nav-mobile .nav-mobile__menu .nav-mobile__menu__head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px; }
-        .mobile-header .nav-mobile .nav-mobile__menu .nav-mobile__menu__head .btn-close {
-          cursor: pointer; }
-          .mobile-header .nav-mobile .nav-mobile__menu .nav-mobile__menu__head .btn-close .fas {
-            font-size: 28.75px;
-            font-size: 1.796875rem;
-            color: #fff; }
-      .mobile-header .nav-mobile .nav-mobile__menu ul {
-        list-style: none; }
-        .mobile-header .nav-mobile .nav-mobile__menu ul li {
-          display: flex;
-          align-items: center;
-          padding: 15px 20px; }
-          .mobile-header .nav-mobile .nav-mobile__menu ul li:hover {
-            background-color: #000; }
-          .mobile-header .nav-mobile .nav-mobile__menu ul li img {
-            width: 21.99px; }
-          .mobile-header .nav-mobile .nav-mobile__menu ul li a {
-            color: #fff;
-            margin-left: 20px;
-            font-size: 15.75px;
-            font-size: 0.984375rem; }
-    .mobile-header .nav-mobile .open {
-      left: 0; }
-  @media only screen and (max-width: 998px) {
-    .mobile-header {
-      display: block; } }
-
-.btn--write {
-  height: 40px;
-  background: #fff;
-  border: none;
-  color: #838383;
-  margin-left: 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 13.2px;
-  font-size: 0.825rem; }
-
-.btn--search {
-  background: #e2e3e4;
-  color: #838383;
-  padding: 5px 10px;
-  white-space: nowrap;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  height: 40px;
-  cursor: pointer;
-  font-size: 13.2px;
-  font-size: 0.825rem; }
-
-.product {
-  height: 800px;
-  background-color: bisque; }
 
 /*# sourceMappingURL=main.css.map */

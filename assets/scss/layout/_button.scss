@@ -1,0 +1,21 @@
+.btn--write {
+  height: 40px;
+  background: #fff;
+  border: none;
+  color: #838383;
+  margin-left: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  @include font-size(13.2px);
+}
+.btn--search {
+  background: #e2e3e4;
+  color: #838383;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 40px;
+  cursor: pointer;
+  @include font-size(13.2px);
+}
