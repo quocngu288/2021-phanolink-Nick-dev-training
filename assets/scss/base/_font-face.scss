@@ -1,0 +1,9 @@
+@import "font-awesome/variables";
+@import "font-awesome/mixins";
+
+@font-face {
+  font-family: "UTM NEO SANS INTEL";
+  src: url("#{$fa-font-path}/UTM Neo Sans Intel.ttf") format("truetype");
+  font-weight: 400;
+  // font-style: normal;
+}

@@ -6,6 +6,7 @@
 
 // Base
 @import "base/typography";
+@import "base/font-face";
 
 // Vendors
 // Import jQuery lib, Bootstrap ... etc
@@ -17,9 +18,18 @@
 @import "layout/common";
 @import "layout/header";
 @import "layout/main";
+@import "layout/button";
 @import "layout/sidebar";
 @import "layout/footer";
 
-
 // Page specific styles
 @import "page/banner";
+@import "page/service";
+@import "page/create-toa";
+@import "page/bonus";
+@import "page/hot-product";
+@import "page/medicinne";
+@import "page/foods";
+@import "page/consumers-goods";
+@import "page/health";
+@import "page/brand";

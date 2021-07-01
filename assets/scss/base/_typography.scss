@@ -1,8 +1,10 @@
 @import "font-awesome";
+@import "font-face";
 
-html, body {
+html,
+body {
   font-size: 16px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "UTM NEO SANS INTEL", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   @media #{$info-tablet-horizontal} {
     font-size: 15px;
