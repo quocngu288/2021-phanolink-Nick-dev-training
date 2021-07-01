@@ -8,6 +8,16 @@
   cursor: pointer;
   @include font-size(13.2px);
 }
+.btn--red {
+  background: #fa434e;
+  width: 190px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  @include font-size(15px);
+}
 .btn--search {
   background: #e2e3e4;
   color: #838383;

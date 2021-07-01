@@ -35,7 +35,7 @@
       justify-content: space-between;
       align-items: center;
       margin: 15px 0;
-      .custom-input {
+      .midle__input {
         display: flex;
         width: 710px;
         margin-left: 41px;
@@ -46,7 +46,7 @@
           width: 510px;
         }
       }
-      .nav__midle__btn {
+      .midle__btn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,16 +91,16 @@
 
   .nav-scroll {
     background: #01adab;
-
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
     .nav-scroll__content {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 70px;
-      .custom-input {
+      .content__input {
         display: flex;
         width: 710px;
         margin-left: 41px;
@@ -108,7 +108,7 @@
           height: 40px;
         }
       }
-      .nav__midle__btn {
+      .content__btn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -129,6 +129,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   background-color: #fff;
   width: 100%;
   .nav-mobile {

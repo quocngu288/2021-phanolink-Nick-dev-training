@@ -6,25 +6,15 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 120) {
           $(".nav-scroll").fadeIn();
-
-          // $(".desktop-header").addClass("fixed");
         } else {
           $(".nav-scroll").fadeOut();
-          // $(".desktop-header").removeClass("fixed");
         }
       });
     });
   });
 })(jQuery);
 
-// $("#nav-mobile__bars").click(function () {
-//   console.log("click");
-//   $("#nav-mobile__menu").addClass("open");
-// });
-// $(window).click(function () {
-//   $("#nav-mobile__menu").removeClass("open");
-// });
-
+//sua lai dung JQUERY
 const handleClickOpenSidebar = () => {
   document.querySelector(".nav-mobile__menu").classList.add("open");
 };
@@ -32,8 +22,44 @@ const handleClickOpenSidebar = () => {
 const handleClickCloseSidebar = () => {
   document.querySelector(".nav-mobile__menu").classList.remove("open");
 };
-window.onclick = function (e) {
-  if (e.target == $(".nav-mobile__menu")) {
-    document.querySelector(".nav-mobile__menu").classList.remove("open");
-  }
-};
+
+// -------------------------------------------------------------------------
+var owl1 = $(".owl-caro-bonus");
+var owl2 = $(".owl-caro-hot-product");
+
+owl1.owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    500: {
+      items: 3,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+// $
+owl2.owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    660: {
+      items: 1,
+    },
+    800: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});

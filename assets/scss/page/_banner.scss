@@ -1,4 +1,32 @@
-.product {
-  height: 800px;
-  background-color: bisque;
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  .banner__left {
+    height: 302px;
+    position: relative;
+  }
+  .banner__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .item {
+      text-align: center;
+      width: 84px;
+      margin: 20px;
+      p {
+        margin-top: 5px;
+        color: #777777;
+        @include font-size(16.9px);
+      }
+    }
+    .item:nth-child(1),
+    .item:nth-child(2) {
+      margin-top: 0;
+    }
+    .item:nth-child(3),
+    .item:nth-child(4) {
+      margin-top: 10px;
+    }
+  }
 }
