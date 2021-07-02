@@ -26,7 +26,7 @@ const handleClickCloseSidebar = () => {
 // -------------------------------------------------------------------------
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
-
+var owl3 = $(".owl-caro-brand");
 owl1.owlCarousel({
   loop: true,
   margin: 15,
@@ -60,6 +60,22 @@ owl2.owlCarousel({
     },
     1000: {
       items: 1,
+    },
+  },
+});
+owl3.owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  responsive: {
+    0: {
+      items: 3,
+    },
+    500: {
+      items: 5,
+    },
+    1000: {
+      items: 10,
     },
   },
 });

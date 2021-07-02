@@ -9,5 +9,6 @@
 .history/
 .DS_Store
 .idea
-/assets .DS_Store
+/assets/.DS_Store
+/assets/css/main.css.map
 

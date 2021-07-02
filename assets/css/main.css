@@ -6000,5 +6000,13 @@ main {
       font-size: 1.375rem;
       color: #777777;
       margin-left: 10px; }
+  .brand .brand__content {
+    margin-top: 30px;
+    border: 1px solid #e5e5e4;
+    padding: 60px 0; }
+    .brand .brand__content .content__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
