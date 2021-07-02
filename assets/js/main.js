@@ -65,7 +65,7 @@ owl2.owlCarousel({
 });
 owl3.owlCarousel({
   loop: true,
-  margin: 15,
+  margin: 35,
   nav: true,
   responsive: {
     0: {
@@ -75,7 +75,7 @@ owl3.owlCarousel({
       items: 5,
     },
     1000: {
-      items: 10,
+      items: 9,
     },
   },
 });

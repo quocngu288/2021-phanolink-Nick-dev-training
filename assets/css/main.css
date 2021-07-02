@@ -5561,6 +5561,67 @@ main {
   font-size: 13.2px;
   font-size: 0.825rem; }
 
+footer {
+  height: 782px; }
+  footer .utilities {
+    position: relative; }
+    footer .utilities .utilities__mes {
+      position: absolute;
+      top: 0;
+      right: 5%; }
+    footer .utilities .utilities__content {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      footer .utilities .utilities__content .item {
+        padding: 30px 70px;
+        text-align: center;
+        border-left: 1px solid #e5e5e4;
+        border-right: 1px solid #e5e5e4; }
+        footer .utilities .utilities__content .item p {
+          margin: 20px auto 0 auto;
+          font-size: 16px;
+          font-size: 1rem;
+          color: #757575;
+          width: 80px; }
+      footer .utilities .utilities__content .item:nth-child(1),
+      footer .utilities .utilities__content .item:nth-child(4) {
+        border-left: none;
+        border-right: none; }
+      footer .utilities .utilities__content .item:nth-child(2),
+      footer .utilities .utilities__content .item:nth-child(3) {
+        width: 319px; }
+  footer .hotline {
+    background-color: #01adab; }
+    footer .hotline .hotline__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px; }
+      footer .hotline .hotline__content h2 {
+        color: #fff;
+        font-size: 18px;
+        font-size: 1.125rem;
+        margin-right: 10px; }
+      footer .hotline .hotline__content h2:nth-child(2) {
+        margin-left: 10px; }
+      footer .hotline .hotline__content .content__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        width: 395px;
+        border-radius: 20px; }
+        footer .hotline .hotline__content .content__button p {
+          color: #757575;
+          font-size: 16.79px;
+          font-size: 1.049375rem;
+          margin-left: 10px; }
+          footer .hotline .hotline__content .content__button p span {
+            color: #ea4036;
+            font-size: 24.82px;
+            font-size: 1.55125rem; }
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -5638,7 +5699,7 @@ main {
     margin-top: 36px; }
 
 .bonus {
-  padding: 30px 30px 60px 30px;
+  padding: 18px 30px 60px 30px;
   margin-top: 20px;
   min-height: 452px;
   background-color: #fff; }
@@ -5659,7 +5720,7 @@ main {
       font-size: 18.5px;
       font-size: 1.15625rem; }
   .bonus .bonus__content {
-    margin-top: 26px; }
+    margin-top: 18px; }
     .bonus .bonus__content .content__item {
       background-repeat: no-repeat;
       background-position: center;
@@ -5691,7 +5752,7 @@ main {
         border: 1px solid #36b88c; }
 
 .hot-product {
-  padding: 30px 30px 80px 30px;
+  padding: 16px 30px 80px 30px;
   margin-top: 20px;
   min-height: 832px;
   background-color: #fff; }
@@ -5744,7 +5805,7 @@ main {
       border: 1px solid #36b88c; }
 
 .medicine {
-  padding: 30px 30px 00px 30px;
+  padding: 22px 30px 00px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5759,7 +5820,7 @@ main {
   .medicine .medicine__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 25px; }
+    margin-top: 22px; }
     .medicine .medicine__content a {
       position: relative;
       border: 1px solid #e5e5e4;
@@ -5797,7 +5858,7 @@ main {
           text-decoration: line-through; }
 
 .foods {
-  padding: 30px 30px 0px 30px;
+  padding: 22px 30px 0px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5820,7 +5881,7 @@ main {
   .foods .foods__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 25px; }
+    margin-top: 22px; }
     .foods .foods__content a {
       position: relative;
       border: 1px solid #e5e5e4;
@@ -5858,7 +5919,7 @@ main {
           text-decoration: line-through; }
 
 .consumers-goods {
-  padding: 30px 30px 0px 30px;
+  padding: 22px 30px 0px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5881,7 +5942,7 @@ main {
   .consumers-goods .consumers-goods__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 25px; }
+    margin-top: 22px; }
     .consumers-goods .consumers-goods__content a {
       position: relative;
       border: 1px solid #e5e5e4;
@@ -5989,7 +6050,7 @@ main {
 
 .brand {
   margin-top: 20px;
-  min-height: 732px;
+  min-height: 261px;
   background-color: #fff;
   padding: 30px; }
   .brand .brand__title {
@@ -6002,11 +6063,48 @@ main {
       margin-left: 10px; }
   .brand .brand__content {
     margin-top: 30px;
-    border: 1px solid #e5e5e4;
-    padding: 60px 0; }
-    .brand .brand__content .content__item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+    border-top: 1px solid #e5e5e4;
+    padding: 60px 0;
+    display: flex;
+    align-items: center; }
+    .brand .brand__content .owl-item {
+      width: auto !important; }
+      .brand .brand__content .owl-item img {
+        display: block;
+        width: 100%; }
+    .brand .brand__content .owl-nav {
+      display: block; }
+      .brand .brand__content .owl-nav .owl-prev {
+        position: absolute;
+        left: -5%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -60%);
+        -khtml-transform: translate(-50%, -60%);
+        -moz-transform: translate(-50%, -60%);
+        -ms-transform: translate(-50%, -60%);
+        -o-transform: translate(-50%, -60%);
+        transform: translate(-50%, -60%); }
+        .brand .brand__content .owl-nav .owl-prev span {
+          font-size: 56px;
+          font-size: 3.5rem;
+          color: #01adab;
+          font-weight: bold; }
+      .brand .brand__content .owl-nav .owl-next {
+        position: absolute;
+        right: -5%;
+        top: 50%;
+        -webkit-transform: translate(50%, -60%);
+        -khtml-transform: translate(50%, -60%);
+        -moz-transform: translate(50%, -60%);
+        -ms-transform: translate(50%, -60%);
+        -o-transform: translate(50%, -60%);
+        transform: translate(50%, -60%); }
+        .brand .brand__content .owl-nav .owl-next span {
+          font-size: 56px;
+          font-size: 3.5rem;
+          color: #01adab;
+          font-weight: bold; }
+    .brand .brand__content .owl-dots {
+      display: none; }
 
 /*# sourceMappingURL=main.css.map */
