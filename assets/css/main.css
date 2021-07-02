@@ -5376,7 +5376,7 @@ img {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 15px 0; }
+      margin: 5px 0 15px 0; }
       .desktop-header .nav .nav__midle .midle__input {
         display: flex;
         width: 710px;
@@ -5596,7 +5596,7 @@ footer {
     footer .hotline .hotline__content {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       height: 90px; }
       footer .hotline .hotline__content h2 {
         color: #fff;
@@ -5621,6 +5621,74 @@ footer {
             color: #ea4036;
             font-size: 24.82px;
             font-size: 1.55125rem; }
+  footer .info {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    footer .info .info__content {
+      display: flex;
+      justify-content: space-between; }
+      footer .info .info__content .content__address {
+        color: #595959; }
+        footer .info .info__content .content__address h2 {
+          font-size: 14px;
+          font-size: 0.875rem;
+          font-weight: 400;
+          margin-top: 25px; }
+        footer .info .info__content .content__address p:nth-child(3) {
+          margin-bottom: 25px; }
+      footer .info .info__content .content__suport {
+        color: #595959; }
+        footer .info .info__content .content__suport h2 {
+          font-size: 18px;
+          font-size: 1.125rem;
+          font-weight: 400;
+          margin-bottom: 40px;
+          margin-top: 10px; }
+        footer .info .info__content .content__suport .item {
+          margin-top: 10px; }
+          footer .info .info__content .content__suport .item span {
+            font-weight: bold;
+            color: #01adab; }
+          footer .info .info__content .content__suport .item a {
+            font-size: 14px;
+            font-size: 0.875rem;
+            color: #595959; }
+      footer .info .info__content .content__account {
+        color: #595959; }
+        footer .info .info__content .content__account h2 {
+          font-size: 18px;
+          font-size: 1.125rem;
+          font-weight: 400;
+          margin-bottom: 40px;
+          margin-top: 10px; }
+        footer .info .info__content .content__account .item {
+          margin-top: 10px; }
+          footer .info .info__content .content__account .item span {
+            font-weight: bold;
+            color: #01adab; }
+          footer .info .info__content .content__account .item a {
+            font-size: 14px;
+            font-size: 0.875rem;
+            color: #595959; }
+      footer .info .info__content .content__connect h2 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-top: 10px; }
+      footer .info .info__content .content__connect .connect__social {
+        display: flex; }
+        footer .info .info__content .content__connect .connect__social img {
+          margin-right: 9.5px; }
+  footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e2e3e4; }
+    footer .copyright p {
+      color: #595959;
+      font-size: 10px;
+      font-size: 0.625rem; }
 
 .banner {
   display: flex;
@@ -5628,6 +5696,10 @@ footer {
   margin: 20px auto; }
   .banner .banner__left {
     height: 302px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative; }
   .banner .banner__right {
     display: grid;
@@ -5641,16 +5713,35 @@ footer {
         color: #777777;
         font-size: 16.9px;
         font-size: 1.05625rem; }
+      @media only screen and (max-width: 998px) {
+        .banner .banner__right .item {
+          margin: 5px; } }
     .banner .banner__right .item:nth-child(1),
     .banner .banner__right .item:nth-child(2) {
       margin-top: 0; }
     .banner .banner__right .item:nth-child(3),
     .banner .banner__right .item:nth-child(4) {
       margin-top: 10px; }
+    @media only screen and (max-width: 896px) {
+      .banner .banner__right {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 20px; }
+        .banner .banner__right .item:nth-child(3),
+        .banner .banner__right .item:nth-child(4) {
+          margin-top: 0px; } }
+  @media only screen and (max-width: 998px) {
+    .banner {
+      margin-top: 100px; } }
+  @media only screen and (max-width: 896px) {
+    .banner {
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .service .service__content {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px; }
 
 .create-toa {
   background-color: #fff;
@@ -5805,7 +5896,7 @@ footer {
       border: 1px solid #36b88c; }
 
 .medicine {
-  padding: 22px 30px 00px 30px;
+  padding: 23px 30px 00px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5820,7 +5911,7 @@ footer {
   .medicine .medicine__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 22px; }
+    margin-top: 23px; }
     .medicine .medicine__content a {
       position: relative;
       border: 1px solid #e5e5e4;
@@ -5858,7 +5949,7 @@ footer {
           text-decoration: line-through; }
 
 .foods {
-  padding: 22px 30px 0px 30px;
+  padding: 23px 30px 0px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5881,7 +5972,7 @@ footer {
   .foods .foods__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 22px; }
+    margin-top: 23px; }
     .foods .foods__content a {
       position: relative;
       border: 1px solid #e5e5e4;
@@ -5919,7 +6010,7 @@ footer {
           text-decoration: line-through; }
 
 .consumers-goods {
-  padding: 22px 30px 0px 30px;
+  padding: 23px 30px 0px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff; }
@@ -5942,7 +6033,7 @@ footer {
   .consumers-goods .consumers-goods__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 22px; }
+    margin-top: 23px; }
     .consumers-goods .consumers-goods__content a {
       position: relative;
       border: 1px solid #e5e5e4;
