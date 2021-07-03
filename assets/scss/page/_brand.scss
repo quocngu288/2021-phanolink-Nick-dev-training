@@ -16,15 +16,22 @@
     margin-top: 30px;
     border-top: 1px solid #e5e5e4;
     padding: 60px 0;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
+    .owl-stage {
+      // width: 2783px !important;
+      @media #{$info-tablet-vertical} {
+        width: 3783px !important;
+      }
+    }
     .owl-item {
       width: auto !important;
-      img {
-        display: block;
-        width: 100%;
-      }
+      // img {
+      //   display: block;
+      //   width: 100%;
+      // }
     }
     .owl-nav {
       display: block;
@@ -56,6 +63,9 @@
 
     .owl-dots {
       display: none;
+    }
+    @media #{$info-tablet-vertical} {
+      padding-bottom: 20px;
     }
   }
 }

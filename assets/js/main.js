@@ -71,8 +71,11 @@ owl3.owlCarousel({
     0: {
       items: 3,
     },
-    500: {
-      items: 5,
+    600: {
+      items: 6,
+    },
+    800: {
+      items: 7,
     },
     1000: {
       items: 9,

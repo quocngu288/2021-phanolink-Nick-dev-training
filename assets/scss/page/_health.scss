@@ -38,6 +38,9 @@
             color: #000000;
             margin-top: 2px;
           }
+          @media #{$info-tablet-horizontal} {
+            width: 100%;
+          }
         }
       }
     }
@@ -55,11 +58,15 @@
         }
       }
       .right__content {
+        // @media #{$info-tablet-horizontal}{
+        //   width: 100%;
+        // }
         .content__item {
           display: flex;
           align-items: center;
           border-bottom: 1px solid #e2e3e4;
           padding: 10.5px 0 5.5px 0;
+
           h2 {
             @include font-size(57.56px);
             color: #ebebeb;
@@ -76,9 +83,16 @@
               color: #505050;
               margin-top: 2px;
             }
+            @media #{$info-tablet-horizontal} {
+              width: 100%;
+            }
           }
         }
       }
+    }
+    @media #{$info-tablet-horizontal} {
+      flex-wrap: wrap;
+      // width: 100%;
     }
   }
 }
