@@ -40,6 +40,7 @@
       z-index: 5;
       display: flex;
       gap: 10px;
+      @include transform(translate(-50%));
       .owl-dot {
         display: block;
         height: 10px;

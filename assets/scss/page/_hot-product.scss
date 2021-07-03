@@ -44,6 +44,7 @@
       z-index: 5;
       display: flex;
       gap: 10px;
+      @include transform(translate(-50%));
       .owl-dot {
         display: block;
         height: 10px;
@@ -65,5 +66,11 @@
         border: 1px solid #36b88c;
       }
     }
+  }
+  @media #{$info-tablet-horizontal} {
+    min-height: 632px;
+  }
+  @media #{$info-tablet-vertical} {
+    min-height: 532px;
   }
 }

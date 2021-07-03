@@ -1,8 +1,9 @@
 .create-toa {
   background-color: #fff;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 20px;
-  height: 505px;
+  min-height: 505px;
   .create-toa__head {
     margin: 5px 33px;
     h2 {
@@ -43,6 +44,9 @@
     .content__item:nth-child(2) {
       border-left: 1px solid #d1d1d1;
       border-right: 1px solid #d1d1d1;
+    }
+    @media #{$info-phone} {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   .content__btn {
