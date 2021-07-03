@@ -1,6 +1,6 @@
 .brand {
   margin-top: 20px;
-  min-height: 732px;
+  min-height: 261px;
   background-color: #fff;
   padding: 30px;
   .brand__title {
@@ -14,12 +14,58 @@
   }
   .brand__content {
     margin-top: 30px;
-    border: 1px solid #e5e5e4;
+    border-top: 1px solid #e5e5e4;
     padding: 60px 0;
-    .content__item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    .owl-stage {
+      // width: 2783px !important;
+      @media #{$info-tablet-vertical} {
+        width: 3783px !important;
+      }
+    }
+    .owl-item {
+      width: auto !important;
+      // img {
+      //   display: block;
+      //   width: 100%;
+      // }
+    }
+    .owl-nav {
+      display: block;
+
+      .owl-prev {
+        position: absolute;
+        left: -5%;
+        top: 50%;
+        @include transform(translate(-50%, -60%));
+        span {
+          @include font-size(56px);
+          color: #01adab;
+          font-weight: bold;
+        }
+      }
+
+      .owl-next {
+        position: absolute;
+        right: -5%;
+        top: 50%;
+        @include transform(translate(50%, -60%));
+        span {
+          @include font-size(56px);
+          color: #01adab;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .owl-dots {
+      display: none;
+    }
+    @media #{$info-tablet-vertical} {
+      padding-bottom: 20px;
     }
   }
 }

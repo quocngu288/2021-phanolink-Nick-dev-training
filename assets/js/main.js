@@ -32,11 +32,11 @@ owl1.owlCarousel({
   margin: 15,
   nav: true,
   responsive: {
-    0: {
+    600: {
       items: 1,
     },
-    500: {
-      items: 3,
+    800: {
+      items: 2,
     },
     1000: {
       items: 3,
@@ -65,17 +65,20 @@ owl2.owlCarousel({
 });
 owl3.owlCarousel({
   loop: true,
-  margin: 15,
+  margin: 35,
   nav: true,
   responsive: {
     0: {
       items: 3,
     },
-    500: {
-      items: 5,
+    600: {
+      items: 6,
+    },
+    800: {
+      items: 7,
     },
     1000: {
-      items: 10,
+      items: 9,
     },
   },
 });

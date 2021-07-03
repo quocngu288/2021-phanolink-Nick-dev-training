@@ -1,5 +1,5 @@
 .bonus {
-  padding: 30px 30px 60px 30px;
+  padding: 18px 30px 60px 30px;
   margin-top: 20px;
   min-height: 452px;
   background-color: #fff;
@@ -23,7 +23,7 @@
     }
   }
   .bonus__content {
-    margin-top: 26px;
+    margin-top: 18px;
     .content__item {
       background-repeat: no-repeat;
       background-position: center;
@@ -40,6 +40,7 @@
       z-index: 5;
       display: flex;
       gap: 10px;
+      @include transform(translate(-50%));
       .owl-dot {
         display: block;
         height: 10px;
