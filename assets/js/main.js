@@ -4,7 +4,7 @@
     $(".nav-scroll").hide();
     $(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 120) {
+        if ($(this).scrollTop() > 150) {
           $(".nav-scroll").fadeIn();
         } else {
           $(".nav-scroll").fadeOut();
@@ -16,13 +16,17 @@
 
 //sua lai dung JQUERY
 const handleClickOpenSidebar = () => {
-  document.querySelector(".nav-mobile__menu").classList.add("open");
+  $(".nav-mobile__menu").addClass("open");
 };
 
 const handleClickCloseSidebar = () => {
-  document.querySelector(".nav-mobile__menu").classList.remove("open");
+  $(".nav-mobile__menu").removeClass("open");
 };
 
+//click to show from login-register
+const hanndleClickForm=(formname)=>{
+
+}
 // -------------------------------------------------------------------------
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
