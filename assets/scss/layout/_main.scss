@@ -1,8 +1,42 @@
 main {
   padding: 25px 30px;
+  background-color: #ebebeb;
 }
 .common-container {
   max-width: 1320px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.nav-router {
+  background-color: #e2e3e4;
+
+  ul {
+    @include flex();
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    li {
+      margin-left: 10.5px;
+      .fas {
+        @include font-size(12px);
+      }
+      a {
+        @include font-size(12px);
+        color: #808081;
+        margin-left: 10.5px;
+        &.active {
+          color: #434343;
+        }
+      }
+    }
+    li:nth-child(1) {
+      margin-left: 0px;
+      a {
+        margin-left: 0px;
+      }
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    margin-top: 100px;
+  }
 }

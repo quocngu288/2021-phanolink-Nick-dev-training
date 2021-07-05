@@ -23,13 +23,6 @@
 @import "layout/footer";
 
 // Page specific styles
-@import "page/banner";
-@import "page/service";
-@import "page/create-toa";
-@import "page/bonus";
-@import "page/hot-product";
-@import "page/medicinne";
-@import "page/foods";
-@import "page/consumers-goods";
-@import "page/health";
-@import "page/brand";
+
+@import "page/home/homepage";
+@import "page/cart/cart";

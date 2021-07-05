@@ -15,7 +15,7 @@
   cursor: pointer;
   border-radius: 5px;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
   @include font-size(15px);
 }
 .btn--search {
@@ -28,4 +28,18 @@
   height: 40px;
   cursor: pointer;
   @include font-size(13.2px);
+}
+.btn--blue {
+  background: #01adab;
+  color: #fff;
+  padding: 10px 15px;
+  white-space: nowrap;
+  border: none;
+  height: 45px;
+  width: 119px;
+  cursor: pointer;
+  @include font-size(13.2px);
+  @media #{$info-phone} {
+    width: 80px;
+  }
 }

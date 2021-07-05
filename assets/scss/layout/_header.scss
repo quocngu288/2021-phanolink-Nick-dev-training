@@ -3,13 +3,13 @@
   .nav {
     padding: 20px 15px;
     .nav__top {
-      display: flex;
+      @include flex();
       justify-content: flex-end;
       align-items: center;
       color: #fff;
       @include font-size(13.2px);
       .item {
-        display: flex;
+        @include flex();
         align-items: center;
         justify-content: space-between;
         margin-left: 74px;
@@ -33,12 +33,12 @@
       }
     }
     .nav__midle {
-      display: flex;
+      @include flex();
       justify-content: space-between;
       align-items: center;
       margin: 5px 0 15px 0;
       .midle__input {
-        display: flex;
+        @include flex();
         width: 710px;
         margin-left: 41px;
         input {
@@ -49,7 +49,7 @@
         }
       }
       .midle__btn {
-        display: flex;
+        @include flex();
         justify-content: center;
         align-items: center;
         width: 145px;
@@ -74,13 +74,13 @@
       }
     }
     .nav__bottom {
-      display: flex;
+      @include flex();
       justify-content: space-between;
       align-items: center;
       list-style: none;
       margin-top: 5px;
       li {
-        display: flex;
+        @include flex();
         justify-content: space-between;
         align-items: center;
         div {
@@ -112,12 +112,12 @@
     width: 100%;
     z-index: 5;
     .nav-scroll__content {
-      display: flex;
+      @include flex();
       justify-content: space-between;
       align-items: center;
       height: 70px;
       .content__input {
-        display: flex;
+        @include flex();
         width: 710px;
         margin-left: 41px;
         input {
@@ -125,7 +125,7 @@
         }
       }
       .content__btn {
-        display: flex;
+        @include flex();
         justify-content: center;
         align-items: center;
         width: 145px;
@@ -163,7 +163,7 @@
   background-color: #fff;
   width: 100%;
   .nav-mobile {
-    display: flex;
+    @include flex();
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
@@ -201,7 +201,7 @@
       background-color: rgba($color: #495057, $alpha: 1);
 
       .nav-mobile__menu__head {
-        display: flex;
+        @include flex();
         justify-content: space-between;
         align-items: center;
         padding: 15px;
@@ -216,7 +216,7 @@
       ul {
         list-style: none;
         li {
-          display: flex;
+          @include flex();
           // justify-content: s;
           align-items: center;
           padding: 15px 20px;

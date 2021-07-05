@@ -8,7 +8,7 @@ footer {
       right: 5%;
     }
     .utilities__content {
-      display: flex;
+      @include flex();
       align-items: center;
       justify-content: center;
       .item {
@@ -51,7 +51,7 @@ footer {
     background-color: #01adab;
 
     .hotline__content {
-      display: flex;
+      @include flex();
       align-items: center;
       justify-content: space-between;
       min-height: 90px;
@@ -68,7 +68,7 @@ footer {
         }
       }
       .content__button {
-        display: flex;
+        @include flex();
         align-items: center;
         justify-content: center;
         background-color: #fff;
@@ -99,7 +99,7 @@ footer {
     padding-top: 70px;
     padding-bottom: 70px;
     .info__content {
-      display: flex;
+      @include flex();
       justify-content: space-between;
       .content__address {
         color: #595959;
@@ -172,7 +172,7 @@ footer {
     }
   }
   .copyright {
-    display: flex;
+    @include flex();
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #e2e3e4;
