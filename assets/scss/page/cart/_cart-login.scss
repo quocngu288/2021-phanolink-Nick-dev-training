@@ -1,0 +1,48 @@
+.cart-account {
+  background-color: #ebebeb;
+  min-height: 718px;
+  padding: 0 30px;
+  .cart-account__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 13.5px;
+    margin-top: 41px;
+    .content__left {
+      grid-column: 1 / span 8;
+      background-color: #fff;
+
+      .left__title {
+        display: flex;
+        justify-content: center;
+        gap: 13.5px;
+      }
+      .left__form {
+        width: 472px;
+        margin: 30px auto;
+        .form__button {
+          margin-top: 15px;
+          button {
+            width: 100%;
+            margin-top: 11px;
+            padding: 10px 15px;
+            height: 45px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+          }
+          .button__log {
+            background-color: #01adab;
+          }
+          .button__facebook {
+            background-color: #3b5998;
+          }
+          .button__google {
+            background-color: #e94a32;
+          }
+        }
+      }
+    }
+    .content__right {
+    }
+  }
+}
