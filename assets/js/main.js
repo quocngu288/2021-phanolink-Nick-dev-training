@@ -24,9 +24,26 @@ const handleClickCloseSidebar = () => {
 };
 
 //click to show from login-register
-const hanndleClickForm=(formname)=>{
+$("#title-login").click(function () {
+  console.log("login clicl");
+  $("#title-login").addClass("active");
+  $("#title-register").removeClass("active");
+  $(".left__form-register").slideUp("slow", function () {
+    $(".left__form-login").slideDown("slow");
+  });
+});
+$("#title-register").click(function () {
+  console.log("register clicl");
+  $("#title-register").addClass("active");
+  $("#title-login").removeClass("active");
+  // $(".left__form-register").slideUp("slow", function () {
+  //   $(".left__form-login").slideDown("slow");
+  // });
+  $(".left__form-login").slideUp("slow", function () {
+    $(".left__form-register").slideDown("slow");
+  });
+});
 
-}
 // -------------------------------------------------------------------------
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");

@@ -232,7 +232,7 @@
                 </div>
               </div>
             </div>
-            <div class="left__form left__form-login" style="display: block">
+            <div class="left__form left__form-login">
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -241,7 +241,7 @@
                 aliquip ex ea
               </p>
               <form action="">
-                <div class="form-group">
+                <div class="form-group custom-form">
                   <label for="email">Email / SĐT</label>
                   <input
                     type="email"
@@ -249,7 +249,7 @@
                     placeholder="Nhập Email hoặc số điện thoại"
                   />
                 </div>
-                <div class="form-group">
+                <div class="form-group custom-form">
                   <label for="pwd">Mật khẩu</label>
                   <input
                     type="password"
@@ -259,9 +259,9 @@
                 </div>
               </form>
               <div class="form__not-pass">
-                <a>Quên mật khẩu?</a>
+                <a href="">Quên mật khẩu ? </a>
                 nhấn vào
-                <a>đầy</a>
+                <a href=""> đầy</a>
               </div>
               <div class="form__button">
                 <button class="button__log">Đăng nhập</button>
@@ -271,12 +271,111 @@
                 <button class="button__google">Đăng nhập bằng Google</button>
               </div>
             </div>
-            <div class="left__form-register" style="display: none">
-              form register
+            <div class="left__form left__form-register" style="display: none">
+              <p class="form__text-head">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea
+              </p>
+              <form action="">
+                <div class="form-group custom-form">
+                  <label for="name">Họ tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nhập Họ tên"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập Email"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="pwd">Mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="pwd">Số điện thoại</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Nhập số điện thoại"
+                  />
+                </div>
+              </form>
+              <div class="form__check">
+                <input type="checkbox" />
+                <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
+              </div>
+              <div class="form__button">
+                <button class="button__log">Đăng nhập</button>
+                <button class="button__facebook">
+                  Đăng nhập bằng Facebook
+                </button>
+                <button class="button__google">Đăng nhập bằng Google</button>
+              </div>
+              <p class="form__text-foot">
+                Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua
+                bán theo điều kiện sử dụng và chính sách của
+                <span> PHANOLINK</span>
+              </p>
             </div>
           </div>
 
-          <div class="content__right"></div>
+          <div class="content__right">
+            <div class="right__order">
+              <p>Đơn hàng (3 sản phẩm)</p>
+              <button>Sửa</button>
+            </div>
+            <div class="right__products">
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+            </div>
+            <div class="right__sub">
+              <p>Tạm tính</p>
+              <p>800.000đ</p>
+            </div>
+            <div class="right__shipping">
+              <p>Phí vận chuyển</p>
+              <p>800.000đ</p>
+            </div>
+            <div class="right__total">
+              <p>Thành tiền:</p>
+              <div>
+                <p>1.000.000đ</p>
+                <span>(đã bao gôm VAT nếu có)</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -389,6 +488,7 @@
       </div>
     </footer>
     <!-- END FOOTER -->
+
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -402,35 +502,5 @@
     <!--carousel-->
     <script src="/assets/js/vendor/owl.carousel.min.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        // $(".board-title").click(function () {
-        //   if ($(".left__form-login").css("display") == "none") {
-        //     $(".board-title").addClass("active");
-        //     $(".left__form-login").show();
-        //     $(".left__form-login").hide();
-        //   } else {
-        //     $("left__form-login").hide();
-        //     $(".left__form-register").show();
-        //     $(".board-title").removeClass("active");
-        //   }
-        // });
-        $("#title-login").click(function () {
-          console.log("login clicl");
-          $("#title-register").removeClass("active");
-          $("#title-login").addClass("active");
-          // if ($("#title-login").hasClass("active")) {
-          // }
-        });
-        $("#title-register").click(function () {
-          console.log("register clicl");
-          $("#title-login").removeClass("active");
-          $("#title-register").addClass("active");
-          // if ($("#title-register").hasClass("active")) {
-
-          // }
-        });
-      });
-    </script>
   </body>
 </html>

@@ -30,9 +30,7 @@ footer {
       }
       .item:nth-child(2),
       .item:nth-child(3) {
-        .item {
-          width: 319px;
-        }
+        width: 319px;
       }
       @media #{$info-tablet-horizontal} {
         width: auto;

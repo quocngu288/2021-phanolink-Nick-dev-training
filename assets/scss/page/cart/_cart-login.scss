@@ -1,0 +1,182 @@
+.cart-account {
+  background-color: #ebebeb;
+  min-height: 592px;
+  padding: 0 30px;
+  .cart-account__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 13.5px;
+    margin-top: 41px;
+    .content__left {
+      grid-column: 1 / span 8;
+      background-color: #fff;
+
+      .left__title {
+        display: flex;
+        justify-content: center;
+        gap: 13.5px;
+      }
+      .left__form {
+        width: 472px;
+        margin: 30px auto;
+        .form__text-head {
+          margin-bottom: 5px;
+          @include font-size(16px);
+          color: #434343;
+        }
+        .form__check {
+          @include flex();
+          p {
+            color: #808081;
+            @include font-size(14px);
+            margin-left: 8.5px;
+          }
+        }
+        .form__not-pass {
+          color: #434343;
+          @include font-size(14px);
+          a:nth-child(1) {
+            color: #434343;
+            @include font-size(14px);
+          }
+          a:nth-child(2) {
+            color: #ea4036;
+          }
+        }
+        .form__button {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          button {
+            width: 100%;
+            margin-top: 11px;
+            padding: 10px 15px;
+            height: 45px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+          }
+          .button__log {
+            background-color: #01adab;
+          }
+          .button__facebook {
+            background-color: #3b5998;
+          }
+          .button__google {
+            background-color: #e94a32;
+          }
+        }
+        .form__text-foot {
+          @include font-size(14px);
+          color: #434343;
+          span {
+            color: #ea4036;
+          }
+        }
+        @media #{$info-phone-2} {
+          width: 350px;
+        }
+      }
+      @media #{$info-tablet-horizontal} {
+        grid-column: 1 / span 7;
+      }
+      @media #{$info-tablet-vertical} {
+        grid-column: span 12;
+      }
+    }
+    .content__right {
+      grid-column: 9 / span 4;
+      padding: 24px;
+      background-color: #fff;
+      max-height: 420px;
+      .right__order {
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        p {
+          color: #505050;
+          @include font-size(14px);
+        }
+        button {
+          @include font-size(14px);
+          color: #505050;
+          padding: 5px 12px;
+          border: 1px solid #ebebeb;
+        }
+      }
+      .right__products {
+        padding: 15px 0;
+        border-top: 1px solid #e2e3e4;
+        border-bottom: 1px solid #e2e3e4;
+        .products__item {
+          @include flex();
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .item__name {
+            @include flex();
+            p {
+              width: 175px;
+              margin-left: 13px;
+              color: #505050;
+              @include font-size(14px);
+            }
+          }
+          p {
+            color: #505050;
+            @include font-size(14px);
+          }
+        }
+        .products__item:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .right__sub {
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        p {
+          color: #505050;
+          @include font-size(14px);
+        }
+      }
+      .right__shipping {
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        p {
+          color: #505050;
+          @include font-size(14px);
+        }
+      }
+      .right__total {
+        @include flex();
+        justify-content: space-between;
+        padding-top: 12px;
+        border-top: 0.75px solid #e2e3e4;
+        margin-top: 15px;
+        p {
+          color: #505050;
+          @include font-size(14px);
+        }
+        div {
+          p {
+            color: #fa434e;
+            @include font-size(21.29px);
+          }
+          span {
+            @include font-size(12px);
+            color: #505050;
+          }
+        }
+      }
+      @media #{$info-tablet-horizontal} {
+        grid-column: 8 / span 5;
+      }
+      @media #{$info-tablet-vertical} {
+        grid-column: span 12;
+      }
+    }
+  }
+}

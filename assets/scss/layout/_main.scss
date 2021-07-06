@@ -50,60 +50,63 @@ main {
   cursor: pointer;
   text-align: center;
   &::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0;
-    height: 55px;
-    width: 184px;
-    background-color: #01adab;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    z-index: 0;
+    content: none;
   }
   &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -10px;
-    height: 0;
-    border-bottom: 10px solid #016b68;
-    border-left: 10px solid transparent;
-    transform: translateX(-100%);
+    content: none;
   }
   .board-title__head {
     z-index: 0;
     position: absolute;
-    top: 40%;
+    top: 46%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
     h2 {
+      color: #808081;
       @include font-size(14px);
-      color: #fff;
-    }
-    span {
-      @include font-size(14px);
-      color: #ea4036;
     }
     p {
-      @include font-size(11px);
-      color: #fff;
+      color: #808081;
+      @include font-size(14px);
     }
   }
   &.active {
-    &::after {
-      content: none;
-    }
     &::before {
-      content: none;
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+      height: 55px;
+      width: 184px;
+
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      z-index: 0;
+      background-color: #01adab;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -7px;
+      height: 0;
+      border-bottom: 10px solid #016b68;
+      border-left: 10px solid transparent;
+      transform: translateX(-100%);
     }
     .board-title__head {
       h2 {
-        color: #808081;
+        @include font-size(14px);
+        color: #fff;
+      }
+      span {
+        @include font-size(14px);
+        color: #ea4036;
       }
       p {
-        color: #808081;
+        @include font-size(11px);
+        color: #fff;
       }
     }
   }
@@ -161,13 +164,33 @@ main {
         content: "";
         position: absolute;
         height: 6px;
-        width: 91%;
+        width: 90%;
         right: 54%;
         bottom: 18%;
         background-color: #808081;
         @include transform(translateY(50%));
         z-index: 0;
       }
+      @media #{$info-tablet-vertical-1} {
+        &::after {
+          right: 51%;
+        }
+      }
     }
+    @media #{$info-tablet-vertical-1} {
+      width: 550px;
+    }
+  }
+}
+
+//custom
+.custom-form {
+  label {
+    color: #434343;
+    @include font-size(16px);
+    font-weight: normal;
+  }
+  input {
+    height: 40px;
   }
 }
