@@ -7,6 +7,8 @@ main {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+//nav-router
 .nav-router {
   background-color: #e2e3e4;
 
@@ -38,5 +40,134 @@ main {
   }
   @media #{$info-tablet-vertical} {
     margin-top: 100px;
+  }
+}
+
+.board-title {
+  position: relative;
+  width: 184px;
+  height: 55px;
+  cursor: pointer;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 55px;
+    width: 184px;
+    background-color: #01adab;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 0;
+    border-bottom: 10px solid #016b68;
+    border-left: 10px solid transparent;
+    transform: translateX(-100%);
+  }
+  .board-title__head {
+    z-index: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    h2 {
+      @include font-size(14px);
+      color: #fff;
+    }
+    span {
+      @include font-size(14px);
+      color: #ea4036;
+    }
+    p {
+      @include font-size(11px);
+      color: #fff;
+    }
+  }
+  &.active {
+    &::after {
+      content: none;
+    }
+    &::before {
+      content: none;
+    }
+    .board-title__head {
+      h2 {
+        color: #808081;
+      }
+      p {
+        color: #808081;
+      }
+    }
+  }
+}
+//check-bar
+
+.check-bar {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 950px;
+    li {
+      position: relative;
+      width: 33.3333%;
+      text-align: center;
+      p {
+        margin-bottom: 10px;
+        @include font-size(14px);
+        color: #434343;
+      }
+      span {
+        width: 25px;
+        height: 25px;
+        padding: 5px 12px;
+        text-align: center;
+        background-color: #808081;
+        border-radius: 50%;
+        border: 1px solid #808081;
+        z-index: 4;
+        color: #fff;
+        @include font-size(14px);
+        @include transform(translate(-50%, 50%));
+        transition: all 200ms ease-in;
+      }
+      &.active {
+        span {
+          background-color: #01adab;
+          border: 1px solid #01adab;
+        }
+      }
+    }
+
+    li:nth-child(2),
+    li:nth-child(3) {
+      &.active {
+        &::after {
+          background-color: #01adab;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 91%;
+        right: 54%;
+        bottom: 18%;
+        background-color: #808081;
+        @include transform(translateY(50%));
+        z-index: 0;
+      }
+    }
   }
 }
