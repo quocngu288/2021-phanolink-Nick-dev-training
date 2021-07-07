@@ -1,0 +1,25 @@
+.dialog__content {
+  width: 633.5px;
+  min-height: 1026px;
+  background-color: #fff;
+  .content__header {
+    @include flex();
+    justify-content: center;
+  }
+  .content__form {
+    width: 476px;
+    margin: 0 auto;
+  }
+}
+
+.custom-form-radio {
+  input[type="radio"] {
+    width: 233px;
+    border: 1px solid #000;
+    border-radius: 5px !important;
+    background-color: #fff;
+    color: #808081;
+    height: 39.5px;
+    @include font-size(14px);
+  }
+}
