@@ -1,78 +1,75 @@
-.cart-account {
-  background-color: #ebebeb;
-  min-height: 592px;
-  padding: 0 30px;
-  .cart-account__content {
+.cart-address {
+  .cart-address__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
     .content__left {
       grid-column: 1 / span 8;
-      background-color: #fff;
-      .left__title {
-        @include flex();
-        justify-content: center;
-        gap: 13.5px;
-      }
-      .left__form {
-        width: 472px;
-        margin: 30px auto;
-        .form__text-head {
-          margin-bottom: 5px;
-          @include font-size(16px);
-          color: #434343;
-        }
-        .form__check {
+
+      .left__info {
+        background-color: #ffff;
+        min-height: 567px;
+        .info__title {
           @include flex();
-          p {
-            color: #808081;
-            @include font-size(14px);
-            margin-left: 8.5px;
+          justify-content: center;
+        }
+        .info__content {
+          .content__item {
+            @include flex();
+            justify-content: space-between;
+            padding: 25px 25px 0 25px;
+            .item__left {
+              h2 {
+                color: #434343;
+                @include font-size(14px);
+                margin-bottom: 10px;
+                span {
+                  color: #01adab;
+                  @include font-size(12px);
+                  margin-left: 10px;
+                }
+              }
+              p {
+                color: #808081;
+                @include font-size(14px);
+                margin-bottom: 10px;
+                span {
+                  color: #434343;
+                }
+              }
+              button {
+                width: 163px;
+                border-radius: 5px;
+                background-color: #808081;
+                color: #fff;
+                padding: 10px 15px;
+                white-space: nowrap;
+                border: none;
+                height: 45px;
+                @include font-size(13.2px);
+                cursor: pointer;
+                &.active {
+                  background: #01adab;
+                }
+              }
+            }
           }
         }
-        .form__not-pass {
-          color: #434343;
+      }
+      .left__button {
+        width: 100%;
+        text-align: center;
+        margin-top: 16px;
+        button {
+          height: 25px;
+          width: 145px;
+          border-radius: 5px;
+          background-color: #01adab;
+          color: #fff;
+          //   padding: 5px 10px;
           @include font-size(14px);
-          a:nth-child(1) {
-            color: #434343;
-            @include font-size(14px);
-          }
-          a:nth-child(2) {
-            color: #ea4036;
-          }
-        }
-        .form__button {
-          margin-top: 15px;
-          margin-bottom: 15px;
-          button {
-            width: 100%;
-            margin-top: 11px;
-            padding: 10px 15px;
-            height: 45px;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-          }
-          .button__log {
-            background-color: #01adab;
-          }
-          .button__facebook {
-            background-color: #3b5998;
-          }
-          .button__google {
-            background-color: #e94a32;
-          }
-        }
-        .form__text-foot {
-          @include font-size(14px);
-          color: #434343;
-          span {
-            color: #ea4036;
-          }
-        }
-        @media #{$info-phone-2} {
-          width: 350px;
+          border: none;
         }
       }
       @media #{$info-tablet-horizontal} {

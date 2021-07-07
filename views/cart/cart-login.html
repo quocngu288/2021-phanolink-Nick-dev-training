@@ -189,7 +189,196 @@
     </header>
     <!-- END HEADER -->
     <!-- CART -->
-    <main>cart</main>
+    <div class="nav-router">
+      <ul class="common-container">
+        <li><a href="">Trang chủ</a></li>
+        <li>
+          <i class="fas fa-chevron-right"></i>
+          <a href="" class="active">Giỏ hàng</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section class="cart-account">
+        <div class="check-bar">
+          <ul class="check-bar__content">
+            <li class="content__item active">
+              <p>Đăng nhập</p>
+              <span>1</span>
+            </li>
+            <li class="content__item ">
+              <p>Địa Chỉ Giao Hàng</p>
+              <span>2</span>
+            </li>
+            <li class="content__item">
+              <p>Thanh toán</p>
+              <span>3</span>
+            </li>
+          </ul>
+        </div>
+        <div class="common-container cart-account__content">
+          <div class="content__left">
+            <div class="left__title">
+              <div class="title__login board-title active" id="title-login">
+                <div class="board-title__head">
+                  <h2>ĐĂNG NHẬP</h2>
+                  <p>Đã là thành viên của Phanolink</p>
+                </div>
+              </div>
+              <div class="title__register board-title" id="title-register">
+                <div class="board-title__head">
+                  <h2>ĐĂNG KÍ</h2>
+                  <p>Dành cho khách hàng mới</p>
+                </div>
+              </div>
+            </div>
+            <div class="left__form left__form-login">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea
+              </p>
+              <form action="">
+                <div class="form-group custom-form">
+                  <label for="email">Email / SĐT</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập Email hoặc số điện thoại"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="pwd">Mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                  />
+                </div>
+              </form>
+              <div class="form__not-pass">
+                <a href="">Quên mật khẩu ? </a>
+                nhấn vào
+                <a href=""> đầy</a>
+              </div>
+              <div class="form__button">
+                <button class="button__log">Đăng nhập</button>
+                <button class="button__facebook">
+                  Đăng nhập bằng Facebook
+                </button>
+                <button class="button__google">Đăng nhập bằng Google</button>
+              </div>
+            </div>
+            <div class="left__form left__form-register" style="display: none">
+              <p class="form__text-head">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea
+              </p>
+              <form action="">
+                <div class="form-group custom-form">
+                  <label for="name">Họ tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nhập Họ tên"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập Email"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="pwd">Mật khẩu</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                  />
+                </div>
+                <div class="form-group custom-form">
+                  <label for="pwd">Số điện thoại</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Nhập số điện thoại"
+                  />
+                </div>
+              </form>
+              <div class="form__check">
+                <input type="checkbox" />
+                <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
+              </div>
+              <div class="form__button">
+                <button class="button__log">Đăng nhập</button>
+                <button class="button__facebook">
+                  Đăng nhập bằng Facebook
+                </button>
+                <button class="button__google">Đăng nhập bằng Google</button>
+              </div>
+              <p class="form__text-foot">
+                Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua
+                bán theo điều kiện sử dụng và chính sách của
+                <span> PHANOLINK</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="content__right">
+            <div class="right__order">
+              <p>Đơn hàng (3 sản phẩm)</p>
+              <button>Sửa</button>
+            </div>
+            <div class="right__products">
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+              <div class="products__item">
+                <div class="item__name">
+                  1x
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+                <p>800.000đ</p>
+              </div>
+            </div>
+            <div class="right__sub">
+              <p>Tạm tính</p>
+              <p>800.000đ</p>
+            </div>
+            <div class="right__shipping">
+              <p>Phí vận chuyển</p>
+              <p>800.000đ</p>
+            </div>
+            <div class="right__total">
+              <p>Thành tiền:</p>
+              <div>
+                <p>1.000.000đ</p>
+                <span>(đã bao gôm VAT nếu có)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- END CART -->
     <!-- FOOTER -->
     <footer>
@@ -299,6 +488,7 @@
       </div>
     </footer>
     <!-- END FOOTER -->
+
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please

@@ -1,0 +1,47 @@
+.dialog__content {
+  width: 633.5px;
+  min-height: 1026px;
+  background-color: #fff;
+  .content__header {
+    @include flex();
+    justify-content: center;
+  }
+  .content__form {
+    width: 476px;
+    margin: 0 auto;
+  }
+}
+
+.custom-radios {
+  div {
+    display: inline-block;
+    // input[type="radio"] {
+    //   display: none;
+    // }
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"] + label {
+    span {
+      display: inline-block;
+      width: 165px;
+      height: 25px;
+      margin: -1px 4px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      /* border-radius: 50%; */
+      border: 2px solid #fff;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+      text-align: center;
+      line-height: 25px;
+      background-color: #000;
+      transition: all 0.3s ease;
+    }
+  }
+  input[type="radio"]:checked + label {
+    span {
+      background-color: royalblue;
+    }
+  }
+}
