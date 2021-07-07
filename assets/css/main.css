@@ -5992,15 +5992,26 @@ footer {
     width: 476px;
     margin: 0 auto; }
 
-.custom-form-radio input[type="radio"] {
-  width: 233px;
-  border: 1px solid #000;
-  border-radius: 5px !important;
-  background-color: #fff;
-  color: #808081;
-  height: 39.5px;
-  font-size: 14px;
-  font-size: 0.875rem; }
+.custom-radios div {
+  display: inline-block; }
+.custom-radios input[type="radio"] {
+  display: none; }
+.custom-radios input[type="radio"] + label span {
+  display: inline-block;
+  width: 165px;
+  height: 25px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  text-align: center;
+  line-height: 25px;
+  background-color: #000;
+  transition: all 0.3s ease; }
+.custom-radios input[type="radio"]:checked + label span {
+  background-color: royalblue; }
 
 .banner {
   display: flex;
