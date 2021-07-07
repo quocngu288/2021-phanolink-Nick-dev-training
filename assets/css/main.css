@@ -5591,6 +5591,9 @@ img {
 main {
   padding: 25px 30px;
   background-color: #ebebeb; }
+  @media only screen and (max-width: 767px) {
+    main {
+      padding: 25px 0; } }
 
 .common-container {
   max-width: 1320px;
@@ -5655,7 +5658,7 @@ main {
   .board-title.active::before {
     content: "";
     position: absolute;
-    top: -7px;
+    top: -9px;
     left: 0;
     height: 55px;
     width: 184px;
@@ -5667,7 +5670,7 @@ main {
     content: "";
     position: absolute;
     left: 0;
-    top: -7px;
+    top: -9px;
     height: 0;
     border-bottom: 10px solid #016b68;
     border-left: 10px solid transparent;
@@ -5751,13 +5754,21 @@ main {
       .check-bar ul {
         width: 550px; } }
 
-.custom-form label {
-  color: #434343;
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: normal; }
-.custom-form input {
-  height: 40px; }
+.custom-form {
+  position: relative;
+  padding: 0 10px; }
+  .custom-form label {
+    color: #434343;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal; }
+  .custom-form input {
+    height: 40px; }
+  .custom-form span {
+    color: #ea4036;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .btn--write {
   height: 40px;
@@ -5850,7 +5861,8 @@ footer {
           footer .utilities .utilities__content .item:nth-child(2),
           footer .utilities .utilities__content .item:nth-child(3) {
             border-left: none;
-            border-right: none; } }
+            border-right: none;
+            width: auto; } }
   footer .hotline {
     background-color: #01adab; }
     footer .hotline .hotline__content {
@@ -5978,40 +5990,121 @@ footer {
       font-size: 10px;
       font-size: 0.625rem; }
 
-.dialog__content {
+.modal-dialog .dialog__content {
   width: 633.5px;
-  min-height: 1026px;
-  background-color: #fff; }
-  .dialog__content .content__header {
+  min-height: 820px;
+  background-color: #fff;
+  border-bottom: 4px solid #01adab; }
+  .modal-dialog .dialog__content .content__header {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content: center; }
-  .dialog__content .content__form {
+  .modal-dialog .dialog__content .content__form {
     width: 476px;
     margin: 0 auto; }
+    .modal-dialog .dialog__content .content__form .form__button button {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      background: #01adab;
+      color: #fff;
+      white-space: nowrap;
+      border: none; }
+    .modal-dialog .dialog__content .content__form .form__button p {
+      text-align: right;
+      margin-top: 10px;
+      color: #808081;
+      font-size: 14.3px;
+      font-size: 0.89375rem; }
+      .modal-dialog .dialog__content .content__form .form__button p span {
+        color: #ea4036; }
+    @media only screen and (max-width: 896px) {
+      .modal-dialog .dialog__content .content__form {
+        width: 100%; } }
+  @media only screen and (max-width: 896px) {
+    .modal-dialog .dialog__content {
+      width: 100%;
+      padding: 0 10px; } }
+  @media only screen and (max-width: 767px) {
+    .modal-dialog .dialog__content {
+      min-height: 780px; } }
+@media only screen and (max-width: 896px) {
+  .modal-dialog {
+    padding: 0 30px; } }
 
-.custom-radios div {
-  display: inline-block; }
-.custom-radios input[type="radio"] {
-  display: none; }
-.custom-radios input[type="radio"] + label span {
-  display: inline-block;
-  width: 165px;
-  height: 25px;
-  margin: -1px 4px 0 0;
-  vertical-align: middle;
-  cursor: pointer;
-  /* border-radius: 50%; */
-  border: 2px solid #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+.custom-radios {
   text-align: center;
-  line-height: 25px;
-  background-color: #000;
-  transition: all 0.3s ease; }
-.custom-radios input[type="radio"]:checked + label span {
-  background-color: royalblue; }
+  padding: 0 10px;
+  display: flex;
+  justify-content: center; }
+  .custom-radios input[type="radio"] {
+    display: none; }
+  .custom-radios input[type="radio"] + label span {
+    display: inline-block;
+    width: 233px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #e2e3e4;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color: #808081;
+    font-size: 14.3px;
+    font-size: 0.89375rem; }
+    @media only screen and (max-width: 767px) {
+      .custom-radios input[type="radio"] + label span {
+        width: 150px; } }
+    @media only screen and (max-width: 667px) {
+      .custom-radios input[type="radio"] + label span {
+        width: 120px; } }
+  .custom-radios input[type="radio"]:checked + label span {
+    background-color: #808081;
+    color: #fff; }
+
+.custom-checkbox {
+  display: block;
+  margin-top: 15px; }
+  .custom-checkbox input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer; }
+  .custom-checkbox label {
+    color: #01adab;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer; }
+    .custom-checkbox label::before {
+      content: "";
+      -webkit-appearance: none;
+      background-color: #01adab;
+      border: 2px solid #01adab;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 15px; }
+  .custom-checkbox input:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); }
 
 .banner {
   display: flex;
@@ -7072,7 +7165,7 @@ footer {
           padding: 10px 15px;
           white-space: nowrap;
           border: none;
-          height: 45px;
+          height: 40px;
           font-size: 13.2px;
           font-size: 0.825rem;
           cursor: pointer; }

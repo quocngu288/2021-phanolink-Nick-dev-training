@@ -1,47 +1,143 @@
-.dialog__content {
-  width: 633.5px;
-  min-height: 1026px;
-  background-color: #fff;
-  .content__header {
-    @include flex();
-    justify-content: center;
+.modal-dialog {
+  .dialog__content {
+    width: 633.5px;
+    min-height: 820px;
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    .content__header {
+      @include flex();
+      justify-content: center;
+    }
+    .content__form {
+      width: 476px;
+      margin: 0 auto;
+      .form__button {
+        button {
+          width: 100%;
+          height: 40px;
+          border-radius: 5px;
+          background: #01adab;
+          color: #fff;
+          // padding: 10px 15px;
+          white-space: nowrap;
+          border: none;
+        }
+        p {
+          text-align: right;
+          margin-top: 10px;
+          color: #808081;
+          @include font-size(14.3px);
+          span {
+            color: #ea4036;
+          }
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        width: 100%;
+      }
+    }
+    @media #{$info-tablet-vertical-1} {
+      width: 100%;
+      padding: 0 10px;
+    }
+    @media #{$info-phone} {
+      min-height: 780px;
+    }
   }
-  .content__form {
-    width: 476px;
-    margin: 0 auto;
+  @media #{$info-tablet-vertical-1} {
+    padding: 0 30px;
   }
 }
 
 .custom-radios {
-  div {
-    display: inline-block;
-    // input[type="radio"] {
-    //   display: none;
-    // }
-  }
+  text-align: center;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
   input[type="radio"] {
     display: none;
   }
-  input[type="radio"] + label {
-    span {
-      display: inline-block;
-      width: 165px;
-      height: 25px;
-      margin: -1px 4px 0 0;
-      vertical-align: middle;
-      cursor: pointer;
-      /* border-radius: 50%; */
-      border: 2px solid #fff;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
-      text-align: center;
-      line-height: 25px;
-      background-color: #000;
-      transition: all 0.3s ease;
+  input[type="radio"] {
+    + label {
+      span {
+        display: inline-block;
+        width: 233px;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #e2e3e4;
+        // padding: 5px 10px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        color: #808081;
+        @include font-size(14.3px);
+        @media #{$info-phone} {
+          width: 150px;
+        }
+        @media #{$info-phone-2} {
+          width: 120px;
+        }
+      }
     }
   }
-  input[type="radio"]:checked + label {
-    span {
-      background-color: royalblue;
+  input[type="radio"]:checked {
+    + label {
+      span {
+        background-color: #808081;
+        color: #fff;
+      }
+    }
+  }
+}
+.custom-checkbox {
+  display: block;
+  margin-top: 15px;
+
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+
+  label {
+    color: #01adab;
+    @include font-size(16px);
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      -webkit-appearance: none;
+      background-color: #01adab;
+      border: 2px solid #01adab;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+  }
+
+  input:checked + label {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 9px;
+      width: 6px;
+      height: 14px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
     }
   }
 }
