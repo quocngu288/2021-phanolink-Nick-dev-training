@@ -10,7 +10,12 @@
     }
     .content__form {
       width: 476px;
-      margin: 0 auto;
+      margin: 60px auto 30px auto;
+      form {
+        div {
+          padding: 0 10px;
+        }
+      }
       .form__button {
         button {
           width: 100%;

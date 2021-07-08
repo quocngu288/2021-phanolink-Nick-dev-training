@@ -49,7 +49,7 @@ main {
 .board-title {
   position: relative;
   width: 184px;
-  height: 55px;
+  // height: 55px;
   cursor: pointer;
   text-align: center;
   &::before {
@@ -64,6 +64,7 @@ main {
     top: 46%;
     left: 50%;
     width: 100%;
+    height: 0;
     transform: translate(-50%, -50%);
     h2 {
       color: #808081;
@@ -72,6 +73,13 @@ main {
     p {
       color: #808081;
       @include font-size(14px);
+    }
+    @media #{$info-phone-3} {
+      width: 134px;
+      &::before {
+        width: 134px;
+        height: 40px;
+      }
     }
   }
   &.active {
@@ -110,6 +118,13 @@ main {
       p {
         @include font-size(11px);
         color: #fff;
+      }
+    }
+    @media #{$info-phone-3} {
+      width: 134px;
+      &::before {
+        width: 134px;
+        height: 40px;
       }
     }
   }
@@ -168,7 +183,7 @@ main {
         position: absolute;
         height: 6px;
         width: 90%;
-        right: 54%;
+        right: 55%;
         bottom: 18%;
         background-color: #808081;
         @include transform(translateY(50%));
@@ -177,6 +192,18 @@ main {
       @media #{$info-tablet-vertical-1} {
         &::after {
           right: 51%;
+        }
+      }
+      @media #{$info-phone-3} {
+        &::after {
+          right: 52%;
+          width: 88%;
+        }
+      }
+      @media #{$info-phone-4} {
+        &::after {
+          right: 52%;
+          width: 86%;
         }
       }
     }
@@ -189,7 +216,7 @@ main {
 //custom
 .custom-form {
   position: relative;
-  padding: 0 10px;
+
   label {
     color: #434343;
     @include font-size(16px);

@@ -1,82 +1,73 @@
-.cart-address {
-  .cart-address__content {
+.cart-payment {
+  background-color: #ebebeb;
+  min-height: 592px;
+  padding: 0 30px;
+  .cart-payment__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
     .content__left {
       grid-column: 1 / span 8;
-
-      .left__info {
-        background-color: #ffff;
-        min-height: 567px;
-        .info__title {
-          @include flex();
-          justify-content: center;
-        }
-        .info__content {
-          margin: 30px auto 30px auto;
-          .content__item {
-            @include flex();
-            justify-content: space-between;
-            padding: 25px 25px 0 25px;
-            .item__left {
-              h2 {
-                color: #434343;
-                @include font-size(14px);
-                margin-bottom: 10px;
-                span {
-                  color: #01adab;
-                  @include font-size(12px);
-                  margin-left: 10px;
-                }
-              }
-              p {
-                color: #808081;
-                @include font-size(14px);
-                margin-bottom: 10px;
-                span {
-                  color: #434343;
-                }
-              }
-              button {
-                width: 163px;
-                border-radius: 5px;
-                background-color: #808081;
-                color: #fff;
-                padding: 10px 15px;
-                white-space: nowrap;
-                border: none;
-                height: 40px;
-                @include font-size(13.2px);
-                cursor: pointer;
-                &.active {
-                  background: #01adab;
-                }
-              }
+      background-color: #fff;
+      .left__title {
+        @include flex();
+        justify-content: center;
+        gap: 13.5px;
+        .title__custom {
+          width: 284px;
+          &::before {
+            width: 284px;
+          }
+          .board-title__head {
+            h2 {
+              @include font-size(18px);
             }
-            .item__right {
-              color: #01adab;
-              @include font-size(14px);
-              margin-left: 15px;
-              white-space: nowrap;
+          }
+          @media #{$info-phone-3} {
+            width: 184px;
+            &::before {
+              width: 184px;
             }
           }
         }
       }
-      .left__button {
-        width: 100%;
-        text-align: center;
-        margin-top: 16px;
-        button {
-          height: 25px;
-          width: 145px;
-          border-radius: 5px;
-          background-color: #01adab;
-          color: #fff;
-          //   padding: 5px 10px;
+      .left__form {
+        width: 472px;
+        margin: 90px auto 60px auto;
+        padding: 0 40px;
+        .form__button {
+          margin-top: 40px;
+          margin-bottom: 15px;
+
+          button {
+            width: 100%;
+            margin: 0px 0 10px 0;
+
+            height: 45px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+          }
+          .button__google {
+            background-color: #e94a32;
+          }
+          p {
+            text-align: center;
+            color: #808081;
+            @include font-size(12px);
+          }
+        }
+        .form__text-foot {
           @include font-size(14px);
-          border: none;
+          color: #434343;
+          span {
+            color: #ea4036;
+          }
+        }
+        @media #{$info-phone-4} {
+          width: 250px;
+          padding: 0 10px;
         }
       }
       @media #{$info-tablet-horizontal} {
@@ -181,5 +172,8 @@
         grid-column: span 12;
       }
     }
+  }
+  @media #{$info-phone-2} {
+    padding: 0 0;
   }
 }
