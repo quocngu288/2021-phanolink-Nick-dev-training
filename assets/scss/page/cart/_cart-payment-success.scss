@@ -1,68 +1,41 @@
-.cart-address {
-  .cart-address__content {
+.cart-payment {
+  .cart-payment__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
-    .content__left {
+    .content__left-success {
       grid-column: 1 / span 8;
-
       .left__info {
         background-color: #ffff;
-        max-height: 567px;
-        padding: 0 0 40px 0;
+
         .info__title {
           @include flex();
           justify-content: center;
         }
-        .info__content {
-          margin: 30px auto 30px auto;
-          .content__item {
-            @include flex();
-            justify-content: space-between;
-            padding: 25px 25px 0 25px;
-            .item__left {
-              h2 {
-                color: #434343;
-                @include font-size(14px);
-                margin-bottom: 10px;
-                span {
-                  color: #01adab;
-                  @include font-size(12px);
-                  margin-left: 10px;
-                }
-              }
-              p {
-                color: #808081;
-                @include font-size(14px);
-                margin-bottom: 10px;
-                span {
-                  color: #434343;
-                }
-              }
-              button {
-                width: 163px;
-                border-radius: 5px;
-                background-color: #808081;
-                color: #fff;
-                padding: 10px 15px;
-                white-space: nowrap;
-                border: none;
-                height: 40px;
-                @include font-size(13.2px);
-                cursor: pointer;
-                &.active {
-                  background: #01adab;
-                }
+        .info__success {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 267px;
+          .success__content {
+            text-align: center;
+            p {
+              color: #434343;
+              @include font-size(20px);
+              span {
+                color: #ea4036;
+                @include font-size(24px);
+                font-weight: bolder;
               }
             }
-            .item__right {
-              a {
-                color: #01adab;
-                @include font-size(14px);
-                margin-left: 15px;
-                white-space: nowrap;
-              }
+            p:nth-child(2) {
+              margin-top: 5px;
+              margin-bottom: 20px;
+            }
+            a {
+              color: #01adab;
+              @include font-size(25px);
             }
           }
         }
@@ -71,15 +44,9 @@
         width: 100%;
         text-align: center;
         margin-top: 16px;
-        button {
-          height: 25px;
-          width: 145px;
-          border-radius: 5px;
-          background-color: #01adab;
-          color: #fff;
-          //   padding: 5px 10px;
+        p {
+          color: #505050;
           @include font-size(14px);
-          border: none;
         }
       }
       @media #{$info-tablet-horizontal} {
