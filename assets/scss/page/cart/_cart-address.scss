@@ -1,9 +1,11 @@
 .cart-address {
+  background-color: #ebebeb;
   .cart-address__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
+    padding: 20px 30px;
     .content__left {
       grid-column: 1 / span 8;
 
@@ -183,6 +185,9 @@
       @media #{$info-tablet-vertical} {
         grid-column: span 12;
       }
+    }
+    @media #{$info-phone-2} {
+      padding: 20px 15px;
     }
   }
 }

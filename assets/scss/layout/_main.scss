@@ -1,9 +1,9 @@
 main {
-  padding: 25px 30px;
-  background-color: #ebebeb;
-  @media #{$info-phone} {
-    padding: 25px 0;
-  }
+  // padding: 25px 30px;
+
+  // @media #{$info-phone} {
+  //   padding: 25px 0;
+  // }
 }
 .common-container {
   max-width: 1320px;
@@ -14,7 +14,6 @@ main {
 //nav-router
 .nav-router {
   background-color: #e2e3e4;
-
   ul {
     @include flex();
     align-items: center;
@@ -222,7 +221,7 @@ main {
     @include font-size(16px);
     font-weight: normal;
   }
-  input {
+  .form-control {
     height: 40px;
   }
   span {

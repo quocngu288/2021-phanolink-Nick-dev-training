@@ -1,12 +1,13 @@
 .cart-account {
   background-color: #ebebeb;
-  min-height: 592px;
-  padding: 0 30px;
+
+  padding: 20px 30px;
   .cart-account__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
+    min-height: 592px;
     .content__left {
       grid-column: 1 / span 8;
       background-color: #fff;
@@ -175,6 +176,7 @@
       }
       @media #{$info-tablet-vertical} {
         grid-column: span 12;
+        margin-bottom: 20px;
       }
     }
   }

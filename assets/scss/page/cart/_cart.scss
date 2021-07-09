@@ -1,10 +1,11 @@
 .cart {
-  min-height: 718px;
-  padding: 0 30px;
+  background-color: #ebebeb;
   .cart__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
+    min-height: 718px;
+    padding: 20px 30px;
     .content__left {
       grid-column: 1 / span 8;
       background-color: #fff;
@@ -223,10 +224,10 @@
     }
 
     @media #{$info-phone-2} {
-      padding: 0;
+      padding: 20px 15px;
     }
   }
-  @media #{$info-phone-2} {
-    padding: 0 0;
-  }
+  // @media #{$info-phone-2} {
+  //   padding: 0 0;
+  // }
 }

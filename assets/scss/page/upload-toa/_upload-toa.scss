@@ -1,0 +1,169 @@
+.upload-toa {
+  background-color: #ebebeb;
+  padding: 20px 0;
+  .upload-toa__content {
+    background-color: #fff;
+    width: 792px;
+    margin: 0 auto;
+    border-bottom: 3px solid #01adab;
+    .content__head {
+      @include flex();
+      justify-content: center;
+    }
+    .content__form {
+      padding: 70px 0;
+      width: 80%;
+      margin: 0 auto;
+      h3 {
+        color: #434343;
+        @include font-size(20px);
+        margin: 20px 0;
+      }
+      h2 {
+        text-align: center;
+        color: #01adab;
+        @include font-size(20px);
+        margin-bottom: 13px;
+      }
+      p {
+        color: #434343;
+        @include font-size(14px);
+      }
+
+      .form__file {
+        input {
+          height: 0;
+          overflow: hidden;
+          width: 0;
+        }
+        input + label {
+          background: #edeeee;
+          border: none;
+          border-radius: 5px;
+          color: #808081;
+          cursor: pointer;
+          display: inline-block;
+          @include font-size(18px);
+          font-weight: normal;
+          outline: none;
+          padding: 16px 0px;
+          position: relative;
+          transition: all 0.3s;
+          //   vertical-align: middle;
+          width: 100%;
+          //   &:hover {
+          //     background-color: darken(#f15d22, 10%);
+          //   }
+
+          &.btn-3 {
+            background-color: #edeeee;
+            border-radius: 0;
+            overflow: hidden;
+
+            span {
+              display: inline-block;
+              height: 100%;
+              transition: all 0.3s;
+              width: 100%;
+              text-align: center;
+              @include font-size(18px);
+              color: #808081;
+            }
+
+            &::before {
+              color: #fff;
+              content: "upload image";
+
+              @include font-size(20px);
+              height: 100%;
+              left: 50%;
+              transform: translateX(-8%);
+              line-height: 2.6;
+              position: absolute;
+              top: -180%;
+              transition: all 0.3s;
+              width: 100%;
+            }
+
+            &:hover {
+              background-color: #01adab;
+
+              span {
+                transform: translateY(300%);
+              }
+
+              &::before {
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+      @media #{$info-phone-2} {
+        width: 100%;
+        padding: 60px 15px;
+      }
+    }
+    .form__local {
+      @include flex();
+      gap: 15px;
+      .form-group {
+        width: 50%;
+        .form-control {
+          color: #808081;
+        }
+        @media #{$info-phone-2} {
+          width: 100%;
+        }
+      }
+      @media #{$info-phone-2} {
+        flex-wrap: wrap;
+      }
+    }
+    .form__button {
+      button {
+        width: 100%;
+        margin-top: 11px;
+        padding: 10px 15px;
+        height: 45px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #01adab;
+      }
+    }
+    .form__image {
+      height: 350px;
+    }
+    .form__customer {
+      p {
+        color: #808081;
+        @include font-size(16px);
+        span {
+          color: #434343;
+        }
+      }
+    }
+    .form__address {
+      margin-bottom: 15px;
+      p {
+        color: #808081;
+        @include font-size(16px);
+        span {
+          color: #434343;
+        }
+      }
+    }
+    .form__back {
+      text-align: center;
+      margin-top: 10px;
+      a {
+        color: #01adab;
+        @include font-size(14px);
+      }
+    }
+    @media #{$info-tablet-vertical-1} {
+      width: auto;
+    }
+  }
+}
