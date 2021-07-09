@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
-    min-height: 718px;
+    // min-height: 718px;
     padding: 20px 30px;
     .content__left {
       grid-column: 1 / span 8;
@@ -12,7 +12,7 @@
       padding: 0 30px;
 
       .left__content {
-        margin: 90px auto 30px auto;
+        margin: 60px auto 0px auto;
         table {
           width: 100%;
           th {
