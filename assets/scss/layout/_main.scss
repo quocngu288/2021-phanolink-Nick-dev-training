@@ -107,11 +107,9 @@ main {
     }
     .board-title__head {
       h2 {
-        @include font-size(14px);
         color: #fff;
       }
       span {
-        @include font-size(14px);
         color: #ea4036;
       }
       p {

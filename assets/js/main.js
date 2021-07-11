@@ -48,11 +48,15 @@ $("#title-register").click(function () {
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
 var owl3 = $(".owl-caro-brand");
+var owl4 = $(".owl-caro-banner");
 owl1.owlCarousel({
   loop: true,
   margin: 15,
   nav: true,
   responsive: {
+    0: {
+      items: 1,
+    },
     600: {
       items: 1,
     },
@@ -100,6 +104,22 @@ owl3.owlCarousel({
     },
     1000: {
       items: 9,
+    },
+  },
+});
+owl4.owlCarousel({
+  loop: true,
+  margin: 0,
+  nav: true,
+  responsive: {
+    600: {
+      items: 1,
+    },
+    800: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
     },
   },
 });

@@ -449,25 +449,73 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog__login">
         <div class="dialog__content">
-          <div class="content__header">
-            <div class="board-title active">
+          <div class="content__title">
+            <div class="title__login board-title active" id="title-login">
               <div class="board-title__head">
-                <h2>ĐỊA CHỈ GIAO HÀNG</h2>
+                <h2>ĐĂNG NHẬP</h2>
+                <p>Đã là thành viên của Phanolink</p>
+              </div>
+            </div>
+            <div class="title__register board-title" id="title-register">
+              <div class="board-title__head">
+                <h2>ĐĂNG KÍ</h2>
+                <p>Dành cho khách hàng mới</p>
               </div>
             </div>
           </div>
-          <div class="content__form">
-            <form>
+          <div class="content__form left__form-login">
+            <p class="form__text-head">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            </p>
+            <form action="">
               <div class="form-group custom-form">
-                <label for="email">Họ Tên</label>
+                <label for="email">Email / SĐT</label>
                 <input
                   type="email"
                   class="form-control"
-                  placeholder="Nhập họ tên"
+                  placeholder="Nhập Email hoặc số điện thoại"
                 />
-                <span>*</span>
+              </div>
+              <div class="form-group custom-form">
+                <label for="pwd">Mật khẩu</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                />
+              </div>
+            </form>
+            <div class="form__not-pass">
+              <a href="">Quên mật khẩu ? </a>
+              nhấn vào
+              <a href=""> đầy</a>
+            </div>
+            <div class="form__button">
+              <button class="button__log">Đăng nhập</button>
+              <button class="button__facebook">Đăng nhập bằng Facebook</button>
+              <button class="button__google">Đăng nhập bằng Google</button>
+            </div>
+          </div>
+          <div class="content__form left__form-register" style="display: none">
+            <p class="form__text-head">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            </p>
+            <form action="">
+              <div class="form-group custom-form">
+                <label for="name">Họ tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập Họ tên"
+                />
               </div>
               <div class="form-group custom-form">
                 <label for="email">Email</label>
@@ -476,90 +524,38 @@
                   class="form-control"
                   placeholder="Nhập Email"
                 />
-                <span>*</span>
               </div>
               <div class="form-group custom-form">
-                <label for="email">Số điện thoại</label>
+                <label for="pwd">Mật khẩu</label>
                 <input
-                  type="text"
+                  type="password"
+                  class="form-control"
+                  placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                />
+              </div>
+              <div class="form-group custom-form">
+                <label for="pwd">Số điện thoại</label>
+                <input
+                  type="password"
                   class="form-control"
                   placeholder="Nhập số điện thoại"
                 />
-                <span>*</span>
-              </div>
-              <div class="form-group custom-form">
-                <label for="email">Tỉnh/ Thành phố</label>
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group custom-form">
-                <label for="email">Quận Huyện</label>
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group custom-form">
-                <label for="email">Phường Xã</label>
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group custom-form">
-                <label for="email">Địa chỉ</label>
-                <textarea
-                  type="text"
-                  class="form-control"
-                  placeholder="Nhập địa chỉ"
-                ></textarea>
-              </div>
-              <div class="custom-radios">
-                <div>
-                  <input
-                    type="radio"
-                    id="color-3"
-                    name="color"
-                    value="color-3"
-                    checked
-                  />
-                  <label for="color-3">
-                    <span>Công ty</span>
-                  </label>
-                </div>
-
-                <div>
-                  <input
-                    type="radio"
-                    id="color-4"
-                    name="color"
-                    value="color-4"
-                  />
-                  <label for="color-4">
-                    <span> nhà riêng</span>
-                  </label>
-                </div>
-              </div>
-              <div class="form-group custom-checkbox">
-                <input type="checkbox" checked />
-                <label>Sử dụng làm địa chỉ mặc định</label>
               </div>
             </form>
-            <div class="form__button">
-              <button>CẬP NHẬT THAY ĐỔI</button>
-              <p><span>* </span> Bắt buộc</p>
+            <div class="form__check">
+              <input type="checkbox" />
+              <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
             </div>
+            <div class="form__button">
+              <button class="button__log">Đăng nhập</button>
+              <button class="button__facebook">Đăng nhập bằng Facebook</button>
+              <button class="button__google">Đăng nhập bằng Google</button>
+            </div>
+            <p class="form__text-foot">
+              Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua
+              bán theo điều kiện sử dụng và chính sách của
+              <span> PHANOLINK</span>
+            </p>
           </div>
         </div>
       </div>

@@ -1,50 +1,55 @@
 .banner {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-  .banner__left {
-    height: 302px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .banner__right {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  padding: 20px 0;
+  .banner__content {
+    display: flex;
+    justify-content: space-between;
 
-    .item {
-      text-align: center;
-      width: 84px;
-      margin: 20px;
-      p {
-        margin-top: 5px;
-        color: #777777;
-        @include font-size(16.9px);
-      }
-      @media #{$info-tablet-vertical} {
-        margin: 5px;
-      }
+    .content__left {
+      height: 302px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
     }
-    .item:nth-child(1),
-    .item:nth-child(2) {
-      margin-top: 0;
-    }
-    .item:nth-child(3),
-    .item:nth-child(4) {
-      margin-top: 10px;
-    }
-    @media #{$info-tablet-vertical-1} {
-      grid-template-columns: repeat(4, 1fr);
-      margin-top: 20px;
+    .content__right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
 
+      .item {
+        text-align: center;
+        width: 84px;
+        margin: 20px;
+        p {
+          margin-top: 5px;
+          color: #777777;
+          @include font-size(16.9px);
+        }
+        @media #{$info-tablet-vertical} {
+          margin: 5px;
+        }
+      }
+      .item:nth-child(1),
+      .item:nth-child(2) {
+        margin-top: 0;
+      }
       .item:nth-child(3),
       .item:nth-child(4) {
-        margin-top: 0px;
+        margin-top: 10px;
+      }
+      @media #{$info-tablet-vertical-1} {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 20px;
+
+        .item:nth-child(3),
+        .item:nth-child(4) {
+          margin-top: 0px;
+        }
       }
     }
   }
+
   @media #{$info-tablet-vertical} {
     margin-top: 100px;
   }

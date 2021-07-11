@@ -5675,12 +5675,8 @@ img {
     border-left: 10px solid transparent;
     transform: translateX(-100%); }
   .board-title.active .board-title__head h2 {
-    font-size: 14px;
-    font-size: 0.875rem;
     color: #fff; }
   .board-title.active .board-title__head span {
-    font-size: 14px;
-    font-size: 0.875rem;
     color: #ea4036; }
   .board-title.active .board-title__head p {
     font-size: 11px;
@@ -6016,29 +6012,59 @@ footer {
     display: flex;
     justify-content: center; }
   .modal-dialog .dialog__content .content__form {
-    width: 476px;
-    margin: 60px auto 30px auto; }
-    .modal-dialog .dialog__content .content__form form div {
-      padding: 0 10px; }
-    .modal-dialog .dialog__content .content__form .form__button button {
-      width: 100%;
-      height: 40px;
-      border-radius: 5px;
-      background: #01adab;
-      color: #fff;
-      white-space: nowrap;
-      border: none; }
-    .modal-dialog .dialog__content .content__form .form__button p {
-      text-align: right;
-      margin-top: 10px;
-      color: #808081;
-      font-size: 14.3px;
-      font-size: 0.89375rem; }
-      .modal-dialog .dialog__content .content__form .form__button p span {
+    width: 472px;
+    margin: 60px auto; }
+    .modal-dialog .dialog__content .content__form .form__text-head {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-size: 1rem;
+      color: #434343; }
+    .modal-dialog .dialog__content .content__form .form__check {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+      .modal-dialog .dialog__content .content__form .form__check p {
+        color: #808081;
+        font-size: 14px;
+        font-size: 0.875rem;
+        margin-left: 8.5px; }
+    .modal-dialog .dialog__content .content__form .form__not-pass {
+      color: #434343;
+      font-size: 14px;
+      font-size: 0.875rem; }
+      .modal-dialog .dialog__content .content__form .form__not-pass a:nth-child(1) {
+        color: #434343;
+        font-size: 14px;
+        font-size: 0.875rem; }
+      .modal-dialog .dialog__content .content__form .form__not-pass a:nth-child(2) {
         color: #ea4036; }
-    @media only screen and (max-width: 896px) {
+    .modal-dialog .dialog__content .content__form .form__button {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .modal-dialog .dialog__content .content__form .form__button button {
+        width: 100%;
+        margin-top: 11px;
+        padding: 10px 15px;
+        height: 45px;
+        color: #fff;
+        border: none;
+        border-radius: 5px; }
+      .modal-dialog .dialog__content .content__form .form__button .button__log {
+        background-color: #01adab; }
+      .modal-dialog .dialog__content .content__form .form__button .button__facebook {
+        background-color: #3b5998; }
+      .modal-dialog .dialog__content .content__form .form__button .button__google {
+        background-color: #e94a32; }
+    .modal-dialog .dialog__content .content__form .form__text-foot {
+      font-size: 14px;
+      font-size: 0.875rem;
+      color: #434343; }
+      .modal-dialog .dialog__content .content__form .form__text-foot span {
+        color: #ea4036; }
+    @media only screen and (max-width: 510px) {
       .modal-dialog .dialog__content .content__form {
-        width: 100%; } }
+        width: 250px; } }
   @media only screen and (max-width: 896px) {
     .modal-dialog .dialog__content {
       width: 100%;
@@ -6049,6 +6075,105 @@ footer {
 @media only screen and (max-width: 896px) {
   .modal-dialog {
     padding: 0 30px; } }
+
+.modal-dialog__login {
+  margin-top: 200px; }
+  .modal-dialog__login .dialog__content {
+    width: 471px;
+    min-height: 500px;
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    padding: 0 42px; }
+    .modal-dialog__login .dialog__content .content__title {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      gap: 13.5px; }
+      .modal-dialog__login .dialog__content .content__title .title__login .board-title__head {
+        height: 55px;
+        transform: translate(-50%, 25%); }
+        .modal-dialog__login .dialog__content .content__title .title__login .board-title__head h2 {
+          font-size: 22px;
+          font-size: 1.375rem; }
+      .modal-dialog__login .dialog__content .content__title .title__register .board-title__head {
+        height: 55px;
+        transform: translate(-50%, 25%); }
+        .modal-dialog__login .dialog__content .content__title .title__register .board-title__head h2 {
+          font-size: 22px;
+          font-size: 1.375rem; }
+    .modal-dialog__login .dialog__content .content__form {
+      width: 100%;
+      margin-top: 85px;
+      margin-bottom: 30px; }
+      .modal-dialog__login .dialog__content .content__form .form__text-head {
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-size: 1rem;
+        color: #434343; }
+      .modal-dialog__login .dialog__content .content__form .form__check {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 35px; }
+        .modal-dialog__login .dialog__content .content__form .form__check p {
+          color: #808081;
+          font-size: 14px;
+          font-size: 0.875rem;
+          margin-left: 8.5px; }
+      .modal-dialog__login .dialog__content .content__form .form__not-pass {
+        color: #434343;
+        font-size: 14px;
+        font-size: 0.875rem;
+        margin-bottom: 30px; }
+        .modal-dialog__login .dialog__content .content__form .form__not-pass a:nth-child(1) {
+          color: #434343;
+          font-size: 14px;
+          font-size: 0.875rem; }
+        .modal-dialog__login .dialog__content .content__form .form__not-pass a:nth-child(2) {
+          color: #ea4036; }
+      .modal-dialog__login .dialog__content .content__form .form__button {
+        margin-bottom: 15px; }
+        .modal-dialog__login .dialog__content .content__form .form__button button {
+          width: 100%;
+          margin-top: 11px;
+          padding: 10px 15px;
+          height: 45px;
+          color: #fff;
+          border: none;
+          border-radius: 5px; }
+        .modal-dialog__login .dialog__content .content__form .form__button .button__log {
+          background-color: #01adab;
+          margin-top: 0; }
+        .modal-dialog__login .dialog__content .content__form .form__button .button__facebook {
+          background-color: #3b5998; }
+        .modal-dialog__login .dialog__content .content__form .form__button .button__google {
+          background-color: #e94a32; }
+      .modal-dialog__login .dialog__content .content__form .form__text-foot {
+        font-size: 14px;
+        font-size: 0.875rem;
+        color: #434343; }
+        .modal-dialog__login .dialog__content .content__form .form__text-foot span {
+          color: #ea4036; }
+      @media only screen and (max-width: 510px) {
+        .modal-dialog__login .dialog__content .content__form {
+          width: 250px; } }
+    @media only screen and (max-width: 896px) {
+      .modal-dialog__login .dialog__content {
+        width: 100%;
+        padding: 0 10px; } }
+    @media only screen and (max-width: 767px) {
+      .modal-dialog__login .dialog__content {
+        min-height: 780px; } }
+  .modal-dialog__login .dialog__content-notpass {
+    min-height: 250px; }
+    .modal-dialog__login .dialog__content-notpass .content__form .form__text-head {
+      margin-bottom: 30px; }
+  @media only screen and (max-width: 896px) {
+    .modal-dialog__login {
+      padding: 0 30px; } }
 
 .custom-radios {
   text-align: center;
@@ -6169,44 +6294,46 @@ footer {
       background-color: #ccc; }
 
 .banner {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px auto; }
-  .banner .banner__left {
-    height: 302px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative; }
-  .banner .banner__right {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    .banner .banner__right .item {
-      text-align: center;
-      width: 84px;
-      margin: 20px; }
-      .banner .banner__right .item p {
-        margin-top: 5px;
-        color: #777777;
-        font-size: 16.9px;
-        font-size: 1.05625rem; }
-      @media only screen and (max-width: 998px) {
-        .banner .banner__right .item {
-          margin: 5px; } }
-    .banner .banner__right .item:nth-child(1),
-    .banner .banner__right .item:nth-child(2) {
-      margin-top: 0; }
-    .banner .banner__right .item:nth-child(3),
-    .banner .banner__right .item:nth-child(4) {
-      margin-top: 10px; }
-    @media only screen and (max-width: 896px) {
-      .banner .banner__right {
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 20px; }
-        .banner .banner__right .item:nth-child(3),
-        .banner .banner__right .item:nth-child(4) {
-          margin-top: 0px; } }
+  background-color: #fff;
+  padding: 20px 0; }
+  .banner .banner__content {
+    display: flex;
+    justify-content: space-between; }
+    .banner .banner__content .content__left {
+      height: 302px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative; }
+    .banner .banner__content .content__right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .banner .banner__content .content__right .item {
+        text-align: center;
+        width: 84px;
+        margin: 20px; }
+        .banner .banner__content .content__right .item p {
+          margin-top: 5px;
+          color: #777777;
+          font-size: 16.9px;
+          font-size: 1.05625rem; }
+        @media only screen and (max-width: 998px) {
+          .banner .banner__content .content__right .item {
+            margin: 5px; } }
+      .banner .banner__content .content__right .item:nth-child(1),
+      .banner .banner__content .content__right .item:nth-child(2) {
+        margin-top: 0; }
+      .banner .banner__content .content__right .item:nth-child(3),
+      .banner .banner__content .content__right .item:nth-child(4) {
+        margin-top: 10px; }
+      @media only screen and (max-width: 896px) {
+        .banner .banner__content .content__right {
+          grid-template-columns: repeat(4, 1fr);
+          margin-top: 20px; }
+          .banner .banner__content .content__right .item:nth-child(3),
+          .banner .banner__content .content__right .item:nth-child(4) {
+            margin-top: 0px; } }
   @media only screen and (max-width: 998px) {
     .banner {
       margin-top: 100px; } }

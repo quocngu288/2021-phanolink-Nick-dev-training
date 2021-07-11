@@ -9,36 +9,63 @@
       justify-content: center;
     }
     .content__form {
-      width: 476px;
-      margin: 60px auto 30px auto;
-      form {
-        div {
-          padding: 0 10px;
+      width: 472px;
+      margin: 60px auto;
+      .form__text-head {
+        margin-bottom: 5px;
+        @include font-size(16px);
+        color: #434343;
+      }
+      .form__check {
+        @include flex();
+        p {
+          color: #808081;
+          @include font-size(14px);
+          margin-left: 8.5px;
+        }
+      }
+      .form__not-pass {
+        color: #434343;
+        @include font-size(14px);
+        a:nth-child(1) {
+          color: #434343;
+          @include font-size(14px);
+        }
+        a:nth-child(2) {
+          color: #ea4036;
         }
       }
       .form__button {
+        margin-top: 15px;
+        margin-bottom: 15px;
         button {
           width: 100%;
-          height: 40px;
-          border-radius: 5px;
-          background: #01adab;
+          margin-top: 11px;
+          padding: 10px 15px;
+          height: 45px;
           color: #fff;
-          // padding: 10px 15px;
-          white-space: nowrap;
           border: none;
+          border-radius: 5px;
         }
-        p {
-          text-align: right;
-          margin-top: 10px;
-          color: #808081;
-          @include font-size(14.3px);
-          span {
-            color: #ea4036;
-          }
+        .button__log {
+          background-color: #01adab;
+        }
+        .button__facebook {
+          background-color: #3b5998;
+        }
+        .button__google {
+          background-color: #e94a32;
         }
       }
-      @media #{$info-tablet-vertical-1} {
-        width: 100%;
+      .form__text-foot {
+        @include font-size(14px);
+        color: #434343;
+        span {
+          color: #ea4036;
+        }
+      }
+      @media #{$info-phone-3} {
+        width: 250px;
       }
     }
     @media #{$info-tablet-vertical-1} {
@@ -54,6 +81,122 @@
   }
 }
 
+//MODAL LOGIN-REGISTER
+.modal-dialog__login {
+  margin-top: 200px;
+  .dialog__content {
+    width: 471px;
+    min-height: 500px;
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    padding: 0 42px;
+    .content__title {
+      @include flex();
+      justify-content: center;
+      gap: 13.5px;
+      .title__login {
+        .board-title__head {
+          height: 55px;
+          transform: translate(-50%, 25%);
+          h2 {
+            @include font-size(22px);
+          }
+        }
+      }
+      .title__register {
+        .board-title__head {
+          height: 55px;
+          transform: translate(-50%, 25%);
+          h2 {
+            @include font-size(22px);
+          }
+        }
+      }
+    }
+    .content__form {
+      width: 100%;
+      margin-top: 85px;
+      margin-bottom: 30px;
+      .form__text-head {
+        margin-bottom: 5px;
+        @include font-size(16px);
+        color: #434343;
+      }
+      .form__check {
+        @include flex();
+        margin-top: 35px;
+        p {
+          color: #808081;
+          @include font-size(14px);
+          margin-left: 8.5px;
+        }
+      }
+      .form__not-pass {
+        color: #434343;
+        @include font-size(14px);
+        margin-bottom: 30px;
+        a:nth-child(1) {
+          color: #434343;
+          @include font-size(14px);
+        }
+        a:nth-child(2) {
+          color: #ea4036;
+        }
+      }
+      .form__button {
+        margin-bottom: 15px;
+        button {
+          width: 100%;
+          margin-top: 11px;
+          padding: 10px 15px;
+          height: 45px;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+        }
+        .button__log {
+          background-color: #01adab;
+          margin-top: 0;
+        }
+        .button__facebook {
+          background-color: #3b5998;
+        }
+        .button__google {
+          background-color: #e94a32;
+        }
+      }
+      .form__text-foot {
+        @include font-size(14px);
+        color: #434343;
+        span {
+          color: #ea4036;
+        }
+      }
+      @media #{$info-phone-3} {
+        width: 250px;
+      }
+    }
+    @media #{$info-tablet-vertical-1} {
+      width: 100%;
+      padding: 0 10px;
+    }
+    @media #{$info-phone} {
+      min-height: 780px;
+    }
+  }
+  .dialog__content-notpass {
+    min-height: 250px;
+    .content__form {
+      .form__text-head {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media #{$info-tablet-vertical-1} {
+    padding: 0 30px;
+  }
+}
+//END
 .custom-radios {
   text-align: center;
   padding: 0 10px;
