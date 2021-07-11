@@ -90,6 +90,7 @@
     background-color: #fff;
     border-bottom: 4px solid #01adab;
     padding: 0 42px;
+    display: block;
     .content__title {
       @include flex();
       justify-content: center;
@@ -164,6 +165,9 @@
         .button__google {
           background-color: #e94a32;
         }
+        .button__close {
+          background-color: #808081;
+        }
       }
       .form__text-foot {
         @include font-size(14px);
@@ -176,6 +180,9 @@
         width: 250px;
       }
     }
+    // .left__form-register-success {
+    //   display: none;
+    // }
     @media #{$info-tablet-vertical-1} {
       width: 100%;
       padding: 0 10px;
@@ -186,10 +193,14 @@
   }
   .dialog__content-notpass {
     min-height: 250px;
+    display: none;
     .content__form {
       .form__text-head {
         margin-bottom: 30px;
       }
+    }
+    .content__form-notpass-success {
+      display: none;
     }
   }
   @media #{$info-tablet-vertical-1} {

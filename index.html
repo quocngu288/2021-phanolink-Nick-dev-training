@@ -1280,11 +1280,11 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog__login">
-        <div class="dialog__content">
+        <div class="dialog__content dialog__content-account">
           <div class="content__title">
             <div class="title__login board-title active" id="title-login">
               <div class="board-title__head">
-                <h2>QUÊN MẬT KHẨU</h2>
+                <h2>Đăng nhập</h2>
               </div>
             </div>
             <div class="title__register board-title" id="title-register">
@@ -1377,7 +1377,7 @@
                 <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
               </div>
               <div class="form__button">
-                <button class="button__log">Đăng nhập</button>
+                <button class="button__log" id="btnRegister">Đăng nhập</button>
               </div>
             </form>
 
@@ -1386,6 +1386,20 @@
               bán theo điều kiện sử dụng và chính sách của
               <span> PHANOLINK</span>
             </p>
+          </div>
+          <div
+            class="content__form left__form-register-success"
+            style="display: none"
+          >
+            <p class="form__text-foot">
+              Tài khoản của bạn đã được khởi tạo thành công. Vui lòng đăng nhập
+              vào email<span> abc@gmail.com</span> để tiếp sử dụng dịch vụ tại
+              Phanolink.
+            </p>
+
+            <div class="form__button">
+              <button class="button__log">Đăng nhập</button>
+            </div>
           </div>
         </div>
         <!-- content- notpass -->
@@ -1397,7 +1411,7 @@
               </div>
             </div>
           </div>
-          <div class="content__form">
+          <div class="content__form content__form-notpass" id="form-notpass">
             <p class="form__text-head">
               Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại
               mật khẩu.
@@ -1412,9 +1426,23 @@
                 />
               </div>
               <div class="form__button">
-                <button class="button__log">Tạo tài khoản</button>
+                <button class="button__log" id="createAccount">
+                  Tạo tài khoản
+                </button>
               </div>
             </form>
+          </div>
+          <div
+            class="content__form content__form-notpass-success"
+            id="notpass-success"
+          >
+            <p class="form__text-foot">
+              Hệ thống đã gửi Email đến <span>@phanopharamacy.com</span>, vui
+              lòng kiểm tra hộp thư để cập nhật thông tin.
+            </p>
+            <div class="form__button">
+              <button class="button__close">Đóng</button>
+            </div>
           </div>
         </div>
       </div>

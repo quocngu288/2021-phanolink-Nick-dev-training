@@ -22,29 +22,54 @@ const handleClickOpenSidebar = () => {
 const handleClickCloseSidebar = () => {
   $(".nav-mobile__menu").removeClass("open");
 };
-
+//-------------------------------------------------------------------------
 //click to show from login-register
 $("#title-login").click(function () {
   console.log("login clicl");
   $("#title-login").addClass("active");
   $("#title-register").removeClass("active");
-  $(".left__form-register").slideUp("slow", function () {
-    $(".left__form-login").slideDown("slow");
+  // $(".left__form-register").slideUp("slow", function () {
+  //   $(".left__form-login").slideDown("slow");
+  // });
+  $(".left__form-register").hide(0, function () {
+    $(".left__form-login").show();
   });
 });
 $("#title-register").click(function () {
   console.log("register clicl");
   $("#title-register").addClass("active");
   $("#title-login").removeClass("active");
-  // $(".left__form-register").slideUp("slow", function () {
-  //   $(".left__form-login").slideDown("slow");
+  // $(".left__form-login").slideUp("slow", function () {
+  //   $(".left__form-register").slideDown("slow");
   // });
-  $(".left__form-login").slideUp("slow", function () {
-    $(".left__form-register").slideDown("slow");
+  $(".left__form-login").hide(0, function () {
+    $(".left__form-register").show();
   });
 });
-
+//-------------------------------------------------------------------------
+// click to show not pass/ form success
+$("#ModalLogin").on("shown.bs.modal", () => {
+  console.log("show fomr");
+  $(".dialog__content-notpass").css("display", "none");
+  $(".dialog__content-account").css("display", "block");
+});
+$(".form__not-pass > a").click((e) => {
+  e.preventDefault();
+  $(".dialog__content-account").css("display", "none");
+  $(".dialog__content-notpass").css("display", "block");
+});
+$("#createAccount").click((e) => {
+  e.preventDefault();
+  $("#form-notpass").css("display", "none");
+  $("#notpass-success").css("display", "block");
+});
+$("#btnRegister").click((e) => {
+  e.preventDefault();
+  $(".left__form-register").css("display", "none");
+  $(".left__form-register-success").css("display", "block");
+});
 // -------------------------------------------------------------------------
+// own carosel
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
 var owl3 = $(".owl-caro-brand");

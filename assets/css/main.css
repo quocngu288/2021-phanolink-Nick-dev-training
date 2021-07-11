@@ -6083,7 +6083,8 @@ footer {
     min-height: 500px;
     background-color: #fff;
     border-bottom: 4px solid #01adab;
-    padding: 0 42px; }
+    padding: 0 42px;
+    display: block; }
     .modal-dialog__login .dialog__content .content__title {
       display: -moz-box;
       display: -ms-flexbox;
@@ -6151,6 +6152,8 @@ footer {
           background-color: #3b5998; }
         .modal-dialog__login .dialog__content .content__form .form__button .button__google {
           background-color: #e94a32; }
+        .modal-dialog__login .dialog__content .content__form .form__button .button__close {
+          background-color: #808081; }
       .modal-dialog__login .dialog__content .content__form .form__text-foot {
         font-size: 14px;
         font-size: 0.875rem;
@@ -6168,9 +6171,12 @@ footer {
       .modal-dialog__login .dialog__content {
         min-height: 780px; } }
   .modal-dialog__login .dialog__content-notpass {
-    min-height: 250px; }
+    min-height: 250px;
+    display: none; }
     .modal-dialog__login .dialog__content-notpass .content__form .form__text-head {
       margin-bottom: 30px; }
+    .modal-dialog__login .dialog__content-notpass .content__form-notpass-success {
+      display: none; }
   @media only screen and (max-width: 896px) {
     .modal-dialog__login {
       padding: 0 30px; } }
