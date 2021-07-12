@@ -1,20 +1,24 @@
 .cart-address {
+  background-color: #ebebeb;
   .cart-address__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
+    padding: 20px 30px;
     .content__left {
       grid-column: 1 / span 8;
 
       .left__info {
         background-color: #ffff;
-        min-height: 567px;
+        max-height: 567px;
+        padding: 0 0 40px 0;
         .info__title {
           @include flex();
           justify-content: center;
         }
         .info__content {
+          margin: 30px auto 30px auto;
           .content__item {
             @include flex();
             justify-content: space-between;
@@ -46,12 +50,20 @@
                 padding: 10px 15px;
                 white-space: nowrap;
                 border: none;
-                height: 45px;
+                height: 40px;
                 @include font-size(13.2px);
                 cursor: pointer;
                 &.active {
                   background: #01adab;
                 }
+              }
+            }
+            .item__right {
+              a {
+                color: #01adab;
+                @include font-size(14px);
+                margin-left: 15px;
+                white-space: nowrap;
               }
             }
           }
@@ -173,6 +185,9 @@
       @media #{$info-tablet-vertical} {
         grid-column: span 12;
       }
+    }
+    @media #{$info-phone-2} {
+      padding: 20px 15px;
     }
   }
 }

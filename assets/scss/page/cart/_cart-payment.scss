@@ -1,13 +1,13 @@
-.cart-account {
+.cart-payment {
   background-color: #ebebeb;
 
-  padding: 20px 30px;
-  .cart-account__content {
+  .cart-payment__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
     min-height: 592px;
+    padding: 20px 30px;
     .content__left {
       grid-column: 1 / span 8;
       background-color: #fff;
@@ -15,54 +15,49 @@
         @include flex();
         justify-content: center;
         gap: 13.5px;
+        .title__custom {
+          width: 284px;
+          &::before {
+            width: 284px;
+          }
+          .board-title__head {
+            h2 {
+              @include font-size(18px);
+            }
+          }
+          @media #{$info-phone-3} {
+            width: 184px;
+            &::before {
+              width: 184px;
+            }
+          }
+        }
       }
       .left__form {
         width: 472px;
-        margin: 60px auto;
-        .form__text-head {
-          margin-bottom: 5px;
-          @include font-size(16px);
-          color: #434343;
-        }
-        .form__check {
-          @include flex();
-          p {
-            color: #808081;
-            @include font-size(14px);
-            margin-left: 8.5px;
-          }
-        }
-        .form__not-pass {
-          color: #434343;
-          @include font-size(14px);
-          a:nth-child(1) {
-            color: #434343;
-            @include font-size(14px);
-          }
-          a:nth-child(2) {
-            color: #ea4036;
-          }
-        }
+        margin: 90px auto 60px auto;
+        padding: 0 40px;
         .form__button {
-          margin-top: 15px;
+          width: 100%;
+          margin-top: 40px;
           margin-bottom: 15px;
+
           button {
             width: 100%;
-            margin-top: 11px;
-            padding: 10px 15px;
+            margin: 0px 0 10px 0;
+
             height: 45px;
             color: #fff;
             border: none;
             border-radius: 5px;
           }
-          .button__log {
-            background-color: #01adab;
-          }
-          .button__facebook {
-            background-color: #3b5998;
-          }
           .button__google {
             background-color: #e94a32;
+          }
+          p {
+            text-align: center;
+            color: #808081;
+            @include font-size(12px);
           }
         }
         .form__text-foot {
@@ -72,8 +67,12 @@
             color: #ea4036;
           }
         }
-        @media #{$info-phone-3} {
+        @media #{$info-phone-2} {
+          width: auto;
+        }
+        @media #{$info-phone-4} {
           width: 250px;
+          padding: 0 10px;
         }
       }
       @media #{$info-tablet-horizontal} {

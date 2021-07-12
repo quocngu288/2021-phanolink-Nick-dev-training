@@ -1,79 +1,52 @@
-.cart-account {
-  background-color: #ebebeb;
-
-  padding: 20px 30px;
-  .cart-account__content {
+.cart-payment {
+  .cart-payment__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
     margin-top: 41px;
-    min-height: 592px;
-    .content__left {
+    .content__left-success {
       grid-column: 1 / span 8;
-      background-color: #fff;
-      .left__title {
-        @include flex();
-        justify-content: center;
-        gap: 13.5px;
-      }
-      .left__form {
-        width: 472px;
-        margin: 60px auto;
-        .form__text-head {
-          margin-bottom: 5px;
-          @include font-size(16px);
-          color: #434343;
-        }
-        .form__check {
+      .left__info {
+        background-color: #ffff;
+
+        .info__title {
           @include flex();
-          p {
-            color: #808081;
-            @include font-size(14px);
-            margin-left: 8.5px;
+          justify-content: center;
+        }
+        .info__success {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 267px;
+          .success__content {
+            text-align: center;
+            p {
+              color: #434343;
+              @include font-size(20px);
+              span {
+                color: #ea4036;
+                @include font-size(24px);
+                font-weight: bolder;
+              }
+            }
+            p:nth-child(2) {
+              margin-top: 5px;
+              margin-bottom: 20px;
+            }
+            a {
+              color: #01adab;
+              @include font-size(25px);
+            }
           }
         }
-        .form__not-pass {
-          color: #434343;
+      }
+      .left__button {
+        width: 100%;
+        text-align: center;
+        margin-top: 16px;
+        p {
+          color: #505050;
           @include font-size(14px);
-          a:nth-child(1) {
-            color: #434343;
-            @include font-size(14px);
-          }
-          a:nth-child(2) {
-            color: #ea4036;
-          }
-        }
-        .form__button {
-          margin-top: 15px;
-          margin-bottom: 15px;
-          button {
-            width: 100%;
-            margin-top: 11px;
-            padding: 10px 15px;
-            height: 45px;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-          }
-          .button__log {
-            background-color: #01adab;
-          }
-          .button__facebook {
-            background-color: #3b5998;
-          }
-          .button__google {
-            background-color: #e94a32;
-          }
-        }
-        .form__text-foot {
-          @include font-size(14px);
-          color: #434343;
-          span {
-            color: #ea4036;
-          }
-        }
-        @media #{$info-phone-3} {
-          width: 250px;
         }
       }
       @media #{$info-tablet-horizontal} {
@@ -176,11 +149,7 @@
       }
       @media #{$info-tablet-vertical} {
         grid-column: span 12;
-        margin-bottom: 20px;
       }
     }
-  }
-  @media #{$info-phone-2} {
-    padding: 0 0;
   }
 }
