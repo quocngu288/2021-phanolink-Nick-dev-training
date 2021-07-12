@@ -134,9 +134,12 @@ owl3.owlCarousel({
 });
 owl4.owlCarousel({
   loop: true,
-  margin: 0,
+  margin: 5,
   nav: true,
   responsive: {
+    0: {
+      items: 1,
+    },
     600: {
       items: 1,
     },

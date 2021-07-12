@@ -48,7 +48,7 @@ footer {
   }
   .hotline {
     background-color: #01adab;
-
+    padding: 10px 0;
     .hotline__content {
       @include flex();
       align-items: center;
@@ -91,6 +91,20 @@ footer {
       }
       @media #{$info-tablet-vertical} {
         flex-wrap: wrap;
+        justify-content: center;
+        h2 {
+          width: 50%;
+          margin-right: 0;
+        }
+        .content__button {
+          width: 300px;
+        }
+      }
+      @media #{$info-phone} {
+        justify-content: flex-start;
+        h2 {
+          margin: 10px 0;
+        }
       }
     }
   }

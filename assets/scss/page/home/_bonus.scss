@@ -63,4 +63,7 @@
       }
     }
   }
+  @media #{$info-phone-2} {
+    padding: 20px 0 40px 0;
+  }
 }
