@@ -1,8 +1,14 @@
 .service {
+  padding-top: 20px;
   .service__content {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+    justify-content: space-between;
+    @media #{$info-tablet-horizontal} {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  @media #{$info-phone} {
+    display: none;
   }
 }

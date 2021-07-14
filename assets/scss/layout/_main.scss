@@ -1,9 +1,5 @@
 main {
-  // padding: 25px 30px;
-
-  // @media #{$info-phone} {
-  //   padding: 25px 0;
-  // }
+  padding-bottom: 20px;
 }
 .common-container {
   max-width: 1320px;
@@ -107,11 +103,9 @@ main {
     }
     .board-title__head {
       h2 {
-        @include font-size(14px);
         color: #fff;
       }
       span {
-        @include font-size(14px);
         color: #ea4036;
       }
       p {
