@@ -102,31 +102,18 @@
     padding: 0 42px;
     display: block;
     .content__title {
-      @include flex();
       justify-content: center;
       gap: 13.5px;
-      .title__login {
-        .board-title__head {
-          height: 55px;
-          transform: translate(-50%, 25%);
-          h2 {
-            @include font-size(22px);
-          }
-        }
-      }
-      .title__register {
-        .board-title__head {
-          height: 55px;
-          transform: translate(-50%, 25%);
-          h2 {
-            @include font-size(22px);
-          }
+      li {
+        padding-top: 15px;
+        h2 {
+          @include font-size(22px);
         }
       }
     }
     .content__form {
       width: 100%;
-      margin-top: 85px;
+
       margin-bottom: 30px;
       .form__text-head {
         margin-bottom: 5px;

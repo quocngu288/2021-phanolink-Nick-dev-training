@@ -6093,27 +6093,15 @@ footer {
     padding: 0 42px;
     display: block; }
     .modal-dialog__login .dialog__content .content__title {
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
       justify-content: center;
       gap: 13.5px; }
-      .modal-dialog__login .dialog__content .content__title .title__login .board-title__head {
-        height: 55px;
-        transform: translate(-50%, 25%); }
-        .modal-dialog__login .dialog__content .content__title .title__login .board-title__head h2 {
-          font-size: 22px;
-          font-size: 1.375rem; }
-      .modal-dialog__login .dialog__content .content__title .title__register .board-title__head {
-        height: 55px;
-        transform: translate(-50%, 25%); }
-        .modal-dialog__login .dialog__content .content__title .title__register .board-title__head h2 {
+      .modal-dialog__login .dialog__content .content__title li {
+        padding-top: 15px; }
+        .modal-dialog__login .dialog__content .content__title li h2 {
           font-size: 22px;
           font-size: 1.375rem; }
     .modal-dialog__login .dialog__content .content__form {
       width: 100%;
-      margin-top: 85px;
       margin-bottom: 30px; }
       .modal-dialog__login .dialog__content .content__form .form__text-head {
         margin-bottom: 5px;
@@ -8033,15 +8021,17 @@ footer {
     margin: 0 auto;
     border-bottom: 3px solid #01adab; }
     .upload-toa .upload-toa__content .content__head {
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
       justify-content: center; }
+      .upload-toa .upload-toa__content .content__head li {
+        width: 207px;
+        padding-top: 15px; }
+        .upload-toa .upload-toa__content .content__head li h2 {
+          font-size: 26px;
+          font-size: 1.625rem; }
     .upload-toa .upload-toa__content .content__form {
-      padding: 70px 0;
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-bottom: 20px; }
       .upload-toa .upload-toa__content .content__form h3 {
         color: #434343;
         font-size: 20px;
@@ -8111,7 +8101,7 @@ footer {
       @media only screen and (max-width: 667px) {
         .upload-toa .upload-toa__content .content__form {
           width: 100%;
-          padding: 60px 15px; } }
+          padding: 0 15px 20px 15px; } }
     .upload-toa .upload-toa__content .form__local {
       display: -moz-box;
       display: -ms-flexbox;
