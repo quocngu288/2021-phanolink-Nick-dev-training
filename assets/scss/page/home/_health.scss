@@ -1,5 +1,4 @@
 .health {
-  padding: 30px;
   margin-top: 20px;
   min-height: 559px;
   background-color: #fff;
@@ -8,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 20px 15px 5px 15px;
     p {
       @include font-size(22px);
       color: #505050;
@@ -23,6 +22,12 @@
     display: flex;
     justify-content: space-between;
     .content__left {
+      img {
+        @media #{$info-phone-2} {
+          width: 137px;
+          height: 92px;
+        }
+      }
       .left__item {
         display: flex;
         margin-bottom: 37px;
@@ -48,14 +53,27 @@
       .right__title {
         display: flex;
         align-items: center;
-        img {
-          height: 1px;
-        }
+
         p {
           @include font-size(22px);
           color: #01b1af;
           margin-right: 10px;
+          white-space: nowrap;
         }
+        .title__border {
+          height: 1px;
+          width: 100%;
+          background-color: #e2e3e4;
+        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   top: 50%;
+        //   right: 0;
+        //   height: 1px;
+        //   width: 80%;
+        //   background-color: #e2e3e4;
+        // }
       }
       .right__content {
         // @media #{$info-tablet-horizontal}{
@@ -94,5 +112,8 @@
       flex-wrap: wrap;
       // width: 100%;
     }
+  }
+  @media #{$info-phone-2} {
+    padding: 0;
   }
 }

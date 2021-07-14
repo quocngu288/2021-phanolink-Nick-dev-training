@@ -233,6 +233,10 @@
           }
         }
       }
+      @media #{$info-phone-4} {
+        width: 70%;
+        left: -70%;
+      }
     }
     .open {
       left: 0;

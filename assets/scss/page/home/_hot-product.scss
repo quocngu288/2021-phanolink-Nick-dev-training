@@ -1,10 +1,11 @@
 .hot-product {
-  padding: 16px 30px 80px 30px;
   margin-top: 20px;
-  min-height: 832px;
+  min-height: 932px;
   background-color: #fff;
+  padding-bottom: 60px;
   .hot-product__title {
     margin-bottom: 20.5px;
+    padding: 15px 15px 0px 15px;
     .title__name {
       display: flex;
       align-items: center;
@@ -74,14 +75,14 @@
     }
   }
   @media #{$info-tablet-horizontal} {
-    min-height: 632px;
+    min-height: 732px;
   }
   @media #{$info-tablet-vertical} {
-    min-height: 532px;
+    min-height: 632px;
   }
   @media #{$info-phone-2} {
     min-height: 380px;
-    padding: 20px 0 40px 0;
+    padding: 0 0 60px 0;
   }
   // @media #{$info-phone-4} {
   //   min-height: 350px;
