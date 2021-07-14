@@ -1,5 +1,4 @@
 .bonus {
-  padding: 18px 30px 60px 30px;
   margin-top: 20px;
   min-height: 452px;
   background-color: #fff;
@@ -7,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 15px 15px 0px 15px;
     .title__name {
       display: flex;
       align-items: center;
@@ -29,6 +28,15 @@
       background-position: center;
       background-size: cover;
       height: 300px;
+      @media #{$info-phone} {
+        height: 240px;
+        background-size: auto;
+      }
+
+      @media #{$info-phone-3} {
+        background-size: cover;
+        height: 230px;
+      }
     }
     .owl-nav {
       display: none;
@@ -64,6 +72,7 @@
     }
   }
   @media #{$info-phone-2} {
-    padding: 20px 0 40px 0;
+    padding: 0 0 40px 0;
+    min-height: 385px;
   }
 }

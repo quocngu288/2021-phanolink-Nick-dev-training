@@ -15,6 +15,7 @@
         img {
           width: 100%;
           display: block;
+          border-radius: 30px;
         }
         .item__button {
           position: absolute;
@@ -31,6 +32,10 @@
           @media #{$info-phone} {
             top: 70%;
             height: 40px;
+          }
+          @media #{$info-phone-3} {
+            // top: 70%;
+            height: 25px;
           }
         }
       }
@@ -54,6 +59,10 @@
         img {
           width: 100%;
           display: block;
+          @media #{$info-phone} {
+            width: 80%;
+            margin: 0 auto;
+          }
         }
         p {
           margin-top: 5px;
@@ -88,7 +97,7 @@
   }
 
   @media #{$info-tablet-vertical} {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   // @media #{$info-tablet-vertical-1} {
   //   flex-wrap: wrap;

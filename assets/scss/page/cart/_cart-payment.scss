@@ -1,41 +1,29 @@
 .cart-payment {
   background-color: #ebebeb;
-
+  padding-bottom: 20px;
   .cart-payment__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 13.5px;
-    margin-top: 41px;
+
     min-height: 592px;
-    padding: 20px 30px;
+
     .content__left {
       grid-column: 1 / span 8;
       background-color: #fff;
       .left__title {
-        @include flex();
         justify-content: center;
-        gap: 13.5px;
-        .title__custom {
+        li {
           width: 284px;
-          &::before {
-            width: 284px;
-          }
-          .board-title__head {
-            h2 {
-              @include font-size(18px);
-            }
-          }
-          @media #{$info-phone-3} {
-            width: 184px;
-            &::before {
-              width: 184px;
-            }
+          padding-top: 18px;
+          h2 {
+            @include font-size(18px);
           }
         }
       }
       .left__form {
         width: 472px;
-        margin: 90px auto 60px auto;
+        margin: 30px auto 60px auto;
         padding: 0 40px;
         .form__button {
           width: 100%;
@@ -45,7 +33,6 @@
           button {
             width: 100%;
             margin: 0px 0 10px 0;
-
             height: 45px;
             color: #fff;
             border: none;
@@ -107,6 +94,7 @@
         padding: 15px 0;
         border-top: 1px solid #e2e3e4;
         border-bottom: 1px solid #e2e3e4;
+        margin-bottom: 15px;
         .products__item {
           @include flex();
           justify-content: space-between;
@@ -133,7 +121,7 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+
         p {
           color: #505050;
           @include font-size(14px);
@@ -178,8 +166,5 @@
         margin-bottom: 20px;
       }
     }
-  }
-  @media #{$info-phone-2} {
-    padding: 0 0;
   }
 }

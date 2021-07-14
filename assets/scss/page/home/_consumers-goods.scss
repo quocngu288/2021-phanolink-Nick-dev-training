@@ -1,5 +1,4 @@
 .consumers-goods {
-  padding: 23px 30px 0px 30px;
   margin-top: 20px;
   min-height: 700px;
   background-color: #fff;
@@ -7,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 20px 15px 5px 15px;
     .title__name {
       display: flex;
       align-items: center;
@@ -33,11 +32,24 @@
       text-align: center;
       .item__event {
         position: absolute;
+        background-image: url("/assets/img/products/ban-event.png");
         top: 0;
-        height: 200px;
-        width: 50px;
         left: 5%;
         z-index: 4;
+        width: 31px;
+        height: 41.7px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 5px;
+        p {
+          color: #fff;
+          font-weight: bolder;
+          span {
+            font-weight: normal;
+            @include font-size(12px);
+          }
+        }
       }
       .item__bonus {
         position: absolute;
@@ -46,9 +58,18 @@
         gap: 10px;
         right: 5%;
         top: 5%;
+        img {
+          width: 36px;
+        }
       }
       .item__image {
         height: 138.98px;
+        @media #{$info-phone-3} {
+          height: 90px;
+        }
+        @media #{$info-phone-4} {
+          height: 70px;
+        }
       }
       .item__info {
         text-align: left;
@@ -105,6 +126,6 @@
     }
   }
   @media #{$info-phone-2} {
-    padding: 20px 0 0 0;
+    padding: 0;
   }
 }

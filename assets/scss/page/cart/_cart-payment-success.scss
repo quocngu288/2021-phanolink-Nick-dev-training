@@ -10,8 +10,14 @@
         background-color: #ffff;
 
         .info__title {
-          @include flex();
           justify-content: center;
+          li {
+            padding-top: 15px;
+            width: 234px;
+            h2 {
+              @include font-size(18px);
+            }
+          }
         }
         .info__success {
           display: flex;

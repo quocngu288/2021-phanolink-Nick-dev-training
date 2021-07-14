@@ -1,16 +1,22 @@
 .modal-dialog {
   .dialog__content {
     width: 633.5px;
+    margin: 0 auto;
     min-height: 820px;
     background-color: #fff;
     border-bottom: 4px solid #01adab;
     .content__header {
-      @include flex();
       justify-content: center;
+      li {
+        padding-top: 18px;
+        h2 {
+          @include font-size(18px);
+        }
+      }
     }
     .content__form {
       width: 472px;
-      margin: 60px auto;
+      margin: 0px auto;
       .form__text-head {
         margin-bottom: 5px;
         @include font-size(16px);
@@ -36,36 +42,40 @@
         }
       }
       .form__button {
-        margin-top: 15px;
         margin-bottom: 15px;
         button {
           width: 100%;
-          margin-top: 11px;
+
           padding: 10px 15px;
           height: 45px;
           color: #fff;
           border: none;
           border-radius: 5px;
+          margin-bottom: 2px;
         }
         .button__log {
           background-color: #01adab;
         }
-        .button__facebook {
-          background-color: #3b5998;
-        }
-        .button__google {
-          background-color: #e94a32;
+
+        p {
+          text-align: right;
+
+          @include font-size(14px);
+          color: #434343;
+          span {
+            color: #ea4036;
+          }
         }
       }
       .form__text-foot {
         @include font-size(14px);
-        color: #434343;
+
         span {
           color: #ea4036;
         }
       }
       @media #{$info-phone-3} {
-        width: 250px;
+        width: 100%;
       }
     }
     @media #{$info-tablet-vertical-1} {
@@ -178,6 +188,7 @@
       }
       @media #{$info-phone-3} {
         width: 250px;
+        margin-top: 40px;
       }
     }
     // .left__form-register-success {
@@ -188,7 +199,7 @@
       padding: 0 10px;
     }
     @media #{$info-phone} {
-      min-height: 780px;
+      min-height: 480px;
     }
   }
   .dialog__content-notpass {
@@ -206,6 +217,9 @@
   @media #{$info-tablet-vertical-1} {
     padding: 0 30px;
   }
+  @media #{$info-phone-3} {
+    margin-top: 80px;
+  }
 }
 //END
 .custom-radios {
@@ -213,6 +227,7 @@
   padding: 0 10px;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
   input[type="radio"] {
     display: none;
   }
@@ -252,8 +267,7 @@
 }
 .custom-checkbox {
   display: block;
-  margin-top: 15px;
-
+  margin-bottom: 35px;
   input {
     padding: 0;
     height: initial;
@@ -298,5 +312,8 @@
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
     }
+  }
+  @media #{$info-phone-3} {
+    margin-bottom: 15px;
   }
 }
