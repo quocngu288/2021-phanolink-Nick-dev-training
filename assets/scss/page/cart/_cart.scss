@@ -317,8 +317,12 @@
         }
       }
       .right__bottom {
-        button {
+        a {
+          display: block;
+          text-decoration: none;
           width: 100%;
+          color: #fff;
+          text-align: center;
           @include font-size(22px);
           border-radius: 0;
         }

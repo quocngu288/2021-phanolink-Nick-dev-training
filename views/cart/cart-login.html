@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="desktop-header">
+    <header>
       <div class="common-container nav">
         <div class="nav__top">
           <div class="item">
@@ -48,7 +48,9 @@
           <div class="item">
             <img src="/assets/img/icon-user.png" alt="" />
             <div class="item__content">
-              <a href="">Đăng Nhập</a>
+              <a href="" data-toggle="modal" data-target="#ModalLogin"
+                >Đăng Nhập</a
+              >
               <p>Tài khoản</p>
             </div>
           </div>
@@ -116,74 +118,82 @@
               <button class="btn--search" type="submit">Tìm kiếm</button>
             </div>
           </div>
-          <button class="btn--write content__btn">
+          <a
+            href="/views/upload-toa/upload-toa.html"
+            class="btn--write content__btn"
+          >
             <img src="/assets/img/icon-create.png" alt="" />
             <p>Tạo toa thuốc</p>
-          </button>
-          <button class="btn--write content__btn">
+          </a>
+          <a
+            href="/views/upload-toa/upload-toa.html"
+            class="btn--write content__btn"
+          >
             <img src="/assets/img/icon-cart.png" alt="" />
             <p>Giỏ Hàng</p>
             <span>69</span>
-          </button>
+          </a>
         </div>
       </div>
-    </header>
-    <header class="common-container mobile-header">
-      <div class="nav-mobile">
-        <div class="nav-mobile__bars" onclick="handleClickOpenSidebar()">
-          <i class="fas fa-bars"></i>
-        </div>
-
-        <img src="/assets/img/logo-1.png" alt="" />
-        <div class="nav-mobile__cart">
-          <img src="/assets/img/icon-cart.png" alt="" />
-          <span>69</span>
-        </div>
-        <div class="nav-mobile__menu">
-          <div class="nav-mobile__menu__head">
-            <img src="/assets/img/icon-ring.png" alt="" />
-            <div class="btn-close" onclick="handleClickCloseSidebar()">
-              <i class="fas fa-window-close"></i>
-            </div>
+      <div class="common-container mobile-header">
+        <div class="nav-mobile">
+          <div class="nav-mobile__bars" onclick="handleClickOpenSidebar()">
+            <i class="fas fa-bars"></i>
           </div>
-          <ul>
-            <li>
-              <img src="/assets/img/icon-user.png" alt="" />
-              <a href="">ĐĂNG NHẬP</a>
-            </li>
-            <li>
-              <img src="/assets/img/icon-create.png" alt="" />
-              <a href="">TẠO TOA THUỐC</a>
-            </li>
-            <li>
-              <img src="/assets/img/icon-cate.png" alt="" />
-              <a href="">DANH MỤC SẢN PHẨM</a>
-            </li>
-            <li>
-              <div>
-                <img src="/assets/img/icon-fire.png" alt="" />
+
+          <img src="/assets/img/logo-1.png" alt="" />
+          <div class="nav-mobile__cart">
+            <img src="/assets/img/icon-cart.png" alt="" />
+            <span>69</span>
+          </div>
+          <div class="nav-mobile__menu">
+            <div class="nav-mobile__menu__head">
+              <img src="/assets/img/icon-ring.png" alt="" />
+              <div class="btn-close" onclick="handleClickCloseSidebar()">
+                <i class="fas fa-window-close"></i>
               </div>
-              <a href="">KHUYẾN MÃI HOT</a>
-            </li>
-            <li>
-              <img src="/assets/img/icon-local.png" alt="" />
-              <a href="">HỆ THỐNG NHÀ THUỐC</a>
-            </li>
-            <li>
-              <img src="/assets/img/icon-hear.png" alt="" />
-              <a href="">GÓC SỨC KHỎE</a>
-            </li>
-            <li>
-              <img src="/assets/img/icon-home.png" alt="" />
-              <a href="">GIỚI THIỆU</a>
-            </li>
-            <li>
-              <div>
-                <img src="/assets/img/icon-question.png" alt="" />
-              </div>
-              <a href="">HƯỚNG DẪN</a>
-            </li>
-          </ul>
+            </div>
+            <ul>
+              <li>
+                <img src="/assets/img/icon-user.png" alt="" />
+                <a href="" data-toggle="modal" data-target="#ModalLogin"
+                  >ĐĂNG NHẬP</a
+                >
+              </li>
+              <li>
+                <img src="/assets/img/icon-create.png" alt="" />
+                <a href="/views/upload-toa/upload-toa.html">TẠO TOA THUỐC</a>
+              </li>
+              <li>
+                <img src="/assets/img/icon-cate.png" alt="" />
+                <a href="">DANH MỤC SẢN PHẨM</a>
+              </li>
+              <li>
+                <div>
+                  <img src="/assets/img/icon-fire.png" alt="" />
+                </div>
+                <a href="">KHUYẾN MÃI HOT</a>
+              </li>
+              <li>
+                <img src="/assets/img/icon-local.png" alt="" />
+                <a href="">HỆ THỐNG NHÀ THUỐC</a>
+              </li>
+              <li>
+                <img src="/assets/img/icon-hear.png" alt="" />
+                <a href="">GÓC SỨC KHỎE</a>
+              </li>
+              <li>
+                <img src="/assets/img/icon-home.png" alt="" />
+                <a href="">GIỚI THIỆU</a>
+              </li>
+              <li>
+                <div>
+                  <img src="/assets/img/icon-question.png" alt="" />
+                </div>
+                <a href="">HƯỚNG DẪN</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -269,11 +279,11 @@
                 <a href=""> đầy</a>
               </div>
               <div class="form__button">
-                <button class="button__log">Đăng nhập</button>
-                <button class="button__facebook">
-                  Đăng nhập bằng Facebook
-                </button>
-                <button class="button__google">Đăng nhập bằng Google</button>
+                <a href="/views/cart/cart-address.html" class="button__log"
+                  >Đăng nhập</a
+                >
+                <a class="button__facebook"> Đăng nhập bằng Facebook </a>
+                <a class="button__google">Đăng nhập bằng Google</a>
               </div>
             </div>
             <div class="left__form left__form-register" style="display: none">
@@ -323,11 +333,11 @@
                 <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
               </div>
               <div class="form__button">
-                <button class="button__log">Đăng nhập</button>
-                <button class="button__facebook">
-                  Đăng nhập bằng Facebook
-                </button>
-                <button class="button__google">Đăng nhập bằng Google</button>
+                <a href="/views/cart/cart-address.html" class="button__log"
+                  >Đăng nhập</a
+                >
+                <a class="button__facebook"> Đăng nhập bằng Facebook </a>
+                <a class="button__google">Đăng nhập bằng Google</a>
               </div>
               <p class="form__text-foot">
                 Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua

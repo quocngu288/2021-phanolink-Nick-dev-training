@@ -22,6 +22,9 @@ footer {
           color: #757575;
           width: 80px;
         }
+        @media #{$info-phone-2} {
+          padding: 30px;
+        }
       }
       .item:nth-child(1),
       .item:nth-child(4) {
@@ -37,11 +40,16 @@ footer {
       }
       @media #{$info-tablet-vertical-1} {
         flex-wrap: wrap;
+        .item:nth-child(1),
+        .item:nth-child(2),
+        .item:nth-child(3),
+        .item:nth-child(4) {
+          width: 50%;
+        }
         .item:nth-child(2),
         .item:nth-child(3) {
           border-left: none;
           border-right: none;
-          width: auto;
         }
       }
     }
