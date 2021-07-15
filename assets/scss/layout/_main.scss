@@ -48,8 +48,7 @@ main {
     position: relative;
     text-align: center;
     width: 184px;
-    height: 55px;
-    padding: 8px 0;
+    padding: 10px 0;
     top: -10px;
     cursor: pointer;
     h2 {
@@ -68,6 +67,7 @@ main {
     }
     &.active {
       background-color: #01adab;
+      border-radius: 0 0 10px 10px;
       h2 {
         color: #ffff;
         @include font-size(14px);

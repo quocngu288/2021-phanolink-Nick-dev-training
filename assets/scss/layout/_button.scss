@@ -17,6 +17,9 @@
   border: none;
   padding: 10px 15px;
   @include font-size(15px);
+  span {
+    margin-left: 2px;
+  }
 }
 .btn--search {
   background: #e2e3e4;

@@ -95,6 +95,10 @@
           color: #fff;
           margin-left: 11px;
           @include font-size(15.75px);
+          transition: all 0.5s;
+          &:hover {
+            font-weight: bold;
+          }
         }
       }
     }
