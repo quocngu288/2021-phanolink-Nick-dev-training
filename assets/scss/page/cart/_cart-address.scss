@@ -151,7 +151,7 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-
+        margin-bottom: 15px;
         p {
           color: #505050;
           @include font-size(14px);
@@ -161,7 +161,9 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+        padding-bottom: 12px;
+        border-bottom: 0.75px solid #e2e3e4;
+        margin-bottom: 15px;
         p {
           color: #505050;
           @include font-size(14px);
@@ -170,9 +172,7 @@
       .right__total {
         @include flex();
         justify-content: space-between;
-        padding-top: 12px;
-        border-top: 0.75px solid #e2e3e4;
-        margin-top: 15px;
+
         p {
           color: #505050;
           @include font-size(14px);

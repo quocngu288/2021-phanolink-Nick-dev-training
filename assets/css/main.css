@@ -5953,11 +5953,12 @@ footer {
       justify-content: space-between; }
       footer .info .info__content .content__address {
         color: #595959; }
+        footer .info .info__content .content__address img {
+          margin-bottom: 25px; }
         footer .info .info__content .content__address h2 {
           font-size: 14px;
           font-size: 0.875rem;
-          font-weight: 400;
-          margin-top: 25px; }
+          font-weight: 400; }
         footer .info .info__content .content__address p {
           font-size: 14px;
           font-size: 0.875rem;
@@ -6113,7 +6114,7 @@ footer {
   margin-top: 200px; }
   .modal-dialog__login .dialog__content {
     width: 471px;
-    min-height: 500px;
+    min-height: 260px;
     background-color: #fff;
     border-bottom: 4px solid #01adab;
     padding: 0 42px;
@@ -6191,6 +6192,11 @@ footer {
         .modal-dialog__login .dialog__content .content__form {
           width: 100%;
           margin-top: 0; } }
+    .modal-dialog__login .dialog__content .left__form-register-success {
+      display: none;
+      padding-top: 20px; }
+      .modal-dialog__login .dialog__content .left__form-register-success .form__text-foot {
+        margin-bottom: 20px; }
     @media only screen and (max-width: 896px) {
       .modal-dialog__login .dialog__content {
         width: 100%;
@@ -6478,7 +6484,8 @@ footer {
       margin-top: 70px; } }
 
 .service {
-  padding-top: 20px; }
+  padding-top: 20px;
+  margin-bottom: 20px; }
   .service .service__content {
     display: flex;
     justify-content: space-between; }
@@ -6525,7 +6532,7 @@ footer {
   background-color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 505px; }
   .create-toa .create-toa__head {
     margin: 5px 33px; }
@@ -6573,7 +6580,7 @@ footer {
     margin-top: 36px; }
 
 .bonus {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 452px;
   background-color: #fff; }
   .bonus .bonus__title {
@@ -6644,7 +6651,7 @@ footer {
       min-height: 385px; } }
 
 .hot-product {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 932px;
   background-color: #fff;
   padding-bottom: 60px; }
@@ -6720,7 +6727,7 @@ footer {
       padding: 0 0 60px 0; } }
 
 .medicine {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 690px;
   background-color: #fff; }
   .medicine .medicine__title {
@@ -6824,7 +6831,7 @@ footer {
       padding: 0; } }
 
 .foods {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 690px;
   background-color: #fff; }
   .foods .foods__title {
@@ -6936,7 +6943,7 @@ footer {
       padding: 0; } }
 
 .consumers-goods {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 290px;
   background-color: #fff; }
   .consumers-goods .consumers-goods__title {
@@ -7048,15 +7055,14 @@ footer {
       padding: 0; } }
 
 .health {
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 559px;
   background-color: #fff;
   padding: 30px; }
   .health .health__title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 15px 5px 15px; }
+    justify-content: space-between; }
     .health .health__title p {
       font-size: 22px;
       font-size: 1.375rem;
@@ -7137,12 +7143,13 @@ footer {
         .health .health__content .content__right .right__content .content__item .info a {
           font-size: 22px;
           font-size: 1.375rem;
-          color: #505050; }
+          color: #505050;
+          margin-bottom: 2px;
+          display: block; }
         .health .health__content .content__right .right__content .content__item .info p {
           font-size: 11.6px;
           font-size: 0.725rem;
-          color: #505050;
-          margin-top: 2px; }
+          color: #505050; }
         @media only screen and (max-width: 1180px) {
           .health .health__content .content__right .right__content .content__item .info {
             width: 100%; } }
@@ -7156,20 +7163,20 @@ footer {
       padding: 0; } }
 
 .brand {
-  margin: 20px 0 0 0;
+  margin-bottom: 20px;
   min-height: 261px;
   background-color: #fff;
   padding: 30px; }
   .brand .brand__title {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 30px; }
     .brand .brand__title p {
       font-size: 22px;
       font-size: 1.375rem;
       color: #777777;
       margin-left: 10px; }
   .brand .brand__content {
-    margin-top: 30px;
     border-top: 1px solid #e5e5e4;
     padding: 60px 0; }
     @media only screen and (max-width: 998px) {
@@ -7792,7 +7799,8 @@ footer {
         display: -webkit-flex;
         display: flex;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 15px; }
         .cart-address .cart-address__content .content__right .right__sub p {
           color: #505050;
           font-size: 14px;
@@ -7804,7 +7812,9 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px; }
+        padding-bottom: 12px;
+        border-bottom: 0.75px solid #e2e3e4;
+        margin-bottom: 15px; }
         .cart-address .cart-address__content .content__right .right__shipping p {
           color: #505050;
           font-size: 14px;
@@ -7814,10 +7824,7 @@ footer {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        justify-content: space-between;
-        padding-top: 12px;
-        border-top: 0.75px solid #e2e3e4;
-        margin-top: 15px; }
+        justify-content: space-between; }
         .cart-address .cart-address__content .content__right .right__total p {
           color: #505050;
           font-size: 14px;
@@ -7960,7 +7967,8 @@ footer {
         display: -webkit-flex;
         display: flex;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 15px; }
         .cart-payment .cart-payment__content .content__right .right__sub p {
           color: #505050;
           font-size: 14px;
@@ -7971,8 +7979,7 @@ footer {
         display: -webkit-flex;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-top: 15px; }
+        align-items: center; }
         .cart-payment .cart-payment__content .content__right .right__shipping p {
           color: #505050;
           font-size: 14px;
@@ -7982,10 +7989,7 @@ footer {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        justify-content: space-between;
-        padding-top: 12px;
-        border-top: 0.75px solid #e2e3e4;
-        margin-top: 15px; }
+        justify-content: space-between; }
         .cart-payment .cart-payment__content .content__right .right__total p {
           color: #505050;
           font-size: 14px;

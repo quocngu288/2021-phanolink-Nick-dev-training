@@ -50,6 +50,7 @@ $("#title-register").click(function () {
 // click to show not pass/ form success
 $("#ModalLogin").on("shown.bs.modal", () => {
   console.log("show fomr");
+  $(".left__form-register-success").css("display", "none");
   $(".dialog__content-notpass").css("display", "none");
   $(".dialog__content-account").css("display", "block");
 });
@@ -118,6 +119,9 @@ owl3.owlCarousel({
   loop: true,
   margin: 35,
   nav: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 3,
@@ -137,6 +141,9 @@ owl4.owlCarousel({
   loop: true,
   margin: 5,
   nav: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,

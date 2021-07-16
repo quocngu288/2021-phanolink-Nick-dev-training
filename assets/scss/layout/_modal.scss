@@ -96,7 +96,7 @@
   margin-top: 200px;
   .dialog__content {
     width: 471px;
-    min-height: 500px;
+    min-height: 260px;
     background-color: #fff;
     border-bottom: 4px solid #01adab;
     padding: 0 42px;
@@ -120,7 +120,6 @@
         @include font-size(16px);
         color: #434343;
       }
-
       .form__check {
         @include flex();
         margin-bottom: 25px;
@@ -186,9 +185,14 @@
         margin-top: 0;
       }
     }
-    // .left__form-register-success {
-    //   display: none;
-    // }
+
+    .left__form-register-success {
+      display: none;
+      padding-top: 20px;
+      .form__text-foot {
+        margin-bottom: 20px;
+      }
+    }
     @media #{$info-tablet-vertical-1} {
       width: 100%;
       padding: 0 10px;
