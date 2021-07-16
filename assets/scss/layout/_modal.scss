@@ -221,44 +221,32 @@
 }
 //END
 .custom-radios {
-  text-align: center;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  input[type="radio"] {
-    display: none;
-  }
-  input[type="radio"] {
-    + label {
-      span {
-        display: inline-block;
-        width: 233px;
-        height: 40px;
-        line-height: 40px;
-        vertical-align: middle;
-        cursor: pointer;
-        border-radius: 5px;
-        border: 1px solid #e2e3e4;
-        // padding: 5px 10px;
-        background-color: #fff;
-        transition: all 0.3s ease;
-        color: #808081;
-        @include font-size(14.3px);
-        @media #{$info-phone} {
-          width: 150px;
-        }
-        @media #{$info-phone-2} {
-          width: 120px;
-        }
-      }
+  border: 1px solid #eeeeef;
+  border-radius: 8px;
+  overflow: hidden;
+  label {
+    width: 50%;
+    float: left;
+    color: #808081;
+    font-weight: normal;
+    margin: 0;
+    font-size: 13px;
+    input[type="radio"] {
+      display: none;
     }
-  }
-  input[type="radio"]:checked {
-    + label {
-      span {
-        background-color: #808081;
+    span {
+      display: flex;
+      text-align: center;
+      padding: 9px 0;
+
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="radio"]:checked {
+      ~ span {
+        font-weight: bold;
         color: #fff;
+        background-color: #808081;
       }
     }
   }

@@ -278,4 +278,13 @@ main {
     top: 0;
     left: -10px;
   }
+  .custom-form__birthday {
+    @include flex();
+    select {
+      margin-left: 13.5px;
+    }
+    select:first-child {
+      margin-left: 0;
+    }
+  }
 }

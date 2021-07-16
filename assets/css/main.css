@@ -5776,6 +5776,15 @@ main {
     position: absolute;
     top: 0;
     left: -10px; }
+  .custom-form .custom-form__birthday {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .custom-form .custom-form__birthday select {
+      margin-left: 13.5px; }
+    .custom-form .custom-form__birthday select:first-child {
+      margin-left: 0; }
 
 .btn--write {
   height: 40px;
@@ -6219,36 +6228,28 @@ footer {
       margin-top: 80px; } }
 
 .custom-radios {
-  text-align: center;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px; }
-  .custom-radios input[type="radio"] {
-    display: none; }
-  .custom-radios input[type="radio"] + label span {
-    display: inline-block;
-    width: 233px;
-    height: 40px;
-    line-height: 40px;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #e2e3e4;
-    background-color: #fff;
-    transition: all 0.3s ease;
+  border: 1px solid #eeeeef;
+  border-radius: 8px;
+  overflow: hidden; }
+  .custom-radios label {
+    width: 50%;
+    float: left;
     color: #808081;
-    font-size: 14.3px;
-    font-size: 0.89375rem; }
-    @media only screen and (max-width: 767px) {
-      .custom-radios input[type="radio"] + label span {
-        width: 150px; } }
-    @media only screen and (max-width: 667px) {
-      .custom-radios input[type="radio"] + label span {
-        width: 120px; } }
-  .custom-radios input[type="radio"]:checked + label span {
-    background-color: #808081;
-    color: #fff; }
+    font-weight: normal;
+    margin: 0;
+    font-size: 13px; }
+    .custom-radios label input[type="radio"] {
+      display: none; }
+    .custom-radios label span {
+      display: flex;
+      text-align: center;
+      padding: 9px 0;
+      align-items: center;
+      justify-content: center; }
+    .custom-radios label input[type="radio"]:checked ~ span {
+      font-weight: bold;
+      color: #fff;
+      background-color: #808081; }
 
 .custom-checkbox {
   display: block;
@@ -8309,5 +8310,107 @@ footer {
     @media only screen and (max-width: 896px) {
       .upload-toa .upload-toa__content {
         width: auto; } }
+
+.user-info {
+  background-color: #ebebeb;
+  padding: 20px 0; }
+  .user-info .user-info__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 13.5px; }
+    .user-info .user-info__content .content__left {
+      grid-column: 1 / span 3; }
+      .user-info .user-info__content .content__left .left__head {
+        background-color: #fff;
+        padding: 0 14px;
+        min-height: 353px;
+        margin-bottom: 22px; }
+        .user-info .user-info__content .content__left .left__head h3 {
+          padding: 15px 0;
+          font-size: 15px;
+          font-size: 0.9375rem;
+          color: #505050;
+          border-bottom: 1px solid #e2e3e4; }
+        .user-info .user-info__content .content__left .left__head ul {
+          list-style: none;
+          padding: 20px 0; }
+          .user-info .user-info__content .content__left .left__head ul li {
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px; }
+            .user-info .user-info__content .content__left .left__head ul li .fas {
+              color: #01adab;
+              font-size: 10px;
+              font-size: 0.625rem; }
+              .user-info .user-info__content .content__left .left__head ul li .fas i {
+                font-weight: bold; }
+            .user-info .user-info__content .content__left .left__head ul li a {
+              color: #505050;
+              margin-left: 6px;
+              font-size: 14px;
+              font-size: 0.875rem; }
+            .user-info .user-info__content .content__left .left__head ul li.active a {
+              font-weight: bold; }
+          .user-info .user-info__content .content__left .left__head ul li:last-child {
+            margin-bottom: 0; }
+      .user-info .user-info__content .content__left .left__foot {
+        background-color: #fff;
+        padding: 0 14px;
+        min-height: 415px; }
+        .user-info .user-info__content .content__left .left__foot .foot__title li {
+          width: 110px;
+          padding: 15px 0; }
+          .user-info .user-info__content .content__left .left__foot .foot__title li h2 {
+            color: #808081;
+            font-weight: bolder; }
+          .user-info .user-info__content .content__left .left__foot .foot__title li.active {
+            background-color: #eee8a9; }
+            .user-info .user-info__content .content__left .left__foot .foot__title li.active::after {
+              border-bottom: 10px solid #c6be85; }
+        .user-info .user-info__content .content__left .left__foot .foot__block .block__image {
+          height: 198px;
+          margin-bottom: 15px; }
+          .user-info .user-info__content .content__left .left__foot .foot__block .block__image img {
+            height: 100%; }
+        .user-info .user-info__content .content__left .left__foot .foot__block h2 {
+          color: #01adab;
+          font-size: 14px;
+          font-size: 0.875rem;
+          font-weight: bolder;
+          margin-bottom: 6px; }
+        .user-info .user-info__content .content__left .left__foot .foot__block p {
+          color: #434343;
+          font-size: 20px;
+          font-size: 1.25rem;
+          margin-bottom: 44px; }
+        .user-info .user-info__content .content__left .left__foot .foot__block a {
+          color: #01adab;
+          font-size: 12px;
+          font-size: 0.75rem; }
+    .user-info .user-info__content .content__right {
+      grid-column: 4 / span 9;
+      padding: 0 70px 0 70px;
+      background-color: #fff; }
+      .user-info .user-info__content .content__right .right__title li {
+        top: -10px; }
+      .user-info .user-info__content .content__right .right__form {
+        display: flex;
+        justify-content: space-between; }
+        .user-info .user-info__content .content__right .right__form .form__info {
+          width: 59%; }
+          .user-info .user-info__content .content__right .right__form .form__info .form-group label {
+            font-weight: normal;
+            color: #434343;
+            font-size: 16px;
+            font-size: 1rem; }
+          .user-info .user-info__content .content__right .right__form .form__info .form-group .custom-radios {
+            justify-content: space-between;
+            padding: 0; }
+        .user-info .user-info__content .content__right .right__form .form__change-pass {
+          padding-left: 70px;
+          width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
