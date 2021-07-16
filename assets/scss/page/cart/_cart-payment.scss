@@ -30,10 +30,12 @@
           margin-top: 40px;
           margin-bottom: 15px;
 
-          button {
+          a {
+            display: block;
+            text-align: center;
             width: 100%;
             margin: 0px 0 10px 0;
-            height: 45px;
+            padding: 10px 15px;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -83,7 +85,7 @@
           color: #505050;
           @include font-size(14px);
         }
-        button {
+        a {
           @include font-size(14px);
           color: #505050;
           padding: 5px 12px;
@@ -121,6 +123,7 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 15px;
 
         p {
           color: #505050;
@@ -131,7 +134,9 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+        // border-bottom: 0.75px solid #e2e3e4;
+        // margin-bottom: 15px;
+        // padding-bottom: 12px;
         p {
           color: #505050;
           @include font-size(14px);
@@ -140,9 +145,6 @@
       .right__total {
         @include flex();
         justify-content: space-between;
-        padding-top: 12px;
-        border-top: 0.75px solid #e2e3e4;
-        margin-top: 15px;
         p {
           color: #505050;
           @include font-size(14px);

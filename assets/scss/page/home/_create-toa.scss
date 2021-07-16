@@ -2,12 +2,13 @@
   background-color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 505px;
   .create-toa__head {
     margin: 5px 33px;
     h2 {
       @include font-size(22px);
+      font-weight: bolder;
       color: #505050;
     }
     p {

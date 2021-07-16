@@ -96,7 +96,7 @@
   margin-top: 200px;
   .dialog__content {
     width: 471px;
-    min-height: 500px;
+    min-height: 260px;
     background-color: #fff;
     border-bottom: 4px solid #01adab;
     padding: 0 42px;
@@ -122,7 +122,7 @@
       }
       .form__check {
         @include flex();
-        margin-top: 35px;
+        margin-bottom: 25px;
         p {
           color: #808081;
           @include font-size(14px);
@@ -145,7 +145,7 @@
         margin-bottom: 15px;
         button {
           width: 100%;
-          margin-top: 11px;
+          margin-bottom: 11px;
           padding: 10px 15px;
           height: 45px;
           color: #fff;
@@ -154,7 +154,6 @@
         }
         .button__log {
           background-color: #01adab;
-          margin-top: 0;
         }
         .button__facebook {
           background-color: #3b5998;
@@ -173,14 +172,27 @@
           color: #ea4036;
         }
       }
+      .form__text-success {
+        @include font-size(14px);
+        color: #434343;
+        margin-bottom: 25px;
+        span {
+          color: #ea4036;
+        }
+      }
       @media #{$info-phone-3} {
-        width: 250px;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 0;
       }
     }
-    // .left__form-register-success {
-    //   display: none;
-    // }
+
+    .left__form-register-success {
+      display: none;
+      padding-top: 20px;
+      .form__text-foot {
+        margin-bottom: 20px;
+      }
+    }
     @media #{$info-tablet-vertical-1} {
       width: 100%;
       padding: 0 10px;
@@ -192,11 +204,10 @@
   .dialog__content-notpass {
     min-height: 250px;
     display: none;
-    .content__form {
-      .form__text-head {
-        margin-bottom: 30px;
-      }
+    .content__title {
+      margin-bottom: 30px;
     }
+
     .content__form-notpass-success {
       display: none;
     }
@@ -210,44 +221,32 @@
 }
 //END
 .custom-radios {
-  text-align: center;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  input[type="radio"] {
-    display: none;
-  }
-  input[type="radio"] {
-    + label {
-      span {
-        display: inline-block;
-        width: 233px;
-        height: 40px;
-        line-height: 40px;
-        vertical-align: middle;
-        cursor: pointer;
-        border-radius: 5px;
-        border: 1px solid #e2e3e4;
-        // padding: 5px 10px;
-        background-color: #fff;
-        transition: all 0.3s ease;
-        color: #808081;
-        @include font-size(14.3px);
-        @media #{$info-phone} {
-          width: 150px;
-        }
-        @media #{$info-phone-2} {
-          width: 120px;
-        }
-      }
+  border: 1px solid #eeeeef;
+  border-radius: 8px;
+  overflow: hidden;
+  label {
+    width: 50%;
+    float: left;
+    color: #808081;
+    font-weight: normal;
+    margin: 0;
+    font-size: 13px;
+    input[type="radio"] {
+      display: none;
     }
-  }
-  input[type="radio"]:checked {
-    + label {
-      span {
-        background-color: #808081;
+    span {
+      display: flex;
+      text-align: center;
+      padding: 9px 0;
+
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="radio"]:checked {
+      ~ span {
+        font-weight: bold;
         color: #fff;
+        background-color: #808081;
       }
     }
   }

@@ -1,6 +1,6 @@
 .medicine {
-  margin-top: 20px;
-  min-height: 700px;
+  margin-bottom: 20px;
+  min-height: 690px;
   background-color: #fff;
   .medicine__title {
     display: flex;
@@ -21,6 +21,7 @@
       border: 1px solid #e5e5e4;
       padding: 35px 38px 30px 38px;
       text-align: center;
+      transition: all 0.5s;
       .item__event {
         position: absolute;
         background-image: url("/assets/img/products/ban-event.png");
@@ -67,15 +68,21 @@
         text-align: left;
         margin-top: 15px;
 
-        .info__name {
+        h3 {
           @include font-size(16px);
           color: #020202;
+          text-decoration: none;
+          transition: all 0.5s;
+          &:hover {
+            color: #01adab;
+          }
         }
-        .info__price {
+        p {
           @include font-size(16.8px);
           color: #e42f43;
+          font-weight: bolder;
         }
-        .info__old-price {
+        span {
           @include font-size(12.74px);
           color: #aaaaaa;
           text-decoration: line-through;

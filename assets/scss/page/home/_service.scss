@@ -1,14 +1,51 @@
 .service {
   padding-top: 20px;
+  margin-bottom: 20px;
   .service__content {
     display: flex;
     justify-content: space-between;
     @media #{$info-tablet-horizontal} {
       justify-content: center;
       flex-wrap: wrap;
+      gap: 20px;
     }
-  }
-  @media #{$info-phone} {
-    display: none;
+    .content__item {
+      // width: calc((100%-80px) / 5);
+      width: 230px;
+      height: 159px;
+      @include flex();
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-decoration: none;
+      border-radius: 17px;
+      transition: all 0.5s;
+      p {
+        @include font-size(16.8px);
+        color: #fff;
+        font-weight: bolder;
+      }
+      &:hover {
+        box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.75);
+      }
+    }
+    .content__item:nth-child(1) {
+      background-image: url("/assets/img/service/ban-thuoc.png");
+    }
+    .content__item:nth-child(2) {
+      background-image: url("/assets/img/service/ban-chai.png");
+    }
+    .content__item:nth-child(3) {
+      background-image: url("/assets/img/service/ban-tieudung.png");
+    }
+    .content__item:nth-child(4) {
+      background-image: url("/assets/img/service/ban-mypham.png");
+    }
+    .content__item:nth-child(5) {
+      background-image: url("/assets/img/service/ban-yte.png");
+    }
   }
 }

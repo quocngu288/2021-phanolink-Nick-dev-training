@@ -7,7 +7,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
     .content__left {
-      grid-column: 1 / span 10;
+      grid-column: 1 / span 9;
       display: flex;
       align-items: center;
       .left__item {
@@ -19,23 +19,41 @@
         }
         .item__button {
           position: absolute;
+          cursor: pointer;
           top: 73%;
           left: 53%;
           height: 50px;
-          button {
-            border: 1px solid #fff;
-            border-radius: 10px;
-            color: #fff;
-            background-color: #ffab78;
-            height: 100%;
+          width: 215px;
+          background-color: #ffab78;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2px;
+          img {
+            width: 40px;
+            display: block;
+            @media #{$info-phone-2} {
+              display: none;
+            }
           }
-          @media #{$info-phone} {
-            top: 70%;
+          p {
+            @include font-size(24px);
+            color: #fff;
+            @media #{$info-phone-3} {
+              @include font-size(18px);
+            }
+          }
+          @media #{$info-phone-2} {
+            width: 150px;
             height: 40px;
+            top: 70%;
           }
           @media #{$info-phone-3} {
-            // top: 70%;
+            width: 100px;
             height: 25px;
+            top: 65%;
           }
         }
       }
@@ -43,29 +61,72 @@
       .owl-nav {
         display: none;
       }
+      .owl-dots {
+        position: absolute;
+        bottom: 22px;
+        left: 156px;
+        z-index: 5;
+        display: flex;
+        gap: 10px;
+        // @include transform(translate(-50%));
+        .owl-dot {
+          display: block;
+          height: 2px;
+          width: 23.5px;
+          border: 1px solid #969696;
+          background: #0099a8;
+
+          &:focus {
+            outline: none;
+            background: #fff;
+            opacity: 1;
+          }
+          @media #{$info-phone-4} {
+            width: 18.5px;
+          }
+        }
+
+        .owl-dot.active {
+          background: #fff;
+          opacity: 1;
+          border: 1px solid #fff;
+        }
+        @media #{$info-phone} {
+          left: 72px;
+          bottom: 12px;
+        }
+        @media #{$info-phone-3} {
+          left: 50%;
+          bottom: 8px;
+          @include transform(translate(-50%));
+        }
+        @media #{$info-phone-4} {
+          bottom: 2px;
+        }
+      }
       @media #{$info-tablet-vertical} {
         grid-column: 1 / span 12;
       }
     }
     .content__right {
-      grid-column: 11 / span 2;
+      grid-column: 10 / span 3;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
       .item {
         text-align: center;
-        width: 76px;
-        margin: 10px;
+        width: 83px;
+        margin: 10px auto;
         img {
           width: 100%;
           display: block;
+          margin-bottom: 5px;
           @media #{$info-phone} {
             width: 80%;
             margin: 0 auto;
           }
         }
         p {
-          margin-top: 5px;
           color: #777777;
           @include font-size(16.9px);
         }
