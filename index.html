@@ -340,8 +340,8 @@
       <!-- BONUS -->
       <section class="common-container">
         <div class="bonus">
-          <div class="bonus__title">
-            <div class="title__name">
+          <div class="common-title">
+            <div>
               <img src="/assets/img/icon-fire-1.png" alt="" />
               <p>Khuyến Mãi Hot</p>
             </div>
@@ -420,9 +420,11 @@
       <!-- MEDICINE -->
       <section class="common-container">
         <div class="medicine">
-          <div class="medicine__title">
-            <img src="/assets/img/thuoc-1.png" alt="" />
-            <p>Thuốc không kê toa</p>
+          <div class="common-title">
+            <div>
+              <img src="/assets/img/thuoc-1.png" alt="" />
+              <p>Thuốc không kê toa</p>
+            </div>
           </div>
           <div class="medicine__content">
             <a href="" class="content__item">
@@ -649,8 +651,8 @@
       <!-- FOOD -->
       <section class="common-container">
         <div class="foods">
-          <div class="foods__title">
-            <div class="title__name">
+          <div class="common-title">
+            <div>
               <img src="/assets/img/chai-1.png" alt="" />
               <p>Thực phẩm chức năng</p>
             </div>
@@ -875,8 +877,8 @@
       <!-- CONSUMERS-GOODS -->
       <section class="common-container">
         <div class="consumers-goods">
-          <div class="consumers-goods__title">
-            <div class="title__name">
+          <div class="common-title">
+            <div>
               <img src="/assets/img/tieudung-1.png" alt="" />
               <p>Hàng Tiêu Dùng</p>
             </div>
@@ -1101,8 +1103,10 @@
       <!-- HEADLTH -->
       <section class="common-container">
         <div class="health">
-          <div class="health__title">
-            <p>Góc Sức Khỏe</p>
+          <div class="common-title">
+            <div>
+                <span>Góc Sức Khỏe</span>
+            </div>
             <a href="">Xem tất cả ></a>
           </div>
           <div class="health__content">
@@ -1213,11 +1217,16 @@
         </div>
       </section>
       <!-- END HEADLTH -->
+
+      <!-- BRAND -->
       <section class="common-container">
         <div class="brand">
-          <div class="brand__title">
-            <img src="assets/img/brand/icon-brand.png" />
+          <div class="common-title">
+            <div>
+                 <img src="assets/img/brand/icon-brand.png" />
             <p>Thương hiệu nổi bật</p>
+            </div>
+         
           </div>
           <div class="brand__content owl-carousel owl-caro-brand">
             <img class="item" src="/assets/img/brand/brand-1.png" alt="" />
@@ -1232,6 +1241,7 @@
           </div>
         </div>
       </section>
+          <!-- END BRAND -->
     </main>
     <!-- FOOTER -->
     <footer>
@@ -1351,8 +1361,8 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog__login">
-        <div class="dialog__content dialog__content-account">
+      <div class="modal-dialog modal-dialog-account">
+        <div class="modal-content dialog__content dialog__content-account">
           <ul class="content__title board-title">  
               <li class="active"id="title-login">
                 <h2>ĐĂNG NHẬP</h2>
@@ -1392,11 +1402,11 @@
                 <a href=""> đầy</a>
               </div>
               <div class="form__button">
-                <button class="button__log">Đăng nhập</button>
-                <button class="button__facebook">
+                <a class="button__log">Đăng nhập</a>
+                <a class="button__facebook">
                   Đăng nhập bằng Facebook
-                </button>
-                <button class="button__google">Đăng nhập bằng Google</button>
+                </a>
+                <a class="button__google">Đăng nhập bằng Google</a>
               </div>
             </form>
           </div>
@@ -1440,12 +1450,13 @@
                   placeholder="Nhập số điện thoại"
                 />
               </div>
-              <div class="form__check">
+              <div class="custom-checkbox form__checkbox">
+                Nhận các thông tin và chương trình khuyến mãi qua email
                 <input type="checkbox" />
-                <p>Nhận các thông tin và chương trình khuyến mãi qua email</p>
+                <span></span>
               </div>
               <div class="form__button">
-                <button class="button__log" id="btnRegister">Đăng nhập</button>
+                <a class="button__log" id="btnRegister">Đăng nhập</a>
               </div>
             </form>
 
@@ -1466,7 +1477,7 @@
             </p>
 
             <div class="form__button">
-              <button class="button__log">Đăng nhập</button>
+              <a class="button__log">Đăng nhập</a>
             </div>
           </div>
         </div>
@@ -1492,9 +1503,9 @@
                 />
               </div>
               <div class="form__button">
-                <button class="button__log" id="createAccount">
+                <a class="button__log" id="createAccount">
                   Tạo tài khoản
-                </button>
+                </a>
               </div>
             </form>
           </div>
@@ -1507,7 +1518,7 @@
               lòng kiểm tra hộp thư để cập nhật thông tin.
             </p>
             <div class="form__button">
-              <button class="button__close">Đóng</button>
+              <a class="button__close">Đóng</a>
             </div>
           </div>
         </div>

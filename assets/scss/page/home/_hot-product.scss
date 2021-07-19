@@ -4,8 +4,7 @@
   background-color: #fff;
   padding-bottom: 60px;
   .hot-product__title {
-    margin-bottom: 20.5px;
-    padding: 15px 15px 0px 15px;
+    padding: 15px;
     .title__name {
       display: flex;
       align-items: center;
@@ -14,6 +13,7 @@
         margin-left: 10px;
         p:nth-child(1) {
           @include font-size(22px);
+          font-weight: bolder;
           color: #505050;
         }
         p:nth-child(2) {

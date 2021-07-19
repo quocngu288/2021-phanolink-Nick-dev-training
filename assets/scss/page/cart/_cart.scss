@@ -1,6 +1,6 @@
 .cart {
   background-color: #ebebeb;
-  padding: 20px 0;
+  padding: 21px 0 210px 0;
   .cart__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -8,10 +8,9 @@
     .content__left {
       grid-column: 1 / span 8;
       background-color: #fff;
-      padding: 0 30px;
 
       .left__content {
-        margin: 30px auto 0px auto;
+        margin: 25px;
         ul {
           list-style: none;
           @include flex();
@@ -23,9 +22,12 @@
           li {
             white-space: nowrap;
             padding: 2px 0;
+            font-weight: bolder;
+            color: #808081;
+            @include font-size(14px);
           }
           li:nth-child(1) {
-            width: 340px;
+            width: 300px;
             @media #{$info-phone-2} {
               width: 200px;
             }
@@ -33,9 +35,12 @@
               width: 100px;
             }
           }
-          // li:nth-child(2) {
-          //   width: 150px;
-          // }
+          li:nth-child(2) {
+            padding-left: 50px;
+          }
+          li:nth-child(3) {
+            padding-right: 15px;
+          }
         }
         .content__products {
           .products__item {
@@ -255,6 +260,7 @@
         p {
           color: #505050;
           @include font-size(14px);
+          font-weight: bolder;
           border-bottom: 0.75px solid #e2e3e4;
           padding-bottom: 13px;
           margin-bottom: 13px;
@@ -268,6 +274,7 @@
           .input-group-append {
             button {
               @include font-size(18.1px);
+              font-weight: bolder;
             }
           }
         }
@@ -308,6 +315,7 @@
             p {
               color: #fa434e;
               @include font-size(21.29px);
+              font-weight: bolder;
             }
             span {
               @include font-size(12px);
@@ -325,6 +333,8 @@
           text-align: center;
           @include font-size(22px);
           border-radius: 0;
+          font-weight: bolder;
+          padding: 12px 0;
         }
       }
       @media #{$info-tablet-vertical} {

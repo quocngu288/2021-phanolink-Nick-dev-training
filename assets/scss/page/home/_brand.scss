@@ -1,21 +1,11 @@
 .brand {
   margin-bottom: 20px;
-  min-height: 261px;
+  min-height: 235px;
   background-color: #fff;
-  padding: 30px;
-  .brand__title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    p {
-      @include font-size(22px);
-      color: #777777;
-      margin-left: 10px;
-    }
-  }
+
   .brand__content {
     border-top: 1px solid #e5e5e4;
-    padding: 60px 0;
+    padding: 60px 30px;
     // display: flex;
     // align-items: center;
     // justify-content: center;
