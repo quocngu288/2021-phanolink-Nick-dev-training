@@ -2,27 +2,8 @@
   margin-bottom: 20px;
   min-height: 452px;
   background-color: #fff;
-  .bonus__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px 0px 15px;
-    .title__name {
-      display: flex;
-      align-items: center;
-      p {
-        @include font-size(22px);
-        color: #505050;
-        margin-left: 10px;
-      }
-    }
-    a {
-      color: #01adab;
-      @include font-size(18.5px);
-    }
-  }
+
   .bonus__content {
-    margin-top: 18px;
     .content__item {
       background-repeat: no-repeat;
       background-position: center;

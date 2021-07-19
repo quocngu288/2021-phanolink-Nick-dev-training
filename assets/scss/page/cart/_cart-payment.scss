@@ -32,13 +32,14 @@
 
           a {
             display: block;
-            text-align: center;
             width: 100%;
-            margin: 0px 0 10px 0;
-            padding: 10px 15px;
+            margin-bottom: 11px;
+            padding: 9px 0;
             color: #fff;
             border: none;
             border-radius: 5px;
+            text-align: center;
+            font-weight: bolder;
           }
           .button__google {
             background-color: #e94a32;
@@ -85,7 +86,7 @@
           color: #505050;
           @include font-size(14px);
         }
-        a {
+        button {
           @include font-size(14px);
           color: #505050;
           padding: 5px 12px;
@@ -123,7 +124,6 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 15px;
 
         p {
           color: #505050;
@@ -134,9 +134,7 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        // border-bottom: 0.75px solid #e2e3e4;
-        // margin-bottom: 15px;
-        // padding-bottom: 12px;
+        margin-top: 15px;
         p {
           color: #505050;
           @include font-size(14px);
@@ -145,14 +143,19 @@
       .right__total {
         @include flex();
         justify-content: space-between;
+        padding-top: 12px;
+        border-top: 0.75px solid #e2e3e4;
+        margin-top: 15px;
         p {
           color: #505050;
           @include font-size(14px);
+          font-weight: bolder;
         }
         div {
           p {
             color: #fa434e;
             @include font-size(21.29px);
+            font-weight: bolder;
           }
           span {
             @include font-size(12px);

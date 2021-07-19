@@ -4,6 +4,7 @@
   .service__content {
     display: flex;
     justify-content: space-between;
+
     @media #{$info-tablet-horizontal} {
       justify-content: center;
       flex-wrap: wrap;

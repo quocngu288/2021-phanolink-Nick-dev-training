@@ -2,20 +2,11 @@
   margin-bottom: 20px;
   min-height: 690px;
   background-color: #fff;
-  .medicine__title {
-    display: flex;
-    align-items: center;
-    padding: 20px 0 5px 15px;
-    p {
-      @include font-size(22px);
-      color: #505050;
-      margin-left: 10px;
-    }
-  }
+
   .medicine__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 23px;
+
     a {
       position: relative;
       border: 1px solid #e5e5e4;

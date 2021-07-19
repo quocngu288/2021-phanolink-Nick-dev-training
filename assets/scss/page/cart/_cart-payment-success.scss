@@ -87,6 +87,7 @@
         padding: 15px 0;
         border-top: 1px solid #e2e3e4;
         border-bottom: 1px solid #e2e3e4;
+        margin-bottom: 15px;
         .products__item {
           @include flex();
           justify-content: space-between;
@@ -113,7 +114,7 @@
         @include flex();
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+
         p {
           color: #505050;
           @include font-size(14px);
@@ -138,11 +139,13 @@
         p {
           color: #505050;
           @include font-size(14px);
+          font-weight: bolder;
         }
         div {
           p {
             color: #fa434e;
             @include font-size(21.29px);
+            font-weight: bolder;
           }
           span {
             @include font-size(12px);
@@ -155,6 +158,7 @@
       }
       @media #{$info-tablet-vertical} {
         grid-column: span 12;
+        margin-bottom: 20px;
       }
     }
   }

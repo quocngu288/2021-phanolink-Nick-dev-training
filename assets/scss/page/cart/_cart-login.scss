@@ -15,17 +15,22 @@
         @include flex();
         justify-content: center;
         gap: 13.5px;
+        li {
+          padding: 18px 23px 13px 23px;
+        }
       }
       .left__form {
         width: 472px;
-        margin: 0 auto 20px auto;
+        margin: 36px auto 0px auto;
+        padding-bottom: 40px;
         .form__text-head {
-          margin-bottom: 5px;
+          margin-bottom: 15px;
           @include font-size(16px);
           color: #434343;
         }
         .form__check {
           @include flex();
+          margin: 38px 0 11px 0;
           p {
             color: #808081;
             @include font-size(14px);
@@ -35,28 +40,30 @@
         .form__not-pass {
           color: #434343;
           @include font-size(14px);
+          margin-bottom: 39px;
           a:nth-child(1) {
             color: #434343;
             @include font-size(14px);
           }
           a:nth-child(2) {
             color: #ea4036;
+            font-weight: bolder;
           }
         }
         .form__button {
-          margin-top: 15px;
           margin-bottom: 15px;
           a {
             display: block;
             width: 100%;
-            margin-top: 11px;
-            padding: 10px 15px;
-            height: 45px;
+            margin-bottom: 11px;
+            padding: 9px 0;
             color: #fff;
             border: none;
             border-radius: 5px;
             text-align: center;
+            font-weight: bolder;
           }
+
           .button__log {
             background-color: #01adab;
           }
@@ -72,6 +79,7 @@
           color: #434343;
           span {
             color: #ea4036;
+            font-weight: bolder;
           }
         }
         @media #{$info-phone-3} {
@@ -162,11 +170,13 @@
         p {
           color: #505050;
           @include font-size(14px);
+          font-weight: bolder;
         }
         div {
           p {
             color: #fa434e;
             @include font-size(21.29px);
+            font-weight: bolder;
           }
           span {
             @include font-size(12px);
