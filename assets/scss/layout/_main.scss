@@ -31,7 +31,32 @@ main {
     @include font-size(18.5px);
   }
 }
-
+.common-paginate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  li {
+    padding: 3px 9px;
+    border-radius: 5px;
+    margin-right: 10px;
+    a {
+      @include font-size(16px);
+      color: #808081;
+      text-decoration: none;
+    }
+    &.active {
+      background-color: #01adab;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  li:last-child {
+    border: 1px solid #808081;
+    margin-right: 0;
+  }
+}
 //nav-router
 .nav-router {
   background-color: #e2e3e4;
@@ -73,11 +98,16 @@ main {
   li {
     position: relative;
     text-align: center;
-    min-width: 184px;
+    min-width: 110px;
     padding: 13px 23px;
     top: -10px;
     cursor: pointer;
     h2 {
+      color: #808081;
+      @include font-size(14px);
+      font-weight: bolder;
+    }
+    a {
       color: #808081;
       @include font-size(14px);
       font-weight: bolder;
@@ -101,6 +131,9 @@ main {
         color: #ffff;
       }
       p {
+        color: #fff;
+      }
+      a {
         color: #fff;
       }
       &::after {
@@ -232,6 +265,9 @@ main {
     select:first-child {
       margin-left: 0;
     }
+  }
+  .custom-form__textarea {
+    height: 110px;
   }
 }
 .custom-file {

@@ -1,0 +1,103 @@
+.user-info {
+  .user-info__content {
+    .content__right-mananger {
+      grid-column: 4 / span 9;
+
+      .right-mananger__info {
+        background-color: #fff;
+        margin-bottom: 25px;
+        .info__head {
+          @include flex();
+          justify-content: space-between;
+          margin-bottom: 11px;
+          padding: 0 26px;
+          .head__left {
+            li {
+              padding: 9px 30px;
+            }
+          }
+          .head__right {
+            @include flex();
+            a {
+              text-decoration: none;
+              color: #ea4036;
+              @include font-size(14px);
+            }
+            ul {
+              margin-left: 12px;
+              li {
+                padding: 9px 0px;
+                &.active {
+                  background-color: #8f9194;
+                  &::after {
+                    border-bottom: 10px solid #58595b;
+                  }
+                }
+                a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .info__info-search {
+          color: #000000;
+          @include font-size(14px);
+          margin-bottom: 29px;
+          padding: 0 26px;
+          span {
+            color: #808081;
+          }
+        }
+        .info__table {
+          thead {
+            th {
+              padding: 12px 25px;
+              text-align: center;
+              white-space: nowrap;
+              border-bottom: 1px solid #e5e5e4;
+              border-top: 1px solid #e5e5e4;
+              @include font-size(14px);
+              color: #808081;
+              font-weight: normal;
+            }
+          }
+          tbody {
+            td {
+              vertical-align: top;
+              padding: 20px 24px;
+              border-bottom: 1px solid #e5e5e4;
+              a {
+                @include font-size(14px);
+                font-weight: bolder;
+                color: #01adab;
+              }
+              p {
+                @include font-size(14px);
+                color: #434343;
+              }
+            }
+            td:nth-child(1) {
+              padding-left: 25px;
+            }
+            td:nth-child(2) {
+            }
+            td:nth-child(3) {
+            }
+            td:nth-child(4) {
+              p {
+                font-weight: bolder;
+                white-space: nowrap;
+              }
+            }
+            td:nth-child(5) {
+              white-space: nowrap;
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
