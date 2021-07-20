@@ -218,21 +218,27 @@
               <ul>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/user-info.html">Thông tin tài khoản </a>
+                  <a href="/views/user-info/user-info.html"
+                    >Thông tin tài khoản
+                  </a>
+                </li>
+                <li class="active">
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="/views/user-info/mananger-order.html"
+                    >Quản Lý Đơn Hàng
+                  </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/mananger-order.html">Quản Lý Đơn Hàng </a>
-                </li>
-                <li>
-                  <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/pro-favorite.html">Sản phẩm yêu thích </a>
+                  <a href="/views/user-info/pro-favorite.html"
+                    >Sản phẩm yêu thích
+                  </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
                   <a href="">Sản phẩm đã xem</a>
                 </li>
-                <li class="active">
+                <li>
                   <i class="fas fa-chevron-right"></i>
                   <a href="/views/user-info/address-number.html">Sổ địa chỉ </a>
                 </li>
@@ -258,71 +264,69 @@
               </div>
             </div>
           </div>
-          <div class="content__right-address">
-            <div class="right-address__info">
-              <ul class="info__title board-title">
-                <li class="active">
-                  <a>SỐ ĐỊA CHỈ</a>
-                </li>
-              </ul>
-              <div class="info__item">
-                <div class="item__left">
-                  <h2>LE DUY LAN<span>địa chỉ mạc định</span></h2>
-                  <p>
-                    Địa chỉ:
-                    <span
-                      >149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ
-                      Chí Minh, Việt Nam
-                    </span>
-                  </p>
-                  <p>Điện thoại: <span>0703764616</span></p>
-                </div>
-                <div class="item__right default">
-                  <a href=""> Chỉnh sửa</a>
-                  <a href="">Xóa</a>
-                </div>
+          <div class="content__right-mananger">
+            <div class="right-mananger__info">
+              <div class="info__title">
+                <ul class="title__left board-title">
+                  <li class="active">
+                    <a>QUẢN LÝ ĐƠN HÀNG</a>
+                  </li>
+                </ul>
               </div>
-              <div class="info__item">
-                <div class="item__left">
-                  <h2>LE DUY LAN<span>địa chỉ mạc định</span></h2>
-                  <p>
-                    Địa chỉ:
-                    <span
-                      >149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ
-                      Chí Minh, Việt Nam
-                    </span>
-                  </p>
-                  <p>Điện thoại: <span>0703764616</span></p>
-                </div>
-                <div class="item__right">
-                  <a href=""> Chỉnh sửa</a>
-                  <a href="">Xóa</a>
-                </div>
+              <div class="info__detail">
+                <p>Chi tiết đơn hàng: <a href="">#697318275</spaan></p>
+                <p>Trạng thái: <span>Giao hàng thành công</span></p>
+                <p>Thời gian đặt hàng: <span> 20:43 18/08/2018</span></p>
+                <p>Tổng Cộng: <span>460.000 đ </span></p>
               </div>
             </div>
-            <div class="right-address__paginate">
-              <a href="/views/user-info/address-add.html" class="paginate__button">Thêm Mới</a>
-              <ul class="common-paginate">
-                <li class="active">
-                  <a href="">1</a>
-                </li>
-                <li>
-                  <a href="">2</a>
-                </li>
-                <li>
-                  <a href="">3</a>
-                </li>
-                <li>
-                  <a href="">4</a>
-                </li>
-                <li>
-                  <a href="">5</a>
-                </li>
-                <li>
-                  <a href="">></a>
-                </li>
-              </ul>
+            <div class="right-mananger__shipping">
+                <div class="shipping__item">
+                    <div class="item__head">
+<h3>Địa Chỉ Giao Hàng</h3>
+                    </div>
+                    <div class="item__content">
+
+                    </div>
+                </div>
+                <div class="shipping__item">
+                    <div class="item__head">
+<h3>Hình Thức Giao Hàng</h3>
+                    </div>
+                    <div class="item__content">
+
+                    </div>
+                </div>
+                <div class="shipping__item">
+                    <div class="item__head">
+<h3>Phương Thức Thanh Toán</h3>
+                    </div>
+                    <div class="item__content">
+
+                    </div>
+                </div>
             </div>
+            <div class="right-mananger__table"></div>
+            <!-- <ul class="right-mananger__paginate common-paginate">
+              <li class="active">
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+              <li>
+                <a href="">4</a>
+              </li>
+              <li>
+                <a href="">5</a>
+              </li>
+              <li>
+                <a href="">></a>
+              </li>
+            </ul> -->
           </div>
         </div>
       </section>
@@ -611,6 +615,7 @@
       </div>
     </div>
     <!-- END MODAL LOGIN -->
+
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please

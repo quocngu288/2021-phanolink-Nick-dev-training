@@ -1,0 +1,48 @@
+.user-info {
+  .user-info__content {
+    .content__right-mananger {
+      grid-column: 4 / span 9;
+
+      .right-mananger__info {
+        background-color: #fff;
+
+        .info__title {
+          @include flex();
+          padding: 0 26px;
+          .title__left {
+            li {
+              padding: 9px 30px;
+            }
+          }
+        }
+        .info__detail {
+          padding: 20px 26px;
+          p {
+            color: #808081;
+            @include font-size(20px);
+            a {
+              color: #01adab;
+              font-weight: bolder;
+              margin-left: 2px;
+            }
+            span {
+              color: #434343;
+              font-weight: bolder;
+              margin-left: 2px;
+            }
+          }
+          p:last-child {
+            span {
+              color: #ea4036;
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+      .right-mananger__shipping {
+      }
+      .right-mananger__table {
+      }
+    }
+  }
+}

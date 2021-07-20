@@ -257,7 +257,7 @@ main {
     top: 0;
     left: -10px;
   }
-  .custom-form__birthday {
+  .custom-form__inline {
     @include flex();
     select {
       margin-left: 13.5px;

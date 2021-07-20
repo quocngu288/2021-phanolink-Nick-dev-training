@@ -218,15 +218,21 @@
               <ul>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="">Thông tin tài khoản </a>
+                  <a href="/views/user-info/user-info.html"
+                    >Thông tin tài khoản
+                  </a>
                 </li>
                 <li class="active">
                   <i class="fas fa-chevron-right"></i>
-                  <a href="">Quản Lý Đơn Hàng </a>
+                  <a href="/views/user-info/mananger-order.html"
+                    >Quản Lý Đơn Hàng
+                  </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="">Sản phẩm yêu thích </a>
+                  <a href="/views/user-info/pro-favorite.html"
+                    >Sản phẩm yêu thích
+                  </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
@@ -234,7 +240,7 @@
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="">Sổ địa chỉ </a>
+                  <a href="/views/user-info/address-number.html">Sổ địa chỉ </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
@@ -271,7 +277,10 @@
                   <ul class="board-title">
                     <li class="active">
                       <span></span>
-                      <a href="">Tìm kiếm</a>
+                      <a href="" data-toggle="modal" data-target="#ModalSearch"
+                        ><i class="fas fa-search"></i>Tìm kiếm</a
+                      >
+           
                     </li>
                   </ul>
                 </div>
@@ -648,6 +657,79 @@
       </div>
     </div>
     <!-- END MODAL LOGIN -->
+
+    <!-- MODAL SEARCH -->
+    <div
+      class="modal fade"
+      id="ModalSearch"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-search">
+        <div class="modal-content dialog__content dialog__content-search">
+          <ul class="content__title board-title">
+            <li class="active" id="title-login">
+              <h2>TÌM KIẾM ĐƠN HÀNG</h2>
+            </li>
+          </ul>
+          <div class="content__form left__form-search">
+            <form>
+              <div class="form-group custom-form">
+                <label for="id">Mã Đơn Hàng</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập mã đơn hàng"
+                />
+              </div>
+              <div class="form-group custom-form form-search__inline">
+                <div class="inline__date">
+                  <label>Ngày Đặt Hàng Từ</label>
+                  <select class="form-control">
+                    <option>20/01/2020</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="inline__date">
+                  <label>Ngày Đặt Hàng Đi</label>
+                  <select class="form-control">
+                    <option>26/07/2021</option>
+                    <option>Tháng 2</option>
+                    <option>Tháng 3</option>
+                    <option>Tháng 4</option>
+                    <option>Tháng 5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group custom-form">
+                <label for="name">Tên Sản Phẩm</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập tên sản phẩm"
+                />
+              </div>
+              <div class="form-group custom-form">
+                <label for="status">Trạng thái đơn hàng</label>
+                <select class="form-control">
+                  <option>Chọn trạng thái đơn hàng</option>
+                  <option>2</option>
+                </select>
+              </div>
+              <div class="form__button">
+                <a class="button__log"><i class="fas fa-search"></i>Tìm kiếm</a>
+                <a href="" class="button__delete">        Xóa tìm kiếm</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END MODAL SEARCH -->
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
