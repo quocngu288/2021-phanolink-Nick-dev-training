@@ -73,6 +73,10 @@
           .button__back {
             color: #434343;
             @include font-size(14px);
+            .fas {
+              color: #01adab;
+              margin-right: 8px;
+            }
           }
         }
       }

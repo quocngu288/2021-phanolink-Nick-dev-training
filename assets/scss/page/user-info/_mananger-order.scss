@@ -1,11 +1,33 @@
 .user-info {
   .user-info__content {
+    .content__left {
+      @media #{$info-phone} {
+        grid-column: 1 / span 3;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
+        @include flex();
+        min-height: 280px;
+        .left__head {
+          margin-bottom: 0;
+          width: 50%;
+          min-height: 0;
+        }
+        .left__foot {
+          width: 50%;
+          min-height: 0;
+        }
+      }
+      @media #{$info-phone-4} {
+        min-height: 300px;
+      }
+    }
     .content__right-mananger {
       grid-column: 4 / span 9;
 
       .right-mananger__info {
         background-color: #fff;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         .info__head {
           @include flex();
           justify-content: space-between;
@@ -14,6 +36,9 @@
           .head__left {
             li {
               padding: 9px 30px;
+              @media #{$info-phone-3} {
+                padding: 6px 13px;
+              }
             }
           }
           .head__right {
@@ -36,8 +61,18 @@
                 a {
                   color: #fff;
                 }
+                @media #{$info-phone-3} {
+                  padding: 6px 0;
+                  min-width: 80px;
+                }
+              }
+              @media #{$info-phone-3} {
+                margin-left: 6px;
               }
             }
+          }
+          @media #{$info-phone-3} {
+            padding: 0 16px;
           }
         }
         .info__info-search {
@@ -60,6 +95,9 @@
               @include font-size(14px);
               color: #808081;
               font-weight: normal;
+              @media #{$info-tablet-vertical-1} {
+                padding: 12px 0px;
+              }
             }
           }
           tbody {
@@ -76,13 +114,31 @@
                 @include font-size(14px);
                 color: #434343;
               }
+              @media #{$info-tablet-vertical-1} {
+                padding: 20px 8px;
+              }
+              @media #{$info-phone-3} {
+                padding: 15px 2px;
+              }
             }
             td:nth-child(1) {
               padding-left: 25px;
+              @media #{$info-phone-3} {
+                padding-left: 4px;
+              }
             }
             td:nth-child(2) {
             }
             td:nth-child(3) {
+              @media #{$info-phone-3} {
+                p {
+                  word-break: break-all;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                }
+              }
             }
             td:nth-child(4) {
               p {
@@ -92,11 +148,23 @@
             }
             td:nth-child(5) {
               white-space: nowrap;
-              p {
+
+              @media #{$info-phone-3} {
+                white-space: unset;
               }
             }
           }
         }
+      }
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 5 / span 8;
+      }
+
+      @media #{$info-phone} {
+        grid-column: 4 / span 9;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
       }
     }
   }
