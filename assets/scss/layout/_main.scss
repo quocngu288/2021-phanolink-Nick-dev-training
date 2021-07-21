@@ -249,6 +249,7 @@ main {
     height: 40px;
     @media #{$info-phone-3} {
       height: 30px;
+      padding: 2px 12px;
     }
   }
   span {

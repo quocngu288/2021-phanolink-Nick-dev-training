@@ -10,6 +10,10 @@
           padding-left: 25px;
           li {
             padding: 9px 30px;
+            @media #{$info-phone-2} {
+              left: 0;
+              padding: 9px 20px;
+            }
           }
         }
         .info__item {
@@ -92,6 +96,15 @@
           font-weight: bolder;
           background-color: #01adab;
         }
+      }
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 5 / span 8;
+      }
+      @media #{$info-phone} {
+        grid-column: 4 / span 9;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
       }
     }
   }

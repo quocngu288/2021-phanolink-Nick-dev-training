@@ -12,6 +12,10 @@
             top: -10px;
             left: 30px;
             padding: 9px 30px;
+            @media #{$info-phone-2} {
+              left: 10px;
+              padding: 9px 20px;
+            }
           }
         }
         .content__product {
@@ -54,12 +58,15 @@
               top: 5%;
               img {
                 width: 36px;
+                @media #{$info-phone-2} {
+                  width: 26px;
+                }
               }
             }
             .item__image {
               height: 138.98px;
               // margin: 0 5px;
-              @media #{$info-phone-3} {
+              @media #{$info-phone} {
                 height: 90px;
               }
               @media #{$info-phone-4} {
@@ -105,17 +112,22 @@
             }
           }
           @media #{$info-tablet-vertical} {
-            grid-template-columns: repeat(4, 1fr);
-          }
-          @media #{$info-phone} {
             grid-template-columns: repeat(3, 1fr);
           }
-          @media #{$info-phone-2} {
+          @media #{$info-phone-3} {
             grid-template-columns: repeat(2, 1fr);
           }
         }
       }
-  
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 5 / span 8;
+      }
+      @media #{$info-phone} {
+        grid-column: 4 / span 9;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
+      }
     }
   }
 }
