@@ -235,6 +235,49 @@ main {
     padding-top: 40px;
   }
 }
+//nav-article
+.nav-article {
+  background-color: #00938f;
+  ul {
+    @include flex();
+    list-style: none;
+    li {
+      position: relative;
+
+      margin-left: 83px;
+      padding: 9px 3px 11px 3px;
+      height: 40px;
+      a {
+        color: #fff;
+        font-weight: bolder;
+        @include font-size(14px);
+      }
+      &.active {
+        background-color: #01adab;
+        top: 5px;
+        left: 0;
+        border-radius: 5px 5px 0 0;
+        a {
+          text-transform: uppercase;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          left: -8px;
+          bottom: 0;
+
+          border-top: 5px solid #016b68;
+          border-left: 8px solid transparent;
+        }
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+}
 
 //custom
 .custom-form {
