@@ -1,6 +1,6 @@
 .user-info {
   background-color: #ebebeb;
-  padding: 20px 0;
+  padding: 20px 0 45px 0;
   .user-info__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -17,6 +17,7 @@
           @include font-size(15px);
           color: #505050;
           border-bottom: 1px solid #e2e3e4;
+          font-weight: bolder;
         }
         ul {
           list-style: none;
@@ -55,8 +56,8 @@
         min-height: 415px;
         .foot__title {
           li {
-            width: 110px;
-            padding: 15px 0;
+            padding: 9px 0;
+            left: 18px;
             h2 {
               color: #808081;
               font-weight: bolder;
@@ -72,9 +73,15 @@
         .foot__block {
           .block__image {
             height: 198px;
-            margin-bottom: 15px;
+            margin: 0 auto 15px auto;
             img {
               height: 100%;
+            }
+            @media #{$info-tablet-horizontal} {
+              height: 150px;
+            }
+            @media #{$info-phone-2} {
+              height: 100px;
             }
           }
           h2 {
@@ -87,6 +94,9 @@
             color: #434343;
             @include font-size(20px);
             margin-bottom: 44px;
+            @media #{$info-phone-2} {
+              margin-bottom: 24px;
+            }
           }
           a {
             color: #01adab;
@@ -94,37 +104,124 @@
           }
         }
       }
-    }
-    .content__right {
-      grid-column: 4 / span 9;
-      padding: 0 70px 0 70px;
-      background-color: #fff;
-      .right__title {
-        li {
-          top: -10px;
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 1 / span 4;
+      }
+      @media #{$info-phone} {
+        grid-column: 1 / span 5;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
+        @include flex();
+        min-height: 280px;
+        .left__head {
+          margin-bottom: 0;
+          width: 50%;
+          min-height: 0;
+        }
+        .left__foot {
+          width: 50%;
+          min-height: 0;
         }
       }
-      .right__form {
-        display: flex;
-        justify-content: space-between;
-        .form__info {
-          width: 59%;
-          .form-group {
-            label {
-              font-weight: normal;
-              color: #434343;
-              @include font-size(16px);
-            }
-            .custom-radios {
-              justify-content: space-between;
-              padding: 0;
+      @media #{$info-phone-4} {
+        min-height: 300px;
+      }
+    }
+    .content__right-info {
+      grid-column: 4 / span 9;
+
+      .right-info__content {
+        background-color: #fff;
+        padding: 0 70px 46px 70px;
+        .content__title {
+          li {
+            top: -10px;
+            left: 30px;
+            @media #{$info-phone-2} {
+              left: 0;
             }
           }
         }
-        .form__change-pass {
-          padding-left: 70px;
-          width: 100%;
+        .content__form {
+          .form__content {
+            display: flex;
+            justify-content: space-between;
+            .content__info {
+              width: 51%;
+              margin-bottom: 36px;
+              .form-group {
+                label {
+                  font-weight: normal;
+                  color: #434343;
+                  @include font-size(16px);
+                }
+                .custom-radios {
+                  justify-content: space-between;
+                  padding: 0;
+                }
+              }
+              p {
+                text-align: left;
+
+                @include font-size(14px);
+                color: #808081;
+                span {
+                  color: #ea4036;
+                }
+              }
+              @media #{$info-tablet-vertical-1} {
+                width: 100%;
+              }
+            }
+            .content__change-pass {
+              padding-left: 79px;
+              width: 49%;
+              .change-pass__checkbox {
+                @include font-size(16px);
+                margin-bottom: 27px;
+                color: #434343;
+              }
+              @media #{$info-tablet-vertical-1} {
+                width: 100%;
+                padding-left: 0;
+              }
+            }
+            @media #{$info-tablet-vertical-1} {
+              flex-flow: column;
+            }
+          }
+          .form__button {
+            a {
+              display: block;
+              width: 100%;
+              padding: 13px 0;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              text-align: center;
+              font-weight: bolder;
+            }
+            .button__log {
+              background-color: #01adab;
+            }
+          }
         }
+        @media #{$info-tablet-vertical} {
+          padding: 0 40px 46px 40px;
+        }
+        @media #{$info-phone-2} {
+          padding: 0 15px 46px 15px;
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 5 / span 8;
+      }
+      @media #{$info-phone} {
+        grid-column: 6 / span 7;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
       }
     }
   }

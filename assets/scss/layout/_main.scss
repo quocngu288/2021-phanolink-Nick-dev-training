@@ -31,7 +31,32 @@ main {
     @include font-size(18.5px);
   }
 }
-
+.common-paginate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  li {
+    padding: 3px 9px;
+    border-radius: 5px;
+    margin-right: 10px;
+    a {
+      @include font-size(16px);
+      color: #808081;
+      text-decoration: none;
+    }
+    &.active {
+      background-color: #01adab;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  li:last-child {
+    border: 1px solid #808081;
+    margin-right: 0;
+  }
+}
 //nav-router
 .nav-router {
   background-color: #e2e3e4;
@@ -73,11 +98,16 @@ main {
   li {
     position: relative;
     text-align: center;
-    min-width: 184px;
+    min-width: 110px;
     padding: 13px 23px;
     top: -10px;
     cursor: pointer;
     h2 {
+      color: #808081;
+      @include font-size(14px);
+      font-weight: bolder;
+    }
+    a {
       color: #808081;
       @include font-size(14px);
       font-weight: bolder;
@@ -101,6 +131,9 @@ main {
         color: #ffff;
       }
       p {
+        color: #fff;
+      }
+      a {
         color: #fff;
       }
       &::after {
@@ -202,6 +235,49 @@ main {
     padding-top: 40px;
   }
 }
+//nav-article
+.nav-article {
+  background-color: #00938f;
+  ul {
+    @include flex();
+    list-style: none;
+    li {
+      position: relative;
+
+      margin-left: 83px;
+      padding: 9px 3px 11px 3px;
+      height: 40px;
+      a {
+        color: #fff;
+        font-weight: bolder;
+        @include font-size(14px);
+      }
+      &.active {
+        background-color: #01adab;
+        top: 5px;
+        left: 0;
+        border-radius: 5px 5px 0 0;
+        a {
+          text-transform: uppercase;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          left: -8px;
+          bottom: 0;
+
+          border-top: 5px solid #016b68;
+          border-left: 8px solid transparent;
+        }
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+}
 
 //custom
 .custom-form {
@@ -216,6 +292,7 @@ main {
     height: 40px;
     @media #{$info-phone-3} {
       height: 30px;
+      padding: 2px 12px;
     }
   }
   span {
@@ -224,7 +301,7 @@ main {
     top: 0;
     left: -10px;
   }
-  .custom-form__birthday {
+  .custom-form__inline {
     @include flex();
     select {
       margin-left: 13.5px;
@@ -232,6 +309,9 @@ main {
     select:first-child {
       margin-left: 0;
     }
+  }
+  .custom-form__textarea {
+    height: 110px;
   }
 }
 .custom-file {

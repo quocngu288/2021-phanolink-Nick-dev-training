@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="nav__midle">
-          <a href="/index.html">
+          <a href="">
             <img src="/assets/img/logo.png" alt="" />
           </a>
           <div class="input-group midle__input">
@@ -111,7 +111,7 @@
       </div>
       <div class="nav-scroll">
         <div class="common-container nav-scroll__content">
-          <a href="/index.html">
+          <a href="">
             <img src="/assets/img/logo.png" alt="" />
           </a>
           <div class="input-group content__input">
@@ -206,23 +206,23 @@
           <li><a href="">Trang chủ</a></li>
           <li>
             <i class="fas fa-chevron-right"></i>
-            <a href="" class="active">Thông Tin Tài Khoản</a>
+            <a href="" class="active">Sản Phẩm Yêu Thích</a>
           </li>
         </ul>
       </div>
-      <section class="user-info">
+    <section class="user-info">
         <div class="common-container user-info__content">
           <div class="content__left">
             <div class="left__head">
               <h3>Quản Lý Tài Khoản</h3>
               <ul>
-                <li class="active">
+                <li>
                   <i class="fas fa-chevron-right"></i>
                   <a href="/views/user-info/user-info.html"
                     >Thông tin tài khoản
                   </a>
                 </li>
-                <li>
+                <li class="active">
                   <i class="fas fa-chevron-right"></i>
                   <a href="/views/user-info/mananger-order.html"
                     >Quản Lý Đơn Hàng
@@ -244,9 +244,7 @@
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/my-notification.html"
-                    >Thông báo của tôi
-                  </a>
+                  <a href="/views/user-info/my-notification.html">Thông báo của tôi </a>
                 </li>
               </ul>
             </div>
@@ -266,138 +264,169 @@
               </div>
             </div>
           </div>
-          <div class="content__right-info">
-            <div class="right-info__content">
-              <ul class="content__title board-title">
-                <li class="active">
-                  <h2>THÔNG TIN TÀI KHOẢN</h2>
-                </li>
-              </ul>
-              <form class="content__form">
-                <div class="form__content">
-                  <div class="content__info">
-                    <div class="form-group custom-form">
-                      <label for="email">Họ Tên</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Nhập họ tên"
-                      />
-                      <span>*</span>
-                    </div>
-                    <div class="form-group custom-form">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Nhập Email"
-                      />
-                      <span>*</span>
-                    </div>
-                    <div class="form-group custom-form">
-                      <label for="email">Số điện thoại</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Nhập số điện thoại"
-                      />
-                      <span>*</span>
-                    </div>
-                    <div class="form-group">
-                      <label>Giới tính</label>
-                      <div class="clearfix custom-radios">
-                        <label>
-                          <input
-                            type="radio"
-                            id="color-3"
-                            name="color"
-                            value="color-3"
-                            checked
-                          />
-                          <span for="color-3"> Nam </span>
-                        </label>
-
-                        <label>
-                          <input
-                            type="radio"
-                            id="color-4"
-                            name="color"
-                            value="color-4"
-                          />
-                          <span for="color-4"> Nữ </span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="form-group custom-form">
-                      <label>Ngày sinh</label>
-                      <div class="custom-form__inline">
-                        <select class="form-control">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                        <select class="form-control">
-                          <option>Tháng 1</option>
-                          <option>Tháng 2</option>
-                          <option>Tháng 3</option>
-                          <option>Tháng 4</option>
-                          <option>Tháng 5</option>
-                        </select>
-                        <select class="form-control">
-                          <option>1999</option>
-                          <option>2000</option>
-                        </select>
-                      </div>
-                    </div>
-                    <p><span>* </span> Bắt buộc</p>
-                  </div>
-                  <div class="content__change-pass">
-                    <label class="change-pass__checkbox custom-checkbox">
-                      Thay đổi mật khẩu
-                      <input type="checkbox" checked />
-                      <span></span>
-                    </label>
-                    <div class="change-pass__form">
-                      <div class="form-group custom-form">
-                        <label for="email">Mật khẩu cũ</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
-                      <div class="form-group custom-form">
-                        <label for="email">Mật khẩu mới</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
-                      <div class="form-group custom-form">
-                        <label for="email">Xác nhận mật khẩu mới</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
-                    </div>
-                  </div>
+          <div class="content__right-detail">
+            <div class="right-mananger__info">
+              <div class="info__title">
+                <ul class="title__left board-title">
+                  <li class="active">
+                    <a>QUẢN LÝ ĐƠN HÀNG</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info__detail">
+                <p>Chi tiết đơn hàng: <a href="">#697318275</a></p>
+                <p>Trạng thái: <span>Giao hàng thành công</span></p>
+                <p>Thời gian đặt hàng: <span> 20:43 18/08/2018</span></p>
+                <p>Tổng Cộng: <span>460.000 đ </span></p>
+              </div>
+            </div>
+            <div class="right-mananger__shipping">
+              <div class="shipping__item">
+                <div class="item__head">
+                  <h3>Địa Chỉ Giao Hàng</h3>
                 </div>
-                <div class="form__button">
-                  <a href="" class="button__log">CẬP NHẬT THAY ĐỔI</a>
+                <div class="item__content">
+                  <p>Địa chỉ: <span>149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span></p>
+                <p>Số điện thoại: <span>0703764616<span></p>
                 </div>
-              </form>
+              </div>
+              <div class="shipping__item">
+                <div class="item__head">
+                  <h3>Hình Thức Giao Hàng</h3>
+                </div>
+                <div class="item__content">
+                    <p>Miễn phí vận chuyển</p>
+                </div>
+              </div>
+              <div class="shipping__item">
+                
+                <div class="item__head">
+                  <h3>Phương Thức Thanh Toán</h3>
+                </div>
+                <div class="item__content">
+                    <p>Thẻ ATM nội địa/Internet Banking (Miễn phí thanh toán)</p>
+                    <a>Giao dịch thành công</a>
+                </div>
+              </div>
+            </div>
+            <div class="right-mananger__table">
+                  <div class="table__content">
+                      <ul class="content__title">
+                      <li>Sản phẩm</li>
+                      <li>Giá</li>
+                      <li>Số lượng</li>
+                      <li>Tạm tính</li>
+                    </ul>
+                    <div class="content__products">
+                      <div class="products__item">
+                        <div class="item__image">
+                          <img src="/assets/img/cart/p-1.png" alt="" />
+                          <div>
+                            <p>
+                              Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex
+                              Multi Tuýp 20 Viên
+                            </p>
+                            <a href="">Xóa</a>
+                          </div>
+                        </div>
+                        <div class="item__price">
+                          <p>200.000đ</p>
+                      
+                        </div>
+                        <div class="item__quantity">
+                          <p>1</p>
+                              </div>
+                              <div class="item__sub-total">
+                                  <p>233.300d</p>
+                              </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="item__image">
+                          <img src="/assets/img/cart/p-2.png" alt="" />
+                          <div>
+                            <p>
+                              Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex
+                              Multi Tuýp 20 Viên
+                            </p>
+                            <a href="">Xóa</a>
+                          </div>
+                        </div>
+                        <div class="item__price">
+                          <p>200.000đ</p>
+                  
+                        </div>
+                        <div class="item__quantity">
+                          <p>1</p>
+                              </div>
+                              <div class="item__sub-total">
+                                  <p>233.300d</p>
+                              </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="item__image">
+                          <img src="/assets/img/cart/p-4.png" alt="" />
+                          <div>
+                            <p>
+                              Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex
+                              Multi Tuýp 20 Viên
+                            </p>
+                            <a href="">Xóa</a>
+                          </div>
+                        </div>
+                        <div class="item__price">
+                          <p>200.000đ</p>
+                        </div>
+                        <div class="item__quantity">
+                              <p>1</p>
+                        </div>
+                        <div class="item__sub-total">
+                            <p>233.300d</p>
+                        </div>
+                      </div>
+                      <div class="products__item">
+                        <div class="item__image">
+                          <img src="/assets/img/cart/p-2.png" alt="" />
+                          <div>
+                            <p>
+                              Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex
+                              Multi Tuýp 20 Viên
+                            </p>
+                            <a href="">Xóa</a>
+                          </div>
+                        </div>
+                        <div class="item__price">
+                          <p>200.000đ</p>
+                        </div>
+                        <div class="item__quantity">
+                          <p>1</p>
+                              </div>
+                              <div class="item__sub-total">
+                                  <p>233.300d</p>
+                              </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix table__total">
+                    <div class="total__left">
+                      <p>Tổng tạm</p>
+                      <p>Phí vận chuyển</p>
+                      <p>Tổng cộng</p>
+                    </div>
+                    <div class="total__right">
+                      <p>50.000 đ</p>
+                      <p>0</p>
+                      <p>460.000đ</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="right-mananger__back">
+              <i class="fas fa-chevron-left"></i>
+              <a href="/views/user-info/mananger-order.html">Quay lại</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       <!-- USER-INFO -->
 
       <!-- END USER-INFO -->
@@ -683,6 +712,7 @@
       </div>
     </div>
     <!-- END MODAL LOGIN -->
+
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please

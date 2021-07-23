@@ -206,7 +206,7 @@
           <li><a href="">Trang chủ</a></li>
           <li>
             <i class="fas fa-chevron-right"></i>
-            <a href="" class="active">Thông Tin Tài Khoản</a>
+            <a href="" class="active">Sản Phẩm Yêu Thích</a>
           </li>
         </ul>
       </div>
@@ -216,37 +216,29 @@
             <div class="left__head">
               <h3>Quản Lý Tài Khoản</h3>
               <ul>
-                <li class="active">
+                <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/user-info.html"
-                    >Thông tin tài khoản
-                  </a>
+                  <a href="/views/user-info/user-info.html">Thông tin tài khoản </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/mananger-order.html"
-                    >Quản Lý Đơn Hàng
-                  </a>
+                  <a href="/views/user-info/mananger-order.html">Quản Lý Đơn Hàng </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/pro-favorite.html"
-                    >Sản phẩm yêu thích
-                  </a>
+                  <a href="/views/user-info/pro-favorite.html">Sản phẩm yêu thích </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
                   <a href="">Sản phẩm đã xem</a>
                 </li>
-                <li>
+                <li class="active">
                   <i class="fas fa-chevron-right"></i>
                   <a href="/views/user-info/address-number.html">Sổ địa chỉ </a>
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/my-notification.html"
-                    >Thông báo của tôi
-                  </a>
+                  <a href="/views/user-info/my-notification.html">Thông báo của tôi </a>
                 </li>
               </ul>
             </div>
@@ -266,14 +258,13 @@
               </div>
             </div>
           </div>
-          <div class="content__right-info">
-            <div class="right-info__content">
-              <ul class="content__title board-title">
+          <div class="content__right-add">
+            <ul class="right-info__title board-title">
                 <li class="active">
-                  <h2>THÔNG TIN TÀI KHOẢN</h2>
+                  <h2>SỐ ĐỊA CHỈ</h2>
                 </li>
               </ul>
-              <form class="content__form">
+            <form class="right-info__form">
                 <div class="form__content">
                   <div class="content__info">
                     <div class="form-group custom-form">
@@ -303,99 +294,88 @@
                       />
                       <span>*</span>
                     </div>
-                    <div class="form-group">
-                      <label>Giới tính</label>
-                      <div class="clearfix custom-radios">
-                        <label>
-                          <input
-                            type="radio"
-                            id="color-3"
-                            name="color"
-                            value="color-3"
-                            checked
-                          />
-                          <span for="color-3"> Nam </span>
-                        </label>
-
-                        <label>
-                          <input
-                            type="radio"
-                            id="color-4"
-                            name="color"
-                            value="color-4"
-                          />
-                          <span for="color-4"> Nữ </span>
-                        </label>
-                      </div>
-                    </div>
+               
                     <div class="form-group custom-form">
-                      <label>Ngày sinh</label>
-                      <div class="custom-form__inline">
+                        <label for="email">Tỉnh/ Thành phố</label>
                         <select class="form-control">
-                          <option>1</option>
+                          <option>Hồ Chí Minh</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
+                      </div>
+                      <div class="form-group custom-form">
+                        <label for="email">Quận Huyện</label>
                         <select class="form-control">
-                          <option>Tháng 1</option>
-                          <option>Tháng 2</option>
-                          <option>Tháng 3</option>
-                          <option>Tháng 4</option>
-                          <option>Tháng 5</option>
-                        </select>
-                        <select class="form-control">
-                          <option>1999</option>
-                          <option>2000</option>
+                          <option>Quận 3</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
                         </select>
                       </div>
-                    </div>
+                      <div class="form-group custom-form">
+                        <label for="email">Phường Xã</label>
+                        <select class="form-control">
+                          <option>Nguyễn Văn Trỗi</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group custom-form">
+                        <label for="email">Địa chỉ</label>
+                        <textarea
+                          type="text"
+                          class="form-control custom-form__textarea"
+                          placeholder="Nhập địa chỉ"
+                        ></textarea>
+                      </div>
                     <p><span>* </span> Bắt buộc</p>
                   </div>
-                  <div class="content__change-pass">
-                    <label class="change-pass__checkbox custom-checkbox">
-                      Thay đổi mật khẩu
-                      <input type="checkbox" checked />
+                  <div class="content__change-address">
+                    <label class="change-address__checkbox custom-checkbox">
+                        Sử dụng làm địa chỉ mặc định
+                      <input type="checkbox"  />
                       <span></span>
                     </label>
-                    <div class="change-pass__form">
-                      <div class="form-group custom-form">
-                        <label for="email">Mật khẩu cũ</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
-                      <div class="form-group custom-form">
-                        <label for="email">Mật khẩu mới</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
-                      <div class="form-group custom-form">
-                        <label for="email">Xác nhận mật khẩu mới</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Nhập họ tên"
-                        />
-                        <span>*</span>
-                      </div>
+                    <div class="change-address__form">
+                        <div class="form-group">
+                            <label>Loại địa chỉ</label>
+                            <div class="clearfix custom-radios">
+                              <label>
+                                <input
+                                  type="radio"
+                                  id="color-3"
+                                  name="color"
+                                  value="color-3"
+                                  checked
+                                />
+                                <span for="color-3"> Nhà riêng </span>
+                              </label>
+        
+                              <label>
+                                <input
+                                  type="radio"
+                                  id="color-4"
+                                  name="color"
+                                  value="color-4"
+                                />
+                                <span for="color-4"> Công ty </span>
+                              </label>
+                            </div>
+                          </div>
+                 
                     </div>
                   </div>
                 </div>
                 <div class="form__button">
                   <a href="" class="button__log">CẬP NHẬT THAY ĐỔI</a>
+                  <a href="/views/user-info/address-number.html" class="button__back">   <i class="fas fa-chevron-left"></i> Quay Lại</a>
                 </div>
               </form>
-            </div>
-          </div>
         </div>
       </section>
       <!-- USER-INFO -->

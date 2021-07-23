@@ -1,0 +1,111 @@
+.user-info {
+  .user-info__content {
+    .content__right-address {
+      grid-column: 4 / span 9;
+
+      .right-address__info {
+        background-color: #fff;
+        margin-bottom: 25px;
+        .info__title {
+          padding-left: 25px;
+          li {
+            padding: 9px 30px;
+            @media #{$info-phone-2} {
+              left: 0;
+              padding: 9px 20px;
+            }
+          }
+        }
+        .info__item {
+          @include flex();
+          justify-content: space-between;
+          padding: 25px;
+          border-bottom: 2px solid #e5e5e4;
+          .item__left {
+            h2 {
+              color: #434343;
+              @include font-size(14px);
+              margin-bottom: 10px;
+              font-weight: bolder;
+              span {
+                color: #01adab;
+                @include font-size(12px);
+                margin-left: 10px;
+              }
+            }
+            p {
+              color: #808081;
+              @include font-size(14px);
+              margin-bottom: 10px;
+              span {
+                color: #434343;
+              }
+            }
+            a {
+              display: block;
+              text-align: center;
+              width: 163px;
+              border-radius: 5px;
+              background-color: #808081;
+              color: #fff;
+              padding: 10px 15px;
+              white-space: nowrap;
+              border: none;
+              height: 40px;
+              @include font-size(13.2px);
+              cursor: pointer;
+              &.active {
+                background: #01adab;
+              }
+            }
+          }
+          .item__right {
+            @include flex();
+            justify-content: space-between;
+            a {
+              color: #01adab;
+              @include font-size(14px);
+              margin-left: 15px;
+              white-space: nowrap;
+            }
+            a:nth-child(2) {
+              color: #ea4036;
+            }
+            &.default {
+              a:nth-child(2) {
+                visibility: hidden;
+              }
+            }
+          }
+          @media #{$info-phone-2} {
+            padding: 15px;
+          }
+        }
+      }
+      .right-address__paginate {
+        @include flex();
+        justify-content: space-between;
+        .paginate__button {
+          display: block;
+          padding: 4px 13px;
+          @include font-size(14px);
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bolder;
+          background-color: #01adab;
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        grid-column: 5 / span 8;
+      }
+      @media #{$info-phone} {
+        grid-column: 4 / span 9;
+      }
+      @media #{$info-phone-2} {
+        grid-column: 1 / span 12;
+      }
+    }
+  }
+}
