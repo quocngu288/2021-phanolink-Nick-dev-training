@@ -128,6 +128,69 @@
         margin-left: 0;
       }
     }
+    @media #{$info-tablet-vertical} {
+      display: none;
+    }
+  }
+  .article__head-mobile {
+    flex-flow: column;
+    display: none;
+    .head-mobile__item {
+      background-color: #fff;
+      width: 100%;
+      padding: 25px;
+
+      @include flex();
+      margin-bottom: 21px;
+      .item__image {
+        width: 258px;
+        height: 194px;
+        padding-right: 21px;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @media #{$info-tablet-vertical} {
+          width: 158px;
+          height: 94px;
+        }
+      }
+      .item__content {
+        width: 50%;
+        h2 {
+          color: #01adab;
+          @include font-size(14px);
+          font-weight: bolder;
+          margin-bottom: 6px;
+        }
+        h3 {
+          color: #434343;
+          @include font-size(20px);
+          font-weight: bolder;
+          margin-bottom: 15px;
+        }
+        p {
+          color: #505050;
+          @include font-size(14px);
+          margin-bottom: 20px;
+
+          word-break: break-all;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        a {
+          @include font-size(12px);
+          color: #01adab;
+        }
+      }
+    }
+    @media #{$info-tablet-vertical} {
+      @include flex();
+    }
   }
   .article__banner {
     background-image: url("/assets/img/article/banner.png");
@@ -151,6 +214,9 @@
         color: #fff;
       }
     }
+    @media #{$info-phone-3} {
+      padding: 0 41px;
+    }
   }
   .article__foot {
     .foot__category {
@@ -169,7 +235,7 @@
         background-color: #fff;
         transition: all 0.5s;
         &:hover {
-          background-color: #01adab;
+          background-color: #fa434e;
           color: #fff;
           font-weight: bolder;
         }
@@ -189,12 +255,20 @@
             padding: 28px 0;
             border-bottom: 1px solid #e2e3e4;
             .item__image {
-              height: 144.44px;
-              width: 22.79%;
+              height: 133px;
+              width: 183px;
               display: block;
               img {
                 height: 100%;
                 width: 100%;
+                object-fit: cover;
+              }
+              @media #{$info-phone} {
+                width: auto;
+              }
+              @media #{$info-phone-2} {
+                width: 158px;
+                height: 94px;
               }
             }
             .item__content {
@@ -212,16 +286,28 @@
                 font-weight: bolder;
                 margin-bottom: 5px;
               }
-
+              p {
+                word-break: break-all;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
               a {
                 @include font-size(12px);
                 color: #01adab;
+              }
+              @media #{$info-phone-2} {
+                width: 50%;
               }
             }
           }
           .info__item:first-child {
             border-bottom: none;
           }
+        }
+        @media #{$info-tablet-vertical-1} {
+          width: 100%;
         }
       }
       .content__right {
@@ -237,6 +323,9 @@
               @include font-size(15px);
               padding: 15px 26px;
               font-weight: bolder;
+              @media #{$info-phone} {
+                padding: 15px;
+              }
             }
           }
           .cate__item {
@@ -260,9 +349,12 @@
               color: #505050;
               @include font-size(14px);
             }
+            @media #{$info-phone} {
+              padding: 0 15px 15px 15px;
+            }
           }
           .cate__item:last-child {
-            padding-bottom: 21px;
+            padding: 0 15px;
           }
         }
         .right__sponsor {
@@ -312,6 +404,9 @@
               color: #01adab;
             }
           }
+          @media #{$info-phone} {
+            padding: 0 15px 15px 15px;
+          }
         }
         .right__bonus {
           background-color: #fff;
@@ -335,6 +430,73 @@
             }
           }
         }
+        @media #{$info-tablet-vertical-1} {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 21px;
+          @include flex();
+          .right__cate {
+            width: calc((100%-32px) / 3);
+            margin-left: 0;
+            .cate__item {
+              p {
+                word-break: break-all;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }
+          }
+          .right__sponsor {
+            width: calc((100%-32px) / 3);
+            margin-left: 16px;
+            margin-bottom: 0;
+            .sponsor__content {
+              .content__image {
+                margin: 0 0 25px 0;
+              }
+            }
+          }
+          .right__bonus {
+            width: calc((100%-32px) / 3);
+            margin-left: 16px;
+          }
+        }
+
+        @media #{$info-phone-2} {
+          flex-wrap: wrap;
+          .right__cate {
+            width: calc((100%-16px) / 2);
+          }
+          .right__sponsor {
+            width: calc((100%-16px) / 2);
+            margin-left: 0px;
+          }
+          .right__bonus {
+            width: calc((100%-16px) / 2);
+            margin-left: 0;
+            margin-top: 20px;
+          }
+        }
+        @media #{$info-phone-3} {
+          .right__cate {
+            width: 100%;
+          }
+          .right__sponsor {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+          }
+          .right__bonus {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        flex-wrap: wrap;
       }
     }
   }

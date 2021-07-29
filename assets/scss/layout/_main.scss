@@ -1,5 +1,9 @@
 main {
   padding-bottom: 20px;
+
+  @media #{$info-tablet-vertical} {
+    padding-top: 95px;
+  }
 }
 .common-container {
   max-width: 1320px;
