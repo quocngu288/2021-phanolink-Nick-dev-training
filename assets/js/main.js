@@ -70,6 +70,16 @@ $("#btnRegister").click((e) => {
   $(".left__form-register-success").css("display", "block");
 });
 // -------------------------------------------------------------------------
+// dropdown menu product
+// $("#btnDropdown").click(function (e) {
+//   e.preventDefault();
+//   $(this).toggleClass("active");
+// });
+$(".list__item").click(function (e) {
+  e.preventDefault();
+  $(this).toggleClass("active");
+});
+// -------------------------------------------------------------------------
 // own carosel
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
@@ -141,9 +151,9 @@ owl4.owlCarousel({
   loop: true,
   margin: 5,
   nav: true,
-  autoplay: true,
-  autoplayTimeout: 1000,
-  autoplayHoverPause: true,
+  // autoplay: true,
+  // autoplayTimeout: 1000,
+  // autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,

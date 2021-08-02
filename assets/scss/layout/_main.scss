@@ -1,5 +1,9 @@
 main {
   padding-bottom: 20px;
+
+  @media #{$info-tablet-vertical} {
+    padding-top: 95px;
+  }
 }
 .common-container {
   max-width: 1320px;
@@ -86,9 +90,6 @@ main {
         margin-left: 0px;
       }
     }
-  }
-  @media #{$info-tablet-vertical} {
-    margin-top: 100px;
   }
 }
 .board-title {
@@ -241,9 +242,9 @@ main {
   ul {
     @include flex();
     list-style: none;
+
     li {
       position: relative;
-
       margin-left: 83px;
       padding: 9px 3px 11px 3px;
       height: 40px;
@@ -251,6 +252,7 @@ main {
         color: #fff;
         font-weight: bolder;
         @include font-size(14px);
+        white-space: nowrap;
       }
       &.active {
         background-color: #01adab;
@@ -272,10 +274,16 @@ main {
           border-left: 8px solid transparent;
         }
       }
+      @media #{$info-tablet-horizontal} {
+        margin-left: 63px;
+      }
     }
     li:first-child {
       margin-left: 0;
     }
+  }
+  @media #{$info-tablet-vertical} {
+    overflow: scroll;
   }
 }
 
