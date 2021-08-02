@@ -10,7 +10,7 @@
         margin-bottom: 17px;
         .head__title {
           padding: 14px;
-          border-bottom: 1px solid #707070;
+          border-bottom: 1px solid #e5e5e4;
           h2 {
             font-weight: bolder;
             @include font-size(15px);
@@ -58,6 +58,10 @@
             }
           }
         }
+        @media #{$info-phone} {
+          width: 50%;
+          margin-bottom: 0;
+        }
       }
       .left__foot {
         background-color: #fff;
@@ -71,6 +75,23 @@
             margin-left: 3px;
           }
         }
+        .foot__content {
+          display: block;
+          img {
+            width: 100%;
+          }
+        }
+        @media #{$info-phone} {
+          width: 50%;
+          margin-left: 15px;
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        width: 27.87%;
+      }
+      @media #{$info-phone} {
+        width: 100%;
+        @include flex();
       }
     }
     .content__right {
@@ -175,12 +196,31 @@
           }
         }
       }
+      .right__search-result {
+        margin-top: 50px;
+        margin-bottom: 12px;
+        p {
+          @include font-size(16px);
+          color: #808081;
+          span:nth-child(1) {
+            font-weight: bolder;
+            color: #434343;
+          }
+          span:nth-child(2) {
+            color: #505050;
+          }
+        }
+      }
       .right__category {
         @include flex();
         margin-bottom: 26px;
         p {
           color: #505050;
           @include font-size(14px);
+          @media #{$info-phone-2} {
+            width: 100%;
+            margin-bottom: 6px;
+          }
         }
         button {
           margin-left: 15px;
@@ -190,11 +230,24 @@
           border-radius: 5px;
           background-color: #fff;
           transition: all 0.5s;
+          white-space: nowrap;
           &:hover {
             background-color: #fa434e;
             color: #fff;
             font-weight: bolder;
           }
+          @media #{$info-tablet-vertical-1} {
+            padding: 3px 6.5px;
+            margin-left: 8px;
+          }
+          @media #{$info-phone-2} {
+            width: 26.33%;
+            margin: 0 auto;
+            margin-bottom: 6px;
+          }
+        }
+        @media #{$info-phone-2} {
+          flex-wrap: wrap;
         }
       }
       .right__product {
@@ -412,7 +465,20 @@
             grid-template-columns: repeat(2, 1fr);
           }
         }
+        @media #{$info-phone} {
+          margin-bottom: 15px;
+        }
       }
+      @media #{$info-tablet-vertical-1} {
+        width: 72.13%;
+      }
+      @media #{$info-phone} {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    @media #{$info-phone} {
+      flex-wrap: wrap-reverse;
     }
   }
 }
