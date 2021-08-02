@@ -1,0 +1,122 @@
+.health {
+  margin-bottom: 20px;
+  min-height: 559px;
+  background-color: #fff;
+
+  .health__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    .content__left {
+      img {
+        @media #{$info-phone-2} {
+          width: 137px;
+          height: 92px;
+        }
+      }
+      .left__item {
+        @include flex();
+        align-items: center;
+        margin-bottom: 37px;
+        .item__image {
+          width: 167px;
+          height: 118px;
+          img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+          }
+          @media #{$info-phone} {
+            height: 90px;
+          }
+          @media #{$info-phone-3} {
+            height: 60px;
+          }
+        }
+        .item__info {
+          margin-left: 15px;
+          width: 363px;
+          p:nth-child(1) {
+            @include font-size(22px);
+            color: #505050;
+            font-weight: bolder;
+            margin-bottom: 2px;
+          }
+          p:nth-child(2) {
+            @include font-size(14.6px);
+            color: #000000;
+
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          @media #{$info-tablet-horizontal} {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .content__right {
+      padding-top: 12px;
+      .right__title {
+        display: flex;
+        align-items: center;
+
+        p {
+          @include font-size(22px);
+          color: #01b1af;
+          margin-right: 10px;
+          white-space: nowrap;
+          font-weight: bolder;
+        }
+        .title__border {
+          height: 1px;
+          width: 100%;
+          background-color: #e2e3e4;
+        }
+      }
+      .right__content {
+        .content__item {
+          display: flex;
+          align-items: center;
+          border-bottom: 2px solid #e2e3e4;
+          padding: 10px 0;
+          h2 {
+            @include font-size(57.56px);
+            color: #ebebeb;
+          }
+          .info {
+            width: 543px;
+            margin-left: 10px;
+            a {
+              @include font-size(22px);
+              color: #505050;
+              margin-bottom: 2px;
+              display: block;
+              font-weight: bolder;
+            }
+            p {
+              @include font-size(11.6px);
+              color: #505050;
+            }
+            @media #{$info-tablet-horizontal} {
+              width: 100%;
+            }
+          }
+        }
+        .content__item:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    @media #{$info-tablet-horizontal} {
+      flex-wrap: wrap;
+      // width: 100%;
+    }
+  }
+  @media #{$info-phone-2} {
+    padding: 0;
+  }
+}

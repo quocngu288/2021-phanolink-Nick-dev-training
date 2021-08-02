@@ -1,0 +1,127 @@
+.upload-toa {
+  background-color: #ebebeb;
+  padding: 20px 0;
+  min-height: 639px;
+  .upload-toa__content {
+    background-color: #fff;
+    width: 792px;
+
+    margin: 0 auto;
+    padding: 0 65px;
+    border-bottom: 3px solid #01adab;
+    .content__head {
+      justify-content: center;
+      li {
+        width: 255px;
+        padding-top: 15px;
+        h2 {
+          @include font-size(26px);
+        }
+      }
+    }
+    .content__form {
+      padding: 11px 0 44px 0;
+      h2 {
+        color: #01adab;
+        text-align: center;
+        @include font-size(20px);
+        font-weight: bolder;
+        margin-bottom: 13px;
+      }
+      p {
+        color: #434343;
+        @include font-size(14px);
+      }
+      .form__file {
+        margin-bottom: 16px;
+        h3 {
+          color: #434343;
+          @include font-size(20px);
+          margin-bottom: 13px;
+          font-weight: bolder;
+        }
+      }
+      .form__info {
+        margin-bottom: 20px;
+        h3 {
+          color: #434343;
+          @include font-size(20px);
+          margin-bottom: 13px;
+          font-weight: bolder;
+        }
+        .info__customer {
+          p {
+            color: #808081;
+            @include font-size(16px);
+            span {
+              color: #434343;
+            }
+          }
+        }
+      }
+      .form__shipping {
+        margin-bottom: 20px;
+        h3 {
+          color: #434343;
+          @include font-size(20px);
+          margin-bottom: 13px;
+          font-weight: bolder;
+        }
+        .shipping__local {
+          @include flex();
+          gap: 15px;
+          margin-bottom: 20px;
+          .form-group {
+            width: 50%;
+            .form-control {
+              color: #808081;
+            }
+            @media #{$info-phone-2} {
+              width: 100%;
+            }
+          }
+          @media #{$info-phone-2} {
+            flex-wrap: wrap;
+          }
+        }
+        .shipping__address {
+          p {
+            color: #808081;
+            @include font-size(16px);
+            span {
+              color: #434343;
+            }
+          }
+        }
+      }
+      .form__button {
+        a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 15px;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          background-color: #01adab;
+        }
+      }
+      .form__image {
+        height: 350px;
+      }
+
+      .form__back {
+        text-align: center;
+        margin-top: 10px;
+        a {
+          color: #01adab;
+          @include font-size(14px);
+        }
+      }
+    }
+
+    @media #{$info-tablet-vertical-1} {
+      width: auto;
+    }
+  }
+}

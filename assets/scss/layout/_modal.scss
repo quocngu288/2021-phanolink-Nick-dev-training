@@ -1,0 +1,320 @@
+.modal-dialog-cart {
+  margin-top: 120px;
+  width: 631px;
+  min-height: 260px;
+  .dialog__content {
+    display: block;
+    padding: 0 74px;
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    .content__header {
+      justify-content: center;
+      li {
+        padding-top: 18px;
+        h2 {
+          @include font-size(18px);
+        }
+      }
+    }
+    .content__form {
+      .form__text-head {
+        margin-bottom: 5px;
+        @include font-size(16px);
+        color: #434343;
+      }
+      .form__check {
+        @include flex();
+        p {
+          color: #808081;
+          @include font-size(14px);
+          margin-left: 8.5px;
+        }
+      }
+      .form__not-pass {
+        color: #434343;
+        @include font-size(14px);
+        a:nth-child(1) {
+          color: #434343;
+          @include font-size(14px);
+        }
+        a:nth-child(2) {
+          color: #ea4036;
+        }
+      }
+      .form__checkbox {
+        @include font-size(16px);
+        color: #01adab;
+        margin-bottom: 41px;
+      }
+      .form__button {
+        margin-bottom: 15px;
+        a {
+          display: block;
+          width: 100%;
+          margin-bottom: 11px;
+          padding: 9px 0;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bolder;
+        }
+        .button__log {
+          background-color: #01adab;
+        }
+
+        p {
+          text-align: right;
+
+          @include font-size(14px);
+          color: #434343;
+          span {
+            color: #ea4036;
+          }
+        }
+      }
+      .form__text-foot {
+        @include font-size(14px);
+
+        span {
+          color: #ea4036;
+        }
+      }
+    }
+
+    @media #{$info-phone-2} {
+      padding: 0 15px;
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    margin: 50px auto 0 auto;
+  }
+  @media #{$info-phone} {
+    width: 531px;
+  }
+  @media #{$info-phone-2} {
+    width: 431px;
+  }
+  @media #{$info-phone-3} {
+    width: 310px;
+  }
+}
+
+//MODAL LOGIN-REGISTER
+.modal-dialog-account {
+  margin-top: 120px;
+  width: 471px;
+  min-height: 260px;
+  .dialog__content {
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    display: block;
+    padding: 0 42px;
+    .content__title {
+      justify-content: center;
+      gap: 13.5px;
+      li {
+        padding-top: 15px;
+        @media #{$info-phone-3} {
+          min-width: 127px;
+          padding: 13px 16px;
+        }
+        h2 {
+          @include font-size(22px);
+        }
+      }
+      @media #{$info-phone-3} {
+        gap: 5.5px;
+      }
+    }
+    .content__form {
+      margin: 30px 0;
+      .form__text-head {
+        margin-bottom: 15px;
+        @include font-size(16px);
+        color: #434343;
+      }
+      .form__checkbox {
+        @include font-size(14px);
+        color: #808081;
+        margin-top: 38px;
+        margin-bottom: 11px;
+      }
+      .form__not-pass {
+        color: #434343;
+        @include font-size(14px);
+        margin-bottom: 30px;
+        a:nth-child(1) {
+          color: #434343;
+          @include font-size(14px);
+        }
+        a:nth-child(2) {
+          color: #ea4036;
+          font-weight: bolder;
+        }
+      }
+      .form__button {
+        margin-bottom: 8px;
+        a {
+          display: block;
+          width: 100%;
+          margin-bottom: 11px;
+          padding: 9px 0;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bolder;
+        }
+        a:last-child {
+          margin-bottom: 0;
+        }
+        .button__log {
+          background-color: #01adab;
+        }
+        .button__facebook {
+          background-color: #3b5998;
+        }
+        .button__google {
+          background-color: #e94a32;
+        }
+        .button__close {
+          background-color: #808081;
+        }
+      }
+      .form__text-foot {
+        @include font-size(14px);
+        color: #434343;
+        span {
+          color: #ea4036;
+          font-weight: bolder;
+        }
+      }
+      .form__text-success {
+        @include font-size(14px);
+        color: #434343;
+        margin-bottom: 25px;
+        span {
+          color: #ea4036;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .left__form-register-success {
+      display: none;
+      padding-top: 20px;
+      .form__text-foot {
+        margin-bottom: 20px;
+      }
+    }
+    @media #{$info-phone-2} {
+      padding: 0 15px;
+    }
+  }
+  .dialog__content-notpass {
+    min-height: 250px;
+    display: none;
+    .content__title {
+      margin-bottom: 30px;
+    }
+
+    .content__form-notpass-success {
+      display: none;
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    margin: 50px auto 0 auto;
+  }
+  @media #{$info-phone} {
+    width: 408px;
+  }
+  @media #{$info-phone-3} {
+    width: 281px;
+  }
+}
+//END LOGIN-REGISTER
+
+// MODAL SEARCH
+.modal-dialog-search {
+  margin-top: 120px;
+  width: 471px;
+  min-height: 260px;
+  .dialog__content {
+    background-color: #fff;
+    border-bottom: 4px solid #01adab;
+    display: block;
+    padding: 0 42px;
+    .content__title {
+      justify-content: center;
+
+      li {
+        padding: 9px 30px;
+        // @media #{$info-phone-3} {
+        //   min-width: 127px;
+        //   padding: 13px 16px;
+        // }
+        h2 {
+          @include font-size(22px);
+        }
+      }
+    }
+    .content__form {
+      margin: 25px 0;
+      .form-search__inline {
+        @include flex();
+        .inline__date {
+          width: calc((100%-15px) / 2);
+        }
+        .inline__date:nth-child(2) {
+          margin-left: 15px;
+        }
+      }
+      .form__button {
+        margin-bottom: 8px;
+        text-align: center;
+
+        .button__log {
+          background-color: #01adab;
+          display: block;
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: 15px;
+          padding: 9px 0;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bolder;
+        }
+        .button__delete {
+          @include font-size(14px);
+          color: #ea4036;
+        }
+      }
+      .form__text-foot {
+        @include font-size(14px);
+        color: #434343;
+        span {
+          color: #ea4036;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    @media #{$info-phone-2} {
+      padding: 0 15px;
+    }
+  }
+
+  @media #{$info-tablet-vertical} {
+    margin: 50px auto 0 auto;
+  }
+  @media #{$info-phone} {
+    width: 408px;
+  }
+  @media #{$info-phone-3} {
+    width: 281px;
+  }
+}
+// END MODAL SEARCH

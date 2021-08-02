@@ -21,15 +21,14 @@
 @import "layout/button";
 @import "layout/sidebar";
 @import "layout/footer";
-
+@import "layout/modal";
+@import "layout/form-custom";
 // Page specific styles
-@import "page/banner";
-@import "page/service";
-@import "page/create-toa";
-@import "page/bonus";
-@import "page/hot-product";
-@import "page/medicinne";
-@import "page/foods";
-@import "page/consumers-goods";
-@import "page/health";
-@import "page/brand";
+@import "page/home/homepage";
+@import "page/cart/cart-page";
+@import "page/upload-toa/upload-toa-page";
+@import "page/user-info/userpage";
+@import "page/article/article-page";
+@import "page/product/product-page";
+@import "page/single-page/single-page";
+@import "page/store/store-page";
