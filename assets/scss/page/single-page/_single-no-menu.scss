@@ -1,0 +1,45 @@
+.single-page {
+  background-color: #ebebeb;
+  padding: 17px 0 44px 0;
+  .single-no-menu__content {
+    background-color: #fff;
+    padding: 0 55px 40px 55px;
+    border-bottom: 5px solid #01adab;
+    .content__title {
+      margin-bottom: 20px;
+      li {
+        padding: 12px 23px;
+        a {
+          @include font-size(26px);
+        }
+      }
+    }
+    .content__intro {
+      h3 {
+        @include font-size(26px);
+        font-weight: bolder;
+        margin-bottom: 16px;
+      }
+      .intro__wrap {
+        p {
+          @include font-size(16px);
+          color: #434343;
+          line-height: 26px;
+          span {
+            font-weight: bolder;
+          }
+        }
+        .wrap__path {
+          h4 {
+            margin-bottom: 6px;
+            font-weight: bolder;
+            @include font-size(16px);
+          }
+        }
+      }
+    }
+    @media #{$info-phone-2} {
+      padding: 0 15px 40px 15px;
+    }
+  }
+}
