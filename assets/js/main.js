@@ -151,9 +151,9 @@ owl4.owlCarousel({
   loop: true,
   margin: 5,
   nav: true,
-  // autoplay: true,
-  // autoplayTimeout: 1000,
-  // autoplayHoverPause: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,

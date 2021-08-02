@@ -303,6 +303,11 @@ main {
       padding: 2px 12px;
     }
   }
+  input::placeholder {
+    @include font-size(13px);
+    font-style: italic;
+    color: #838383;
+  }
   span {
     color: #ea4036;
     position: absolute;
