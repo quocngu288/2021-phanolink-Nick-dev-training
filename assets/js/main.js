@@ -80,6 +80,40 @@ $(".list__item").click(function (e) {
   $(this).toggleClass("active");
 });
 // -------------------------------------------------------------------------
+//check to show form
+$(".change-pass__checkbox").click(function () {
+  console.log("click");
+  if ($(".change-pass__checkbox>input").is(":checked")) {
+    $(".change-pass__form").show(300);
+  } else {
+    $(".change-pass__form").hide(300);
+  }
+});
+function loadFormCheckUserInfo() {
+  if ($(".change-pass__checkbox>input").is(":checked")) {
+    $(".change-pass__form").show(300);
+  } else {
+    $(".change-pass__form").hide(300);
+  }
+}
+$(".change-address__checkbox").click(function () {
+  console.log("click");
+  if ($(".change-address__checkbox>input").is(":checked")) {
+    $(".change-address__form").show(300);
+  } else {
+    $(".change-address__form").hide(300);
+  }
+});
+function loadFormCheckAddAddress() {
+  if ($(".change-address__checkbox>input").is(":checked")) {
+    $(".change-address__form").show(300);
+  } else {
+    $(".change-address__form").hide(300);
+  }
+}
+loadFormCheckUserInfo();
+loadFormCheckAddAddress();
+//----------------------------------------------------------------------------
 // own carosel
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");

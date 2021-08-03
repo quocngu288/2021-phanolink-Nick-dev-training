@@ -1,0 +1,47 @@
+.notfound {
+  height: 635px;
+  padding: 18px 0 40px 0;
+  background-color: #ebebeb;
+  .notfound__content {
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    width: 732px;
+    height: 80%;
+    .content__wrap {
+      @include flex();
+      align-items: center;
+      h2 {
+        font-weight: bolder;
+        @include font-size(150px);
+        color: #808081;
+      }
+      .wrap__info {
+        margin-left: 64px;
+        p {
+          color: #808081;
+          @include font-size(30px);
+          margin-bottom: 9px;
+        }
+        a {
+          @include font-size(25px);
+          font-weight: bolder;
+          color: #01adab;
+        }
+        @media #{$info-phone-2} {
+          margin-left: 0;
+        }
+      }
+      @media #{$info-phone-2} {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    @media #{$info-tablet-vertical-1} {
+      width: 530px;
+    }
+    @media #{$info-phone-2} {
+      width: 200px;
+    }
+  }
+}
