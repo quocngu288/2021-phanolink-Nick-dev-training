@@ -59,3 +59,130 @@
     }
   }
 }
+.custom-radios {
+  border: 1px solid #eeeeef;
+  border-radius: 8px;
+  overflow: hidden;
+  label {
+    width: 50%;
+    float: left;
+    color: #808081;
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+    input[type="radio"] {
+      display: none;
+    }
+    span {
+      display: flex;
+      text-align: center;
+      padding: 11px 0;
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="radio"]:checked {
+      ~ span {
+        font-weight: bold;
+        color: #fff;
+        background-color: #808081;
+      }
+    }
+  }
+}
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  font-weight: normal;
+  cursor: pointer;
+  @include font-size(16px);
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ span {
+      background-color: #01adab;
+      &::after {
+        display: block;
+      }
+    }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 17px;
+    width: 17px;
+    border-radius: 5px;
+    background-color: #eee;
+    &::after {
+      //hidden when not checked
+      content: "";
+      position: absolute;
+      display: none;
+
+      // Style the checkmark
+      left: 7px;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+  &:hover {
+    input ~ span {
+      background-color: #01adab;
+    }
+  }
+}
+
+//custom select 2 library
+.custom-select2 {
+  label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 6px;
+  }
+  .select2-container {
+    width: 100% !important;
+    .select2-selection--single {
+      height: 39px;
+      line-height: 39px;
+      .select2-selection__rendered {
+        line-height: 39px;
+        .select2-selection__placeholder {
+          color: #808081;
+          @include font-size(14px);
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+}
+.select2-container--open {
+  .select2-dropdown--below {
+    min-width: 200px !important;
+    .select2-search--dropdown {
+      input {
+        outline: none;
+        padding: 6px;
+      }
+    }
+    .select2-results {
+      ul {
+        li {
+          padding: 8px 0 8px 4px;
+        }
+        li:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

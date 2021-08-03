@@ -13,16 +13,22 @@ header {
         align-items: center;
         justify-content: space-between;
         margin-left: 74px;
+        a {
+          color: #fff;
+          @include font-size(13.2px);
+          font-weight: bolder;
+          transition: all 0.5s;
+          &:hover {
+            color: #fa434e;
+          }
+        }
         .item__content {
           margin-left: 5px;
           color: #fff;
-          a {
-            color: #fff;
-            @include font-size(13.2px);
-          }
 
           p {
             @include font-size(11.58px);
+            font-weight: bolder;
           }
         }
       }
@@ -44,6 +50,11 @@ header {
         input {
           height: 40px;
         }
+        input::placeholder {
+          @include font-size(13px);
+          font-style: italic;
+          color: #838383;
+        }
         @media #{$info-tablet-horizontal} {
           width: 510px;
         }
@@ -57,6 +68,7 @@ header {
         p {
           margin-left: 5px;
           white-space: nowrap;
+          font-weight: bolder;
         }
         span {
           background-color: #fa434e;
@@ -96,8 +108,9 @@ header {
           margin-left: 11px;
           @include font-size(15.75px);
           transition: all 0.5s;
+          font-weight: bold;
           &:hover {
-            font-weight: bold;
+            color: #fa434e;
           }
         }
       }
@@ -128,6 +141,11 @@ header {
         margin-left: 41px;
         input {
           height: 40px;
+        }
+        input::placeholder {
+          @include font-size(13px);
+          font-style: italic;
+          color: #838383;
         }
       }
       .content__btn {
