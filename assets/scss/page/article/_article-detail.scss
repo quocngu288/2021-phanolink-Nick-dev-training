@@ -97,6 +97,9 @@
               }
             }
           }
+          @media #{$info-phone-2} {
+            padding: 34px 15px;
+          }
         }
         .left__content {
           .content__title {

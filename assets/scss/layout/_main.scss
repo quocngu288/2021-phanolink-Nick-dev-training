@@ -304,9 +304,9 @@ main {
     }
   }
   input::placeholder {
-    @include font-size(13px);
-    font-style: italic;
-    color: #838383;
+    @include font-size(14px);
+
+    color: #808081;
   }
   span {
     color: #ea4036;
@@ -316,10 +316,12 @@ main {
   }
   .custom-form__inline {
     @include flex();
-    select {
+
+    .inline__wrap-select {
       margin-left: 13.5px;
+      width: calc((100%-30px) / 3);
     }
-    select:first-child {
+    .inline__wrap-select:first-child {
       margin-left: 0;
     }
   }
