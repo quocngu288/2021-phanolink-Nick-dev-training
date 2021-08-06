@@ -84,73 +84,70 @@
             color: #808081;
           }
         }
-        .info__table {
-          thead {
-            th {
-              padding: 12px 25px;
-              text-align: center;
-              white-space: nowrap;
-              border-bottom: 1px solid #e5e5e4;
-              border-top: 1px solid #e5e5e4;
-              @include font-size(14px);
-              color: #808081;
-              font-weight: normal;
-              @media #{$info-tablet-vertical-1} {
-                padding: 12px 0px;
-              }
-            }
-          }
-          tbody {
-            td {
-              vertical-align: top;
-              padding: 20px 24px;
-              border-bottom: 1px solid #e5e5e4;
-              a {
+        .info__wrap {
+          overflow: scroll;
+          .wrap__table {
+            min-width: 700px;
+            thead {
+              th {
+                padding: 12px 25px;
+                text-align: center;
+                white-space: nowrap;
+                border-bottom: 1px solid #e5e5e4;
+                border-top: 1px solid #e5e5e4;
                 @include font-size(14px);
-                font-weight: bolder;
-                color: #01adab;
-              }
-              p {
-                @include font-size(14px);
-                color: #434343;
-              }
-              @media #{$info-tablet-vertical-1} {
-                padding: 20px 8px;
-              }
-              @media #{$info-phone-3} {
-                padding: 15px 2px;
+                color: #808081;
+                font-weight: normal;
+                // @media #{$info-tablet-vertical-1} {
+                //   padding: 12px 0px;
+                // }
               }
             }
-            td:nth-child(1) {
-              padding-left: 25px;
-              @media #{$info-phone-3} {
-                padding-left: 4px;
-              }
-            }
-            td:nth-child(2) {
-            }
-            td:nth-child(3) {
-              @media #{$info-phone-3} {
+            tbody {
+              td {
+                vertical-align: top;
+                padding: 20px 24px;
+                border-bottom: 1px solid #e5e5e4;
+                a {
+                  @include font-size(14px);
+                  font-weight: bolder;
+                  color: #01adab;
+                }
                 p {
-                  word-break: break-all;
-                  display: -webkit-box;
-                  -webkit-line-clamp: 4;
-                  -webkit-box-orient: vertical;
-                  overflow: hidden;
+                  @include font-size(14px);
+                  color: #434343;
+                }
+                // @media #{$info-tablet-vertical-1} {
+                //   padding: 20px 8px;
+                // }
+                // @media #{$info-phone-3} {
+                //   padding: 15px 2px;
+                // }
+              }
+              td:nth-child(1) {
+                padding-left: 25px;
+              }
+              td:nth-child(2) {
+              }
+              td:nth-child(3) {
+                @media #{$info-phone} {
+                  p {
+                    word-break: break-all;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  }
                 }
               }
-            }
-            td:nth-child(4) {
-              p {
-                font-weight: bolder;
-                white-space: nowrap;
+              td:nth-child(4) {
+                p {
+                  font-weight: bolder;
+                  white-space: nowrap;
+                }
               }
-            }
-            td:nth-child(5) {
-              white-space: nowrap;
-
-              @media #{$info-phone-3} {
-                white-space: unset;
+              td:nth-child(5) {
+                white-space: nowrap;
               }
             }
           }

@@ -175,7 +175,9 @@
       }
     }
     .select2-results {
+      overflow: scroll;
       ul {
+        max-height: 120px;
         li {
           padding: 8px 0 8px 4px;
         }
@@ -184,5 +186,58 @@
         }
       }
     }
+  }
+}
+//------------------------
+.custom-select {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+
+  // float: left;
+  // min-width: 200px;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+
+    display: block;
+    width: 100%;
+    // max-width: 320px;
+    height: 50px;
+    float: right;
+    margin-bottom: 15px;
+    padding: 0px 12px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+  &::after {
+    content: "<>";
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    font-weight: bolder;
+    top: 8px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+
+    position: absolute;
+    pointer-events: none;
+  }
+  /*To remove button from IE11, thank you Matt */
+  select::-ms-expand {
+    display: none;
   }
 }

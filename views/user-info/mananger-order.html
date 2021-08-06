@@ -24,6 +24,12 @@
     /> -->
     <link rel="stylesheet" href="/assets/css/vendor/owl.carousel.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap.css" />
+    <!-- DATA TABLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
@@ -60,7 +66,11 @@
             <img src="/assets/img/logo.png" alt="" />
           </a>
           <div class="input-group midle__input">
-            <input type="text" class="form-control" placeholder="Bạn đang tìm thuốc gì..." />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bạn đang tìm thuốc gì..."
+            />
             <div class="input-group-append">
               <button class="btn--search" type="submit">Tìm kiếm</button>
             </div>
@@ -115,7 +125,11 @@
             <img src="/assets/img/logo.png" alt="" />
           </a>
           <div class="input-group content__input">
-            <input type="text" class="form-control" placeholder="Bạn đang tìm thuốc gì..." />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bạn đang tìm thuốc gì..."
+            />
             <div class="input-group-append">
               <!-- <img src="/assets/img/search.png" /> -->
               <button class="btn--search" type="submit">Tìm kiếm</button>
@@ -244,7 +258,9 @@
                 </li>
                 <li>
                   <i class="fas fa-chevron-right"></i>
-                  <a href="/views/user-info/my-notification.html">Thông báo của tôi </a>
+                  <a href="/views/user-info/my-notification.html"
+                    >Thông báo của tôi
+                  </a>
                 </li>
               </ul>
             </div>
@@ -280,7 +296,6 @@
                       <a href="" data-toggle="modal" data-target="#ModalSearch"
                         ><i class="fas fa-search"></i>Tìm kiếm</a
                       >
-           
                     </li>
                   </ul>
                 </div>
@@ -292,61 +307,67 @@
                   blochkchain
                 </span>
               </p>
-              <table class="info__table">
-                <thead>
-                  <tr>
-                    <th>Mã đơn hàng</th>
-                    <th>Ngày mua</th>
-                    <th>Sản phẩm</th>
-                    <th>Tổng tiền</th>
-                    <th>Trạng thái</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="">697318275</a>
-                    </td>
-                    <td>
-                      <p>18/08/2018</p>
-                    </td>
-                    <td>
-                      <p>
-                        Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện
-                        Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03
-                        sản phẩm khác
-                      </p>
-                    </td>
-                    <td>
-                      <p>239.200 đ</p>
-                    </td>
-                    <td>
-                      <p>Giao hàng thành công</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="">697318275</a>
-                    </td>
-                    <td>
-                      <p>18/08/2018</p>
-                    </td>
-                    <td>
-                      <p>
-                        Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện
-                        Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03
-                        sản phẩm khác
-                      </p>
-                    </td>
-                    <td>
-                      <p>239.200 đ</p>
-                    </td>
-                    <td>
-                      <p>Giao hàng thành công</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="info__wrap">
+                <table id="scrollTable" class="wrap__table" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Mã đơn hàng</th>
+                      <th>Ngày mua</th>
+                      <th>Sản phẩm</th>
+                      <th>Tổng tiền</th>
+                      <th>Trạng thái</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="/views/user-info/order-detail.html"
+                          >697318275</a
+                        >
+                      </td>
+                      <td>
+                        <p>18/08/2018</p>
+                      </td>
+                      <td>
+                        <p>
+                          Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền
+                          Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền
+                          Tệ...và 03 sản phẩm khác
+                        </p>
+                      </td>
+                      <td>
+                        <p>239.200 đ</p>
+                      </td>
+                      <td>
+                        <p>Giao hàng thành công</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="/views/user-info/order-detail.html"
+                          >697318275</a
+                        >
+                      </td>
+                      <td>
+                        <p>18/08/2018</p>
+                      </td>
+                      <td>
+                        <p>
+                          Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền
+                          Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền
+                          Tệ...và 03 sản phẩm khác
+                        </p>
+                      </td>
+                      <td>
+                        <p>239.200 đ</p>
+                      </td>
+                      <td>
+                        <p>Giao hàng thành công</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             <ul class="right-mananger__paginate common-paginate">
@@ -722,7 +743,7 @@
               </div>
               <div class="form__button">
                 <a class="button__log"><i class="fas fa-search"></i>Tìm kiếm</a>
-                <a href="" class="button__delete">        Xóa tìm kiếm</a>
+                <a href="" class="button__delete"> Xóa tìm kiếm</a>
               </div>
             </form>
           </div>
@@ -742,6 +763,12 @@
     <script src="/assets/js/vendor/bootstrap.min.js"></script>
     <!--carousel-->
     <script src="/assets/js/vendor/owl.carousel.min.js"></script>
+    <!-- DATA TABLE -->
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

@@ -30,6 +30,7 @@
             .fas {
               color: #01adab;
               @include font-size(10px);
+              display: none;
               i {
                 font-weight: bold;
               }
@@ -42,6 +43,9 @@
             &.active {
               a {
                 font-weight: bold;
+              }
+              .fas {
+                display: block;
               }
             }
           }
@@ -122,6 +126,7 @@
         .left__foot {
           width: 50%;
           min-height: 0;
+          margin-left: 15px;
         }
       }
       @media #{$info-phone-4} {
@@ -137,7 +142,7 @@
         .content__title {
           li {
             top: -10px;
-            left: 30px;
+            left: -34px;
             @media #{$info-phone-2} {
               left: 0;
             }

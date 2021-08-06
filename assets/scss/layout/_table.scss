@@ -1,0 +1,33 @@
+.dataTables_wrapper {
+  .dataTables_length {
+    display: none;
+  }
+  .dataTables_filter {
+    display: none;
+  }
+  .dataTables_scroll {
+    .dataTables_scrollHead {
+      .dataTables_scrollHeadInner {
+        .dataTable {
+          thead {
+            .sorting_asc {
+              background-image: none !important;
+            }
+          }
+          th {
+            background-image: none;
+          }
+        }
+      }
+    }
+    .dataTables_scrollBody {
+      border-bottom: none;
+    }
+  }
+  .dataTables_info {
+    display: none;
+  }
+  .dataTables_paginate {
+    display: none;
+  }
+}

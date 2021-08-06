@@ -11,6 +11,10 @@
         }
       });
     });
+    // $("#scrollTable").DataTable({
+    //   scrollX: true,
+    //   scrollY: 200,
+    // });
   });
 })(jQuery);
 
@@ -84,9 +88,9 @@ $(".list__item").click(function (e) {
 $(".change-pass__checkbox").click(function () {
   console.log("click");
   if ($(".change-pass__checkbox>input").is(":checked")) {
-    $(".change-pass__form").show(300);
+    $(".change-pass__form").show();
   } else {
-    $(".change-pass__form").hide(300);
+    $(".change-pass__form").hide();
   }
 });
 function loadFormCheckUserInfo() {
@@ -99,9 +103,9 @@ function loadFormCheckUserInfo() {
 $(".change-address__checkbox").click(function () {
   console.log("click");
   if ($(".change-address__checkbox>input").is(":checked")) {
-    $(".change-address__form").show(300);
+    $(".change-address__form").show();
   } else {
-    $(".change-address__form").hide(300);
+    $(".change-address__form").hide();
   }
 });
 function loadFormCheckAddAddress() {
@@ -114,6 +118,15 @@ function loadFormCheckAddAddress() {
 loadFormCheckUserInfo();
 loadFormCheckAddAddress();
 //----------------------------------------------------------------------------
+// handle scroll table
+// function scrollTable() {
+//   $("#scrollTable").DataTable({
+//     scrollX: true,
+//     scrollY: 200,
+//   });
+// }
+// scrollTable();
+// ------------------------------------------------------------------------
 // own carosel
 var owl1 = $(".owl-caro-bonus");
 var owl2 = $(".owl-caro-hot-product");
